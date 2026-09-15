@@ -550,6 +550,18 @@ Features Assumptions
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+##### Hipótesis de Prevención (Monitoreo + Alertas):
+Creemos que al integrar el Contexto de Monitoreo Ambiental con el Contexto de Alertas, lograremos reducir la pérdida de carga en un 25%. Sabremos que estamos en lo correcto cuando el tiempo entre la detección de una anomalía y la acción correctiva del conductor sea menor a 15 minutos.
+
+##### Hipótesis de Trazabilidad (Inventario + Logístico):
+Creemos que al vincular el Contexto de Inventario con el Contexto Logístico (actualizando el estado térmico del despacho), aumentaremos la confianza del cliente B2B. Sabremos que tenemos razón cuando los reportes finales de entrega no muestren discrepancias entre lo prometido en el inventario y lo registrado en el trayecto.
+
+##### Hipótesis de Eficiencia (Gestión del Sistema):
+Creemos que al proporcionar un Dashboard de Gestión que centralice todos los contextos, los jefes de logística reducirán el tiempo dedicado a la supervisión diaria. Lo validaremos cuando los usuarios reporten una disminución del 40% en el uso de herramientas externas (como Excel o llamadas telefónicas) para verificar el estado de los despachos.
+
+##### Hipótesis de Integridad (Logístico):
+Confiamos en que al automatizar el cambio de estado del despacho basado en datos de sensores, eliminaremos el error humano en los registros de calidad. Estaremos en lo cierto cuando el 100% de los despachos completados cuenten con un historial térmico verificado e inalterable.
+
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
