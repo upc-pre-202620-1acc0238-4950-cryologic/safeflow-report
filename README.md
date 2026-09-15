@@ -468,7 +468,10 @@ La plataforma analiza continuamente las condiciones registradas y detecta desvia
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+
 ## 1.2. Solution Profile
+
+El Solution Profile de SafeFlow presenta la definición del problema que aborda la propuesta y el enfoque de solución basado en la optimización de la cadena de frío mediante una plataforma mobile. Esta sección se divide en dos partes: antecedentes y problemática, y el proceso de Lean UX aplicado al dominio del problema.
 
 ### 1.2.1. Antecedentes y problemática
 
