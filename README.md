@@ -570,7 +570,40 @@ El Lean UX Canvas presenta de manera visual y estructurada los principales eleme
 
 ## 1.3. Segmentos objetivo
 
-<div style="page-break-after: always;"></div>
+En esta sección se identifican los segmentos de clientes a los cuales está dirigida la solución propuesta por Cryologic Systems. La segmentación permite enfocar el desarrollo del producto en usuarios que presentan necesidades específicas relacionadas con la gestión de la cadena de frío, optimizando así la propuesta de valor.
+
+### Segmento Objetivo 1: Empresas del sector farmacéutico
+
+Este segmento está conformado por laboratorios, distribuidoras y operadores logísticos que transportan medicamentos sensibles a la temperatura, como vacunas, insulina y productos biológicos.
+
+Estas organizaciones requieren un control estricto de la cadena de frío debido a normativas sanitarias y estándares de calidad. Actualmente, enfrentan dificultades para monitorear en tiempo real las condiciones térmicas durante el transporte, lo que puede comprometer la eficacia de los productos y generar pérdidas económicas significativas.
+
+Necesidades clave:
+
+- Monitoreo en tiempo real de temperatura
+- Alertas inmediatas ante desviaciones
+- Trazabilidad completa para auditorías
+- Cumplimiento de normativas sanitarias
+
+
+### Segmento 2: Operadores logísticos (3PL / transporte especializado)
+
+Empresas que brindan servicios de transporte y distribución para terceros (farmacéuticas o alimentos), especialmente aquellas que manejan carga refrigerada.
+
+Por qué es potente:
+
+No son dueños del producto, pero sí responsables del transporte
+Necesitan evidencia (reportes) para sus clientes
+Tienen alto interés en diferenciarse con tecnología
+
+Necesidades:
+
+- Monitoreo en tiempo real durante rutas
+- Reportes para clientes
+- Alertas para conductores
+- Optimización de rutas y tiempos
+
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 
