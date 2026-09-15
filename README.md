@@ -491,6 +491,12 @@ En esta parte se implementa el Lean UX Process, abordando la visión del modelo 
 
 #### 1.2.2.1. Lean UX Problem Statements
 
+El estado actual de la gestión de la cadena de frío en las industrias farmacéutica y alimentaria es deficiente debido a la falta de monitoreo en tiempo real y sistemas de trazabilidad integrados. Muchas empresas dependen de registros manuales o dispositivos que solo detectan fallos post-mortem, lo que genera pérdidas económicas, riesgos sanitarios y retrasos en la capacidad de respuesta ante incidencias.
+
+Nuestra plataforma ha sido diseñada para permitir a pequeñas y medianas empresas del sector logístico, farmacéutico y alimentario, así como a gestores logísticos, supervisores de calidad y operadores administrativos, gestionar eficientemente el monitoreo de la cadena de frío, desde la supervisión de temperatura en tiempo real hasta el seguimiento y trazabilidad de los productos transportados. A través de esta herramienta digital, buscamos facilitar la administración operativa, mejorar la capacidad de reacción ante anomalías y optimizar la integridad y seguridad de la carga.
+
+¿Cómo podríamos ofrecer a los gestores logísticos y responsables de calidad una herramienta que proporcione visibilidad completa y alertas preventivas sobre el estado de sus productos, para que puedan intervenir antes de que la temperatura salga del rango permitido y asegurar la integridad de la carga?
+
 #### 1.2.2.2. Lean UX Assumptions
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
