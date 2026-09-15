@@ -460,6 +460,11 @@ A continuación, cada integrante del equipo detallará su contribución al proye
 En esta sección se presenta el perfil de la startup Cryologic Systems, describiendo su propósito, enfoque y propuesta de valor dentro del contexto de la gestión de la cadena de frío. Asimismo, se detallan las características principales de la solución planteada y el rol del equipo encargado de su desarrollo.
 
 ### 1.1.1. Descripción de la Startup
+Cryologic Systems es una startup tecnológica que desarrolla una plataforma digital orientada a la gestión y monitoreo de la cadena de frío en productos sensibles como medicamentos y alimentos perecederos. Su propósito principal es ofrecer una solución que permita a las empresas garantizar que sus productos se mantengan dentro de condiciones térmicas adecuadas durante todo el proceso de almacenamiento y transporte.
+
+La startup surge como respuesta a la problemática de pérdidas económicas y riesgos sanitarios ocasionados por variaciones en la temperatura que afectan la calidad e integridad de los productos. En este contexto, Cryologic Systems  propone un sistema que permite registrar productos, definir rangos de temperatura permitidos y supervisar su comportamiento a lo largo de la cadena logística.
+
+La plataforma analiza continuamente las condiciones registradas y detecta desviaciones respecto a los parámetros establecidos, generando alertas que facilitan la toma de decisiones oportunas. Además, permite la trazabilidad de los productos, identificando en qué punto de la cadena ocurre una incidencia y facilitando el control operativo
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
