@@ -499,6 +499,55 @@ Nuestra plataforma ha sido diseñada para permitir a pequeñas y medianas empres
 
 #### 1.2.2.2. Lean UX Assumptions
 
+En esta sección se detallan las suposiciones relacionadas con los resultados esperados del sistema de monitoreo en tiempo real de la cadena de frío. Estas suposiciones se organizan en tres categorías: Business Outcomes, que contemplan los beneficios comerciales y mejoras en la gestión logística; User Outcomes, enfocados en cómo las empresas y usuarios se beneficiarán al monitorear y controlar la temperatura de sus productos; y User Outcomes Assumptions, que examinan las necesidades, intereses y comportamientos de los usuarios que fundamentan las suposiciones anteriores. Cada categoría busca garantizar que la plataforma cumpla tanto con los objetivos comerciales como con las expectativas de quienes la utilizarán.
+
+Usuarios del sistema
+- Gerentes logísticos.
+- Supervisores y responsables de calidad.
+- Operadores administrativos.
+- Encargados de almacén y transporte.
+- Empresas farmacéuticas, alimentarias y logísticas que gestionan productos sensibles a cambios de temperatura.
+
+¿Dónde encaja nuestro producto en su trabajo?
+- La plataforma encaja en las operaciones diarias de monitoreo y control de la cadena de frío, permitiendo a los usuarios supervisar la temperatura de los productos en tiempo real, recibir alertas preventivas, gestionar incidencias y consultar reportes históricos desde cualquier lugar mediante una solución centralizada y accesible.
+
+Business Outcomes
+- Creemos que al implementar nuestra plataforma de monitoreo continuo de la cadena de frío basada en IoT, podremos aumentar en un 50% la cantidad de empresas que supervisan en tiempo real la temperatura de sus productos.
+- Creemos que al ofrecer alertas automáticas en tiempo real, lograremos reducir en un 30% las pérdidas de productos ocasionadas por fallas en la cadena de frío.
+- Creemos que al proporcionar dashboards visuales y reportes claros, incrementaremos en un 40% la eficiencia en la toma de decisiones logísticas y operativas.
+- Creemos que al ofrecer una plataforma accesible e intuitiva, obtendremos una satisfacción del usuario superior al 85% en cuanto a facilidad de uso y utilidad.
+- Creemos que al integrar trazabilidad completa de los productos, permitiremos a las empresas reducir en un 25% los tiempos de respuesta ante incidencias.
+
+Business Outcomes Assumptions
+- Creemos que la falta de monitoreo continuo de la temperatura en la cadena de frío es un problema crítico que genera pérdidas económicas y riesgos sanitarios.
+- Creemos que las empresas del sector logístico, farmacéutico y alimentario estarán interesadas en adoptar una solución tecnológica que les permita mejorar el control de sus productos.
+- Creemos que el uso de sensores IoT con monitoreo en tiempo real facilitará la detección temprana de problemas en la cadena de frío.
+- Creemos que las empresas valoran soluciones que automaticen alertas y reportes, ya que optimizan tiempo y reducen errores humanos.
+- Creemos que las organizaciones buscan herramientas que les permitan tener visibilidad completa de su operación logística.
+
+User Outcomes
+- Creemos que al ofrecer monitoreo en tiempo real, los usuarios podrán tomar decisiones rápidas para evitar pérdidas de productos.
+- Creemos que mediante dashboards intuitivos, los usuarios podrán interpretar fácilmente el estado de sus productos.
+- Creemos que al permitir el acceso remoto, los usuarios podrán supervisar sus operaciones desde cualquier lugar.
+- Creemos que al ofrecer historial de datos, los usuarios podrán identificar patrones y prevenir futuras incidencias.
+- Creemos que al generar alertas automáticas, los usuarios podrán actuar de manera inmediata ante desviaciones de temperatura.
+
+
+User Outcomes Assumptions
+- Creemos que los usuarios necesitan información clara y en tiempo real para gestionar adecuadamente la cadena de frío.
+- Creemos que los usuarios prefieren soluciones simples que no requieran conocimientos técnicos avanzados.
+- Creemos que los usuarios se sienten limitados por sistemas actuales que no ofrecen monitoreo continuo.
+- Creemos que los usuarios valoran herramientas que reduzcan riesgos y optimicen sus procesos operativos.
+- Creemos que las empresas necesitan sistemas confiables que les permitan garantizar la calidad de sus productos.
+
+
+Features Assumptions
+- Creemos que un dashboard en tiempo real permitirá a los usuarios monitorear múltiples productos y ubicaciones de manera eficiente.
+- Creemos que las alertas automáticas ayudarán a prevenir pérdidas al detectar desviaciones de temperatura de forma inmediata.
+- Creemos que el acceso remoto permitirá una gestión más flexible y eficiente de la cadena de frío.
+- Creemos que el historial de datos permitirá analizar tendencias y mejorar procesos logísticos.
+- Creemos que una interfaz intuitiva facilitará la adopción del sistema sin necesidad de capacitación especializada.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
