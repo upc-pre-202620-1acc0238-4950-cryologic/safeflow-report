@@ -487,6 +487,8 @@ En este contexto, se evidencia la necesidad de contar con una solución tecnoló
 
 ### 1.2.2. Lean UX Process
 
+En esta parte se implementa el Lean UX Process, abordando la visión del modelo de negocio que respaldará al producto de software. Se incluyen los Problem Statements, que contemplan elementos como el dominio, los segmentos de clientes, los puntos de dolor, las brechas, la visión/estrategia y el segmento inicial. Además, se definen las Assumptions y los Hypothesis Statements de acuerdo con la metodología Lean UX. Finalmente, se presenta el Lean UX Canvas que resume y organiza estos elementos.
+
 #### 1.2.2.1. Lean UX Problem Statements
 
 #### 1.2.2.2. Lean UX Assumptions
