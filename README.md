@@ -457,6 +457,7 @@ A continuación, cada integrante del equipo detallará su contribución al proye
 # Capítulo I: Presentación
 
 ## 1.1. Startup Profile
+En esta sección se presenta el perfil de la startup Cryologic Systems, describiendo su propósito, enfoque y propuesta de valor dentro del contexto de la gestión de la cadena de frío. Asimismo, se detallan las características principales de la solución planteada y el rol del equipo encargado de su desarrollo.
 
 ### 1.1.1. Descripción de la Startup
 
