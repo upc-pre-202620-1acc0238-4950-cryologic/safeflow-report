@@ -592,7 +592,7 @@ El propósito de este análisis competitivo radica en examinar y contrastar a Cr
     <tr>
        <td align="center" rowspan="3">Productos & Servicios</td>
         <td>Productos & Servicios</td>
-        <td>App web con monitoreo en tiempo real, alertas, dashboard y trazabilidad.</td>
+        <td>App movil con monitoreo en tiempo real, alertas, dashboard y trazabilidad.</td>
         <td>Servicios completos de monitoreo, análisis y cumplimiento.</td>
         <td>Plataforma IoT con sensores y analítica avanzada.</td>
         <td>Sensores inalámbricos y software básico.</td>
@@ -740,7 +740,7 @@ Segmento Objetivo 1: Empresas del sector farmacéutico
 
 16. Si tuviera un dashboard que centralizara inventario, rutas y alertas en tiempo real, ¿qué métrica sería la primera que revisaría cada mañana?
 
-17. ¿Qué funcionalidad considera "no negociable" para confiar ciegamente en una plataforma web de cadena de frío?
+17. ¿Qué funcionalidad considera "no negociable" para confiar ciegamente en una plataforma movil o web de cadena de frío?
 
 Segmento Objetivo 2: Operadores logísticos (3PL / transporte especializado)
 
@@ -832,6 +832,32 @@ El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 año
 - **URL:** [Enlace de Entrevista]()
 
 ### 2.2.3. Análisis de entrevistas
+### Segmento 1: Empresas del sector farmacéutico
+
+- **Rol principal:** 100% asegura la integridad biológica de productos termolábiles (2°C a 8°C) y garantiza el cumplimiento de normativas sanitarias (DIGEMID).
+- **Gestión de Datos:** 100% se describe como un perfil "analítico" que no toma decisiones sin reportes de datos sustentados.
+- **Herramientas actuales:**  100% utiliza ERPs robustos (SAP) y dataloggers físicos; 0% cuenta con monitoreo en la nube en tiempo real.
+- **Problemas comunes:** 
+  * 100% califica el transporte como una "caja negra" sin visibilidad en tránsito.
+  * 100% reporta procesos caóticos de auditoría (entre 2 a 3 días para consolidar evidencias).
+  * 100% menciona falta de alertas inmediatas ante fallas mecánicas o humanas.
+- **Indicadores Valorados:** 100% prioriza el conteo de "Alertas Críticas Activas" y la trazabilidad histórica inalterable.
+- **Impacto de la solución:** 100% afirma que una reducción del 20% en mermas impacta directamente en sus bonos de desempeño y KPIs.
+- **Factor "No Negociables"** 100% exige integridad total de los datos (registros no editables).
+
+### Segmento 2: Operadores logísticos (3PL / transporte especializado)
+
+- **Rol principal:** 100% coordina despachos, supervisa conductores y gestiona la comunicación operativa en ruta.
+- **Canales digitales:** 100% utiliza WhatsApp para coordinar rutas y Facebook/LinkedIn para actualizarse en normativas.
+- **Herramientas actuales:**  100% usa pizarras acrílicas y registros en papel; 50% depende de fotos enviadas por los choferes como "evidencia".
+- **Problemas comunes:** 
+  * 100% reporta vulnerabilidad ante reclamos de clientes por falta de pruebas de temperatura en vivo.
+  * 100% menciona que los choferes no detectan fallas de frío a tiempo por falta de alertas en cabina.
+  * 100% identifica una pérdida de 5 horas semanales en la descarga manual de datos USB y armado de reportes en Excel.
+- **Indicadores Valorados:** 100% prioriza la visualización de unidades en mapas interactivos con estado térmico actualizado cada 5 minutos.
+- **Adopción de app:** 100% dispuesto a adoptar la solución siempre que sea "fácil de usar como WhatsApp" y apta para conductores con baja alfabetización digital.
+- **Diferenciación:** 100% considera que la falta de una plataforma de monitoreo les está haciendo perder grandes clientes corporativos.
+
 
 ## 2.3. Needfinding
 
