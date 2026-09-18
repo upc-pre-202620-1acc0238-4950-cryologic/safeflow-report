@@ -101,7 +101,6 @@
 |   AV1   | 18-09-2026 |   Bustinza Muñoz, Sebastian Alonso    |                                                    Needfinding                                                     |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |                                                      Análisis competitivo                                              |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |                             Estrategias y tácticas frente a competidores                                               |
-|   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |                             Diseño de entrevistas                                                                      |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |               Diseño de entrevistas                                                                                    |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |              Registro de entrevistas                                                                                   |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |              Análisis de entrevistas                                                                                   |
