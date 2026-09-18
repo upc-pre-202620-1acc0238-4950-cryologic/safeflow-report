@@ -506,7 +506,115 @@ A continuación, cada integrante del equipo detallará su contribución al proye
 Detallar a los competidores más destacados de Cryologic Systems en el sector de tecnologías para el control de la cadena de frío. Evaluar a esta competencia es fundamental para entender el contexto del proyecto e identificar las cualidades, ventajas y estrategias de las alternativas que ya existen en el mercado.
 
 ### 2.1.1. Análisis competitivo
-
+El propósito de este análisis competitivo radica en examinar y contrastar a Cryologic Systems frente a sus competidores más relevantes, tomando como base variables clave como la propuesta de valor, el segmento de mercado, las tácticas de comercialización, la oferta de productos y servicios, las estructuras de precios y los canales de distribución."
+<table>
+    <tr>
+        <td colspan="6" class="section-title">
+            <h3>Competitive Analysis Landscape</h3>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">
+            ¿Por qué llevar a cabo este análisis?
+        </td>
+        <td colspan="4">
+            Escriba en el recuadro la pregunta que busca responder o el objetivo de este análisis.
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            Analizar cómo se posiciona  Cryologic Systems  frente a sus competidores en el mercado de monitoreo de la cadena de frío, en términos de propuesta de valor, tecnología y accesibilidad.
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">(Productos)</td>
+        <td align="center"> Cryologic Systems  (Startup)</td>
+        <td align="center">Sensitech</td>
+        <td align="center">Controlant</td>
+        <td align="center">Monnit</td>
+    </tr>
+    <tr>
+       <td align="center" rowspan="2">Perfil</td>
+        <td>Overview</td>
+        <td> Cryologic Systems  es una plataforma web que permite monitorear en tiempo real la cadena de frío mediante sensores IoT, generando alertas y ofreciendo trazabilidad completa de los productos.</td>
+        <td>Sensitech ofrece soluciones globales de monitoreo de la cadena de frío con alta precisión y análisis avanzado para grandes empresas.</td>
+        <td>Controlant es una plataforma IoT enfocada en la industria farmacéutica, que permite visibilidad en tiempo real y análisis de datos.</td>
+        <td>Monnit proporciona sensores inalámbricos para monitoreo ambiental en múltiples industrias.</td>
+    </tr>
+    <tr>
+        <td>Ventaja Competitiva ¿Qué valor ofrece a los clientes?</td>
+        <td>Accesibilidad, facilidad de uso, monitoreo en tiempo real y alertas preventivas que reducen pérdidas.</td>
+        <td>Alta precisión, cumplimiento normativo y experiencia global.</td>
+        <td>Integración avanzada de IoT y analítica en tiempo real.</td>
+        <td>Bajo costo y flexibilidad en implementación de sensores.</td>
+    </tr>
+    <tr>
+       <td align="center" rowspan="2">Perfil de Marketing</td>
+        <td>Mercado Objetivo</td>
+        <td>PYMEs, empresas farmacéuticas y operadores logísticos.</td>
+        <td>Grandes corporaciones y empresas globales.</td>
+        <td>Industria farmacéutica y logística avanzada.</td>
+        <td>Empresas que requieren soluciones de monitoreo económico.</td>
+    </tr>
+    <tr>
+        <td>Estrategias de Marketing</td>
+        <td>Marketing digital, enfoque en facilidad de adopción y escalabilidad.</td>
+        <td>Posicionamiento como líder global y soluciones enterprise.</td>
+        <td>Alianzas estratégicas con farmacéuticas.</td>
+        <td>Venta directa de hardware y soluciones accesibles.</td>
+    </tr>
+    <tr>
+       <td align="center" rowspan="3">Productos & Servicios</td>
+        <td>Productos & Servicios</td>
+        <td>Plataforma web con monitoreo en tiempo real, alertas, dashboard y trazabilidad.</td>
+        <td>Servicios completos de monitoreo, análisis y cumplimiento.</td>
+        <td>Plataforma IoT con sensores y analítica avanzada.</td>
+        <td>Sensores inalámbricos y software básico.</td>
+    </tr>
+    <tr>
+        <td>Precios & Costos</td>
+        <td>Modelo de suscripción accesible.</td>
+        <td>Alto costo (enterprise).</td>
+        <td>Alto costo especializado.</td>
+        <td>Bajo costo.</td>
+    </tr>
+    <tr>
+        <td>Canales de Distribución (Web y/o Móvil)</td>
+        <td>Web (SaaS).</td>
+        <td>Web y soluciones empresariales.</td>
+        <td>Web con integración IoT.</td>
+        <td>Web y dispositivos físicos.</td>
+    </tr>
+    <tr>
+       <td align="center" rowspan="4">Análisis SWOT</td>
+        <td>Fortalezas</td>
+        <td>Plataforma accesible, monitoreo en tiempo real, alertas automáticas y trazabilidad completa.</td>
+        <td>Alta precisión, experiencia global y marca reconocida.</td>
+        <td>Tecnología IoT avanzada y enfoque especializado.</td>
+        <td>Bajo costo y facilidad de implementación.</td>
+    </tr>
+    <tr>
+        <td>Debilidades</td>
+        <td>Startup en crecimiento y baja presencia en el mercado.</td>
+        <td>Costos elevados y complejidad de implementación.</td>
+        <td>Dependencia de hardware y alto costo.</td>
+        <td>Menor especialización en cadena de frío.</td>
+    </tr>
+    <tr>
+        <td>Oportunidades</td>
+        <td>Crecimiento del IoT, regulación sanitaria y digitalización logística.</td>
+        <td>Expansión en mercados emergentes.</td>
+        <td>Demanda creciente en farmacéutica.</td>
+        <td>Crecimiento del mercado IoT.</td>
+    </tr>
+    <tr>
+        <td>Amenazas</td>
+        <td>Competidores consolidados y barreras de adopción.</td>
+        <td>Nuevas startups más accesibles.</td>
+        <td>Competencia de soluciones más económicas.</td>
+        <td>Competidores especializados.</td>
+    </tr>
+</table>
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 ## 2.2. Entrevistas
