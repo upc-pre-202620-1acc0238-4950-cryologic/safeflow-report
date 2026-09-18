@@ -616,6 +616,64 @@ El propósito de este análisis competitivo radica en examinar y contrastar a Cr
     </tr>
 </table>
 ### 2.1.2. Estrategias y tácticas frente a competidores
+El presente apartado detalla las tácticas y lineamientos estratégicos que Cryologic Systems adoptará para consolidar su posición ante la competencia en el sector de la cadena de frío. Dichas medidas se fundamentan en el análisis FODA previamente desarrollado, con el propósito de formular un plan de acción que maximice las ventajas competitivas de la startup y mitigue las posibles vulnerabilidades frente al mercado.
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <td>Cryologic Systems</td>
+        <td align="center"><strong>Fortalezas</strong><br>
+            - Monitoreo en tiempo real<br>
+            - Plataforma accesible y fácil de usar<br>
+            - Alertas automáticas<br>
+            - Trazabilidad completa
+        </td>
+        <td align="center"><strong>Debilidades</strong><br>
+            - Startup con baja presencia en el mercado<br>
+            - Dependencia de adopción tecnológica<br>
+            - Recursos limitados frente a competidores grandes
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><strong>Oportunidades</strong><br>
+            - Crecimiento del IoT<br>
+            - Regulaciones sanitarias<br>
+            - Digitalización logística<br>
+            - Expansión al sector alimentario
+        </td>
+        <td align="center">
+            <strong>Estrategia FO</strong><br>
+            - Aprovechar el monitoreo en tiempo real para captar empresas que buscan digitalización<br>
+            - Escalar la solución a sectores farmacéutico y alimentario<br>
+            - Integrar sensores IoT accesibles para facilitar adopción
+        </td>
+        <td align="center">
+            <strong>Estrategia DO</strong><br>
+            - Incrementar visibilidad mediante marketing digital<br>
+            - Realizar pruebas piloto con empresas<br>
+            - Generar contenido educativo sobre cadena de frío
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><strong>Amenazas</strong><br>
+            - Competidores consolidados<br>
+            - Soluciones de bajo costo<br>
+            - Barreras de confianza<br>
+            - Rápido avance tecnológico
+        </td>
+        <td align="center">
+            <strong>Estrategia FA</strong><br>
+            - Diferenciarse por simplicidad frente a soluciones complejas<br>
+            - Ofrecer implementación rápida<br>
+            - Enfocar la solución en prevención mediante alertas
+        </td>
+        <td align="center">
+            <strong>Estrategia DA</strong><br>
+            - Ofrecer versiones demo o gratuitas<br>
+            - Generar casos de éxito<br>
+            - Brindar soporte técnico cercano y personalizado
+        </td>
+    </tr>
+</table>
 
 ## 2.2. Entrevistas
 
