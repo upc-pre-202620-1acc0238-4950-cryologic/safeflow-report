@@ -134,7 +134,7 @@ A continuación, se detallan los Link de lo Desarrollado:
 | Andy Alejandro Mio Mejia | ****************** |
 |  ******************  | ******************                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Sebastian Alonso Bustinza Muñoz | ****************** |
-| ******************    | ******************                                                                                                                                                                                                                                   |
+| Morales Yapuchura, Jefferson Bayron    | ******************                                                                                                                                                                                                                                   |
 | ******************    | ******************                                                                                                       |
 
 
@@ -146,7 +146,7 @@ Los integrantes son:
 
 * Andy Alejandro Mio Mejia   (AndyMio17)
 * Sebastian Alonso Bustinza Muñoz   (sebastianbustinza809)
-* ****************** (********)
+* Jefferson Bayron Morales Yapuchura (Fenfito)
 * ****************** (********)
 * ****************** (********)
 
