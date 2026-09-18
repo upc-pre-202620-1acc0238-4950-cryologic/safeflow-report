@@ -615,7 +615,9 @@ El propósito de este análisis competitivo radica en examinar y contrastar a Cr
         <td>Competidores especializados.</td>
     </tr>
 </table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
 El presente apartado detalla las tácticas y lineamientos estratégicos que Cryologic Systems adoptará para consolidar su posición ante la competencia en el sector de la cadena de frío. Dichas medidas se fundamentan en el análisis FODA previamente desarrollado, con el propósito de formular un plan de acción que maximice las ventajas competitivas de la startup y mitigue las posibles vulnerabilidades frente al mercado.
 
 <table border="1" cellpadding="8" cellspacing="0">
