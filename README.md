@@ -68,7 +68,7 @@
 | U202218531 | Andy Alejandro Mio Mejia |
 | U202123362 | Sebastian Alonso Bustinza Muñoz |
 | U202316049 | Jefferson Bayron Morales Yapuchura |
-| U********* | --------- |
+| U202219199 | Abraam Bernabe Acosta Elera |
 | U********* | --------- |
 
 
