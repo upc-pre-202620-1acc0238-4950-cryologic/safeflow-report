@@ -503,6 +503,7 @@ A continuación, cada integrante del equipo detallará su contribución al proye
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
+Detallar a los competidores más destacados de Cryologic Systems en el sector de tecnologías para el control de la cadena de frío. Evaluar a esta competencia es fundamental para entender el contexto del proyecto e identificar las cualidades, ventajas y estrategias de las alternativas que ya existen en el mercado.
 
 ### 2.1.1. Análisis competitivo
 
