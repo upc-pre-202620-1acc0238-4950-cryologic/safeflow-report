@@ -536,9 +536,9 @@ El propósito de este análisis competitivo radica en examinar y contrastar a Cr
     <tr>
        <td align="center" rowspan="2">Perfil</td>
         <td>Overview</td>
-        <td> Cryologic Systems  es una plataforma web que permite monitorear en tiempo real la cadena de frío mediante sensores IoT, generando alertas y ofreciendo trazabilidad completa de los productos.</td>
+        <td> Cryologic Systems  es una app movil que permite monitorear en tiempo real la cadena de frío mediante sensores IoT, generando alertas y ofreciendo trazabilidad completa de los productos.</td>
         <td>Sensitech ofrece soluciones globales de monitoreo de la cadena de frío con alta precisión y análisis avanzado para grandes empresas.</td>
-        <td>Controlant es una plataforma IoT enfocada en la industria farmacéutica, que permite visibilidad en tiempo real y análisis de datos.</td>
+        <td>Controlant es una app movil IoT enfocada en la industria farmacéutica, que permite visibilidad en tiempo real y análisis de datos.</td>
         <td>Monnit proporciona sensores inalámbricos para monitoreo ambiental en múltiples industrias.</td>
     </tr>
     <tr>
@@ -566,7 +566,7 @@ El propósito de este análisis competitivo radica en examinar y contrastar a Cr
     <tr>
        <td align="center" rowspan="3">Productos & Servicios</td>
         <td>Productos & Servicios</td>
-        <td>Plataforma web con monitoreo en tiempo real, alertas, dashboard y trazabilidad.</td>
+        <td>App web con monitoreo en tiempo real, alertas, dashboard y trazabilidad.</td>
         <td>Servicios completos de monitoreo, análisis y cumplimiento.</td>
         <td>Plataforma IoT con sensores y analítica avanzada.</td>
         <td>Sensores inalámbricos y software básico.</td>
@@ -579,11 +579,11 @@ El propósito de este análisis competitivo radica en examinar y contrastar a Cr
         <td>Bajo costo.</td>
     </tr>
     <tr>
-        <td>Canales de Distribución (Web y/o Móvil)</td>
-        <td>Web (SaaS).</td>
-        <td>Web y soluciones empresariales.</td>
-        <td>Web con integración IoT.</td>
-        <td>Web y dispositivos físicos.</td>
+        <td>Canales de Distribución (Móvil y/o Web)</td>
+        <td>Aplicación Móvil y Web.</td>
+        <td>Aplicación Móvil y Web.</td>
+        <td>Aplicación Móvil y Web.</td>
+        <td>Aplicación Móvil y Web.</td>
     </tr>
     <tr>
        <td align="center" rowspan="4">Análisis SWOT</td>
