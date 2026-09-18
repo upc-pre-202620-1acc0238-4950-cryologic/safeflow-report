@@ -104,6 +104,15 @@
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |               Diseño de entrevistas                                                                                    |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |              Registro de entrevistas                                                                                   |
 |   AV1   | 18-09-2026 |   Morales Yapuchura, Jefferson Bayron   |              Análisis de entrevistas                                                                                   |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de User Stories                                                                                |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Impact Mapping                                                                               |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Product Backlog                                                                               |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de EventStorming                                                                                 |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Candidate Context Discovery                                                                    |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Domain Message Flows Modeling                                                                  |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Bounded Context Canvases                                                                       |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Context Mapping                                                                                |
+|   AV1   | 18-09-2026 |   Acosta Elera, Abraam Bernabe          |              Desarrollo de Software Architecture                                                                           |
 
 
 </div>
@@ -132,7 +141,7 @@ A continuación, se detallan los Link de lo Desarrollado:
 | Integrante | Tareas Asignadas                                                                                                                                                                                             |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Andy Alejandro Mio Mejia | ****************** |
-|  ******************  | ******************                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Abraam Bernabe Acosta Elera  | ******************                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Sebastian Alonso Bustinza Muñoz | ****************** |
 | Morales Yapuchura, Jefferson Bayron    | ******************                                                                                                                                                                                                                                   |
 | ******************    | ******************                                                                                                       |
@@ -233,9 +242,15 @@ Los integrantes son:
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
+      - [Segmento 2 Supervisora de Operaciones y Flota](#segmento-2-supervisora-de-operaciones-y-flota)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [Conclusiones](#conclusiones)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+      - [Segmento 1  Gestor de Aseguramiento de Calidad](#segmento-1--gestor-de-aseguramiento-de-calidad)
+      - [Segmento 2 Supervisor de Operaciones y Flota](#segmento-2-supervisor-de-operaciones-y-flota)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+      - [Gestores de Aseguramiento de Calidad](#gestores-de-aseguramiento-de-calidad)
+      - [Supervisores de Operaciones y Flota](#supervisores-de-operaciones-y-flota)
     - [2.3.5. Big Picture EventStorming](#235-big-picture-eventstorming)
     - [2.3.6. Ubiquitous Language](#236-ubiquitous-language)
   - [2.4. Requirements specification](#24-requirements-specification)
@@ -244,10 +259,21 @@ Los integrantes son:
     - [2.4.3. Product Backlog](#243-product-backlog)
   - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
     - [2.5.1. EventStorming](#251-eventstorming)
+      - [EventStorming Inicial](#eventstorming-inicial)
+      - [EventStorming Final](#eventstorming-final)
       - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
       - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
       - [2.5.1.3. Context Canvases](#2513-context-canvases)
+      - [Bounded Context Canvas: IAM](#bounded-context-canvas-iam)
+      - [Bounded Context Canvas: Inventory](#bounded-context-canvas-inventory)
+      - [Bounded Context Canvas: Environmental Monitoring](#bounded-context-canvas-environmental-monitoring)
+      - [Bounded Context Canvas: Alerts](#bounded-context-canvas-alerts)
+      - [Bounded Context Canvas: Logistics](#bounded-context-canvas-logistics)
+      - [Bounded Context Canvas: Reporting](#bounded-context-canvas-reporting)
     - [2.5.2. Context Mapping](#252-context-mapping)
+      - [Relaciones principales entre bounded contexts](#relaciones-principales-entre-bounded-contexts)
+      - [Alternativas evaluadas](#alternativas-evaluadas)
+      - [Mapa de contexto seleccionado](#mapa-de-contexto-seleccionado)
     - [2.5.3. Software Architecture](#253-software-architecture)
       - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
@@ -933,21 +959,306 @@ La siguiente matriz presenta las tareas identificadas para los segmentos objetiv
 
 ### 2.5.1. EventStorming
 
+#### EventStorming Inicial
+
+<div align="center">
+  <img alt="EventStorming inicial de SafeFlow" src="assets/chapter-02/Event_Storming_Inicial_Plantilla de lienzo para Lean UX.jpg.jpeg" width="900" />
+</div>
+
+#### EventStorming Final
+
+<div align="center">
+  <img alt="EventStorming final de SafeFlow" src="assets/chapter-02/Event_Storming_Final_Plantilla de lienzo para Lean UX.jpg.jpeg" width="900" />
+</div>
+
 #### 2.5.1.1. Candidate Context Discovery
+
+El Candidate Context Discovery se realizó a partir del EventStorming final, tomando como referencia el flujo principal de SafeFlow: registrar productos y lotes, asignar sensores, monitorear la temperatura, detectar excursiones térmicas, notificar a los responsables y completar el despacho. Se aplicaron las técnicas **start-with-value** y **look-for-pivotal-events** para identificar las capacidades de mayor valor y los cambios de estado que separan responsabilidades y vocabularios.
+
+Los eventos pivote identificados fueron: **Producto registrado**, **Sensor asignado**, **Lectura de temperatura recibida**, **Excursión térmica detectada**, **Alerta emitida**, **Acción correctiva registrada**, **Despacho iniciado** y **Despacho entregado**.
+
+| Bounded Context candidato | Responsabilidad principal | Eventos y conceptos principales |
+|---|---|---|
+| **IAM** | Gestionar identidad, autenticación, roles y permisos. | Usuario registrado, sesión iniciada, rol asignado y acceso autorizado. |
+| **Inventory** | Gestionar productos, lotes, cantidades, rangos y estados de conservación. | Producto registrado, lote asociado, stock actualizado y producto en riesgo. |
+| **Environmental Monitoring** | Recibir y evaluar la telemetría de sensores. | Sensor asignado, lectura recibida, rango validado y excursión detectada. |
+| **Alerts** | Crear, priorizar, notificar y resolver alertas. | Alerta generada, alerta notificada, acción correctiva y alerta resuelta. |
+| **Logistics** | Gestionar despachos, transporte, rutas y entregas. | Despacho creado, transporte iniciado, despacho actualizado y entrega confirmada. |
+| **Reporting** | Consolidar historial, indicadores y evidencia térmica. | Historial consultado, indicador generado y evidencia exportada. |
+
+Esta separación es una propuesta inicial que se valida mediante los flujos de negocio y los Bounded Context Canvases. La aplicación móvil actúa como canal de acceso, mientras que las reglas del dominio permanecen dentro de los bounded contexts.
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
+El Domain Message Flows Modeling describe cómo colaboran los bounded contexts para monitorear un despacho refrigerado. Se utilizó la técnica **Domain Storytelling**, considerando al operador logístico, al sensor IoT, la aplicación móvil y al responsable de calidad.
+
+Flujo principal:
+
+1. El operador registra el producto, lote y rango de temperatura desde la aplicación móvil.
+2. Inventory entrega la información necesaria para preparar el despacho.
+3. Logistics crea el despacho y asigna un sensor al transporte.
+4. Environmental Monitoring recibe las lecturas y valida el rango permitido.
+5. Cuando detecta una excursión térmica, publica el evento de anomalía.
+6. Alerts genera la alerta y envía una notificación móvil a los usuarios autorizados.
+7. El responsable revisa la alerta y registra una acción correctiva.
+8. Logistics actualiza el estado del despacho y Reporting consolida el historial.
+
+```mermaid
+sequenceDiagram
+  actor Operador as Operador logístico
+  participant App as Aplicación móvil
+  participant Inv as Inventory
+  participant Log as Logistics
+  participant Mon as Environmental Monitoring
+  participant Alt as Alerts
+  actor Calidad as Responsable de calidad
+  participant Rep as Reporting
+
+  Operador->>App: Registra producto, lote y rango térmico
+  App->>Inv: Guarda información de inventario
+  Operador->>App: Crea despacho y asigna sensor
+  App->>Log: Registra despacho en tránsito
+  Mon->>Log: Vincula lecturas al despacho
+  Mon->>Mon: Valida lectura contra el rango
+  Mon-->>Alt: Publica excursión térmica
+  Alt-->>App: Envía alerta móvil
+  App-->>Calidad: Muestra alerta y severidad
+  Calidad->>App: Registra acción correctiva
+  App->>Alt: Marca alerta como resuelta
+  Log->>Rep: Envía estado e historial del despacho
+```
+
 #### 2.5.1.3. Context Canvases
+
+Los Bounded Context Canvases se elaboraron de forma iterativa. Para cada contexto se definió el propósito, se capturaron las reglas y el lenguaje ubicuo, se analizaron las capacidades, se registraron dependencias y se realizó una crítica de diseño para evitar responsabilidades duplicadas. A continuación se presentan los canvases de los seis contextos candidatos.
+
+#### Bounded Context Canvas: IAM
+
+| Elemento | Definición |
+|---|---|
+| Context Overview | Administra el acceso seguro a SafeFlow móvil para administradores, operadores y responsables de calidad. |
+| Business Rules & Ubiquitous Language | Usuario, rol, permiso, sesión activa, sesión expirada y acceso autorizado. |
+| Capabilities | Registro, inicio de sesión, control por rol y cierre de sesión. |
+| Dependencies | Provee identidad a Inventory, Alerts, Logistics y Reporting. Consume datos de usuarios y roles. |
+| Design Critique | Mantenerlo independiente evita que cada contexto implemente sus propias reglas de seguridad. |
+
+#### Bounded Context Canvas: Inventory
+
+| Elemento | Definición |
+|---|---|
+| Context Overview | Gestiona productos sensibles, lotes, cantidades, rangos de temperatura y estado de conservación. |
+| Business Rules & Ubiquitous Language | Producto, lote, stock, rango térmico, normal, en riesgo y desechado. |
+| Capabilities | Registrar producto, registrar stock, consultar inventario y consultar productos en riesgo. |
+| Dependencies | Consume identidad de IAM y entrega productos y rangos a Logistics y Environmental Monitoring. |
+| Design Critique | El inventario debe ser dueño de los datos maestros; los demás contextos solo deben referenciarlos. |
+
+#### Bounded Context Canvas: Environmental Monitoring
+
+| Elemento | Definición |
+|---|---|
+| Context Overview | Recibe telemetría IoT y determina si las condiciones ambientales cumplen los rangos configurados. |
+| Business Rules & Ubiquitous Language | Sensor, lectura, telemetría, umbral, excursión térmica, advertencia y desconexión. |
+| Capabilities | Integrar sensores, recibir lecturas, validar rangos, detectar anomalías y asociar lecturas a despachos. |
+| Dependencies | Consume rangos de Inventory y la relación de sensor con despacho de Logistics. Publica eventos para Alerts y Reporting. |
+| Design Critique | Debe conservar el historial de mediciones y no asumir la responsabilidad de notificar o resolver alertas. |
+
+#### Bounded Context Canvas: Alerts
+
+| Elemento | Definición |
+|---|---|
+| Context Overview | Gestiona la comunicación de anomalías y el registro de acciones correctivas desde la aplicación móvil. |
+| Business Rules & Ubiquitous Language | Alerta activa, severidad, destinatario, notificación, acción correctiva y alerta resuelta. |
+| Capabilities | Generar, priorizar, agrupar, notificar, consultar y resolver alertas. |
+| Dependencies | Consume excursiones de Environmental Monitoring y permisos de IAM. Publica acciones correctivas para Reporting. |
+| Design Critique | La notificación móvil es un canal de entrega; la alerta debe mantenerse disponible aunque el dispositivo esté desconectado. |
+
+#### Bounded Context Canvas: Logistics
+
+| Elemento | Definición |
+|---|---|
+| Context Overview | Coordina despachos, transporte, rutas, sensores asignados y confirmación de entregas. |
+| Business Rules & Ubiquitous Language | Despacho, ruta, transporte, en tránsito, entregado, cancelado y sensor asignado. |
+| Capabilities | Crear despacho, asignar sensor, consultar estado, validar condiciones y confirmar entrega. |
+| Dependencies | Consume productos y lotes de Inventory, y lecturas de Environmental Monitoring. Provee estados a Reporting. |
+| Design Critique | Las transiciones de despacho deben ser explícitas y autorizadas según el rol del usuario. |
+
+#### Bounded Context Canvas: Reporting
+
+| Elemento | Definición |
+|---|---|
+| Context Overview | Consolida información histórica para indicadores, trazabilidad y evidencia de cumplimiento. |
+| Business Rules & Ubiquitous Language | Historial térmico, indicador, evidencia digital, auditoría y reporte de cumplimiento. |
+| Capabilities | Consultar historial, generar indicadores y preparar evidencia de un despacho. |
+| Dependencies | Consume eventos y datos de Inventory, Environmental Monitoring, Alerts y Logistics. Depende de IAM para restringir la consulta. |
+| Design Critique | Debe ser principalmente de lectura y no duplicar reglas operativas de los contextos que originan los datos. |
+
+La elaboración de los canvases siguió un proceso iterativo: primero se definió el propósito de cada contexto, luego se capturaron reglas y lenguaje ubicuo, se identificaron capacidades, dependencias y finalmente se realizó una crítica de diseño para evitar responsabilidades duplicadas. Los canvases deben acompañarse con capturas progresivas del trabajo realizado por el equipo.
+
+
 
 ### 2.5.2. Context Mapping
 
+El Context Mapping define las relaciones estructurales entre los bounded contexts identificados para SafeFlow. El mapa toma como referencia el flujo de negocio del transporte de productos sensibles y diferencia los contextos que producen información, los que la consumen y los que coordinan acciones. La aplicación móvil funciona como canal de interacción y no se considera un bounded context de negocio independiente.
+
+#### Relaciones principales entre bounded contexts
+
+| Contexto origen | Contexto destino | Información compartida | Patrón DDD | Justificación |
+|---|---|---|---|---|
+| **IAM** | Todos los contextos | Usuario autenticado, rol y permisos | **Shared Kernel** | La identidad mínima y los permisos son conceptos compartidos y deben tener una definición consistente. |
+| **Inventory** | **Environmental Monitoring** | Producto, lote y rango térmico | **Customer/Supplier** | Environmental Monitoring necesita los rangos publicados por Inventory para evaluar las lecturas. |
+| **Logistics** | **Environmental Monitoring** | Despacho, sensor asignado y transporte | **Customer/Supplier** | El monitoreo necesita conocer a qué despacho pertenece cada sensor y lectura. |
+| **Environmental Monitoring** | **Alerts** | Excursión térmica, severidad y sensor | **Publisher/Subscriber** | Monitoring publica el evento; Alerts decide cómo priorizarlo y notificarlo. |
+| **Alerts** | **Reporting** | Alerta, acción correctiva y estado de resolución | **Customer/Supplier** | Reporting consume la información para construir trazabilidad y evidencia. |
+| **Logistics** | **Reporting** | Estado del despacho, ruta y entrega | **Customer/Supplier** | Reporting consolida la operación sin modificar las reglas logísticas. |
+| **Inventory** | **Logistics** | Producto, lote y disponibilidad | **Customer/Supplier** | Logistics utiliza los datos de inventario para preparar despachos válidos. |
+| **Reporting** | Todos los contextos | Consultas e indicadores históricos | **Conformist** | Reporting se adapta a los eventos publicados por los contextos operativos y no se convierte en dueño de esos datos. |
+
+#### Alternativas evaluadas
+
+1. **Mover las reglas de temperatura a Logistics:** simplificaría el flujo de despacho, pero mezclaría el transporte con la evaluación de telemetría y dificultaría reutilizar el monitoreo en almacén. Se descartó.
+2. **Mover las alertas a Environmental Monitoring:** reduciría una integración, pero acoplaría la detección técnica con las preferencias de usuarios, severidades y acciones correctivas. Se descartó.
+3. **Crear un Shared Kernel para productos, despachos y lecturas:** reduciría duplicación, pero produciría un modelo central demasiado grande y con cambios de alto impacto. Se mantuvo un Shared Kernel limitado a identidad y conceptos técnicos mínimos.
+4. **Crear un contexto separado para notificaciones móviles:** permitiría cambiar de proveedor de push sin afectar Alerts. Se considera una evolución posible, pero para el alcance actual las notificaciones permanecen como una capacidad de Alerts.
+5. **Aislar Reporting como contexto de lectura:** evita que los reportes modifiquen datos operativos y permite construir indicadores sin alterar Inventory, Logistics o Monitoring. Esta fue la alternativa seleccionada.
+
+#### Mapa de contexto seleccionado
+
+```mermaid
+flowchart LR
+  IAM[IAM\nIdentidad y permisos]
+  Inv[Inventory\nProductos y lotes]
+  Mon[Environmental Monitoring\nTelemetría y umbrales]
+  Alt[Alerts\nAlertas y acciones correctivas]
+  Log[Logistics\nDespachos y entregas]
+  Rep[Reporting\nHistorial y evidencia]
+  App[Aplicación móvil]
+
+  IAM -->|Shared Kernel: identidad| Inv
+  IAM -->|Shared Kernel: identidad| Mon
+  IAM -->|Shared Kernel: identidad| Alt
+  IAM -->|Shared Kernel: identidad| Log
+  Inv -->|Customer/Supplier: rangos y lotes| Mon
+  Inv -->|Customer/Supplier: productos| Log
+  Log -->|Customer/Supplier: despacho y sensor| Mon
+  Mon -->|Publisher/Subscriber: excursión| Alt
+  Alt -->|Customer/Supplier: alertas resueltas| Rep
+  Log -->|Customer/Supplier: estados| Rep
+  Inv -->|Customer/Supplier: trazabilidad| Rep
+  App --> IAM
+  App --> Inv
+  App --> Alt
+  App --> Log
+  App --> Rep
+```
+
+La aproximación seleccionada mantiene aisladas las reglas principales del dominio, reduce la dependencia directa entre contextos y permite que la aplicación móvil evolucione como canal de acceso. Las relaciones y patrones deberán revisarse durante la implementación si aparecen nuevos eventos o responsabilidades.
+
 ### 2.5.3. Software Architecture
+
+La arquitectura de SafeFlow se representa mediante el modelo C4 y considera la aplicación móvil como el principal canal de interacción de los usuarios. La solución integra sensores IoT, servicios de dominio, persistencia, mensajería y notificaciones móviles para monitorear la cadena de frío y responder ante desviaciones de temperatura.
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
+El Context Level Diagram presenta SafeFlow como el sistema central y muestra sus usuarios y sistemas externos. Los usuarios consultan información y registran acciones desde la aplicación móvil. Los sensores IoT entregan telemetría y el proveedor de notificaciones permite comunicar alertas aun cuando el usuario no tenga la aplicación abierta.
+
+```mermaid
+flowchart LR
+  Operador[Operador logístico]
+  Calidad[Responsable de calidad]
+  Admin[Administrador]
+  Sensores[Sensores IoT de temperatura]
+  Push[Proveedor de notificaciones móviles]
+  SafeFlow[SafeFlow\nAplicación móvil y plataforma de monitoreo de cadena de frío]
+
+  Operador -->|Consulta despachos y registra entregas| SafeFlow
+  Calidad -->|Consulta historial y resuelve alertas| SafeFlow
+  Admin -->|Gestiona usuarios y permisos| SafeFlow
+  Sensores -->|Envía telemetría| SafeFlow
+  SafeFlow -->|Envía alertas push| Push
+```
+
+
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 
+El Container Diagram descompone SafeFlow en los contenedores que colaboran para cumplir las responsabilidades del sistema. La aplicación móvil gestiona la interacción y el almacenamiento local temporal; la API coordina las solicitudes; los servicios de dominio mantienen las reglas de cada bounded context; el gateway IoT procesa telemetría; y el bus de eventos desacopla la detección de anomalías, las alertas y los reportes.
+
+```mermaid
+flowchart TB
+  Mobile[Aplicación móvil\nAndroid/iOS]
+  Api[API y BFF móvil\nAutenticación, validación y composición]
+  IAMC[Servicio IAM\nUsuarios, roles y permisos]
+  InvC[Servicio Inventory\nProductos, lotes y stock]
+  MonC[Servicio Environmental Monitoring\nSensores, lecturas y umbrales]
+  AltC[Servicio Alerts\nAlertas, notificaciones y acciones]
+  LogC[Servicio Logistics\nDespachos, rutas y entregas]
+  RepC[Servicio Reporting\nHistorial, indicadores y evidencia]
+  IoT[Gateway IoT\nIngesta de telemetría]
+  Bus[Bus de eventos\nEventos de dominio]
+  DB[(Base de datos operacional)]
+  ReadDB[(Proyección de reportes)]
+  PushC[Servicio push móvil]
+
+  Mobile --> Api
+  Api --> IAMC
+  Api --> InvC
+  Api --> AltC
+  Api --> LogC
+  Api --> RepC
+  IoT --> MonC
+  MonC --> Bus
+  Bus --> AltC
+  Bus --> RepC
+  LogC --> MonC
+  InvC --> MonC
+  InvC --> LogC
+  AltC --> PushC
+  IAMC --> DB
+  InvC --> DB
+  MonC --> DB
+  AltC --> DB
+  LogC --> DB
+  RepC --> ReadDB
+```
+
+Las principales decisiones tecnológicas son: comunicación HTTPS entre la aplicación y la API, eventos asíncronos para desacoplar telemetría y alertas, persistencia operacional para las transacciones del dominio y una proyección de lectura para consultas históricas. La aplicación móvil debe mostrar el último estado conocido cuando exista conectividad intermitente y sincronizar las acciones pendientes al recuperar la conexión.
+
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
+
+El Deployment Diagram muestra la distribución física de SafeFlow. El usuario utiliza un dispositivo móvil conectado a Internet; los sensores transmiten datos hacia el entorno cloud; los servicios de backend se ejecutan en contenedores o servicios administrados; y la información se almacena en bases de datos protegidas. El proveedor de notificaciones entrega los avisos a los dispositivos registrados.
+
+```mermaid
+flowchart LR
+  subgraph Device[Dispositivos en campo]
+    Phone[Celular o tableta\nAplicación SafeFlow]
+    Sensor[Sensor IoT\nTemperatura y ubicación]
+  end
+
+  subgraph Cloud[Entorno cloud de SafeFlow]
+    Edge[API Gateway / HTTPS]
+    Services[Servicios de dominio\nIAM, Inventory, Monitoring, Alerts, Logistics, Reporting]
+    Events[Bus de eventos]
+    Operational[(Base de datos operacional)]
+    ReportingDB[(Base de datos de reportes)]
+  end
+
+  subgraph External[Servicios externos]
+    PushSvc[Proveedor push móvil]
+  end
+
+  Phone -->|HTTPS| Edge
+  Sensor -->|Telemetría segura| Edge
+  Edge --> Services
+  Services --> Events
+  Services --> Operational
+  Services --> ReportingDB
+  Events --> Services
+  Services -->|Notificaciones| PushSvc
+  PushSvc -->|Push| Phone
+```
+
+Los nodos deben proteger sus comunicaciones mediante HTTPS y credenciales administradas. La separación entre la base operacional y la proyección de reportes evita que las consultas históricas afecten las operaciones de monitoreo. El despliegue final debe especificar el proveedor cloud, las regiones, las redes y las políticas de respaldo que el equipo seleccione.
+
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
