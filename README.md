@@ -66,7 +66,7 @@
 | Code       |      Member |
 | :---:      |     :--- |
 | U202218531 | Andy Alejandro Mio Mejia |
-| U********* | --------- |
+| U202123362 | Sebastian Alonso Bustinza Muñoz |
 | U********* | --------- |
 | U********* | --------- |
 | U********* | --------- |
@@ -98,6 +98,7 @@
 |   AV1   | 12-09-2026 |   Mio Mejia, Andy Alejandro    |                                               Creación de la carpeta de Imagenes                                               |
 |   AV1   | 12-09-2026 |   Mio Mejia, Andy Alejandro    |                                             Creacion de Ramas en los Repositorios                                              |                                              |
 |   AV1   | 12-09-2026 |   Mio Mejia, Andy Alejandro    |                                                    Source Code Management.                                                     |              
+|   AV1   | 18-09-2026 |   Bustinza Muñoz, Sebastian Alonso    |                                                    Needfinding                                                     |  
 
 </div>
 
@@ -126,7 +127,7 @@ A continuación, se detallan los Link de lo Desarrollado:
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Andy Alejandro Mio Mejia | ****************** |
 |  ******************  | ******************                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ****************** | ****************** |
+| Sebastian Alonso Bustinza Muñoz | ****************** |
 | ******************    | ******************                                                                                                                                                                                                                                   |
 | ******************    | ******************                                                                                                       |
 
@@ -138,7 +139,7 @@ El proceso de colaboración en el informe se realizó mediante commits constante
 Los integrantes son:
 
 * Andy Alejandro Mio Mejia   (AndyMio17)
-* ******************   (********)
+* Sebastian Alonso Bustinza Muñoz   (sebastianbustinza809)
 * ****************** (********)
 * ****************** (********)
 * ****************** (********)
@@ -499,17 +500,82 @@ A continuación, cada integrante del equipo detallará su contribución al proye
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
-Segmento 1
+<div align="center"> <img src="assets/chapter-02/User_Persona_Pedro Paredes.png" alt="User Segmento 1" width="550" /> </div>
+
+
+#### Segmento 2 Supervisora de Operaciones y Flota
+
+<div align="center"> <img src="assets/chapter-02/User_Persona_Angie Villegas.png" lt="User Segmento 2" width="550" /> </div>
 
 ### 2.3.2. User Task Matrix
+La siguiente matriz presenta las tareas identificadas para los segmentos objetivo, evaluando la frecuencia e importancia para cada User Persona de manera independiente.
+| User Task (Tarea) | **Angie Villegas** | | **Pedro Paredes** | |
+| :--- | :---: | :---: | :---: | :---: |
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Registro de dispositivos y sensores | Media | Alta | Baja | Alta |
+| Monitoreo de temperatura en tiempo real | Alta | Alta | Alta | Alta |
+| Configuración de umbrales de alerta | Media | Alta | Alta | Alta |
+| Atención de alertas y resolución | Alta | Alta | Media | Alta |
+| Generación de reportes para clientes y auditorías | Alta | Alta | Alta | Alta |
+| Visualización de dashboard e indicadores | Alta | Alta | Alta | Alta |
+| Gestión de rutas y vehículos | Alta | Alta | Baja | Media |
+| Consulta del historial de temperatura | Alta | Alta | Alta | Alta |
+| Gestión de usuarios y permisos (IAM) | Media | Media | Baja | Alta |
+
+### Conclusiones
+
+- **Pedro Paredes** se enfoca principalmente en la calidad y seguridad de los medicamentos; necesita monitoreo constante, alertas preventivas, información confiable y reportes organizados para auditorías y control de calidad.
+
+- **Angie Villegas** prioriza la eficiencia de las operaciones logísticas y el control de los vehículos; necesita monitorear las rutas en tiempo real, recibir alertas ante cambios de temperatura y contar con evidencia digital para responder rápidamente ante reclamos de los clientes.
+
+- La plataforma debe ofrecer información detallada para los responsables de calidad y una interfaz sencilla para los supervisores de operaciones y flota. Ambos perfiles necesitan solucionar problemas comunes como la falta de monitoreo en tiempo real, el uso de registros manuales y la dificultad para detectar y demostrar fallas de temperatura durante el transporte.
 
 ### 2.3.3. User Journey Mapping
 
+#### Segmento 1  Gestor de Aseguramiento de Calidad
+
+<div align="center"> <img src="assets/chapter-02/User_Journey_Mapping_Gestores de Aseguramiento de Calidad.png" alt="User Journey Segmento 1" width="550" /> </div>
+
+#### Segmento 2 Supervisor de Operaciones y Flota
+
+<div align="center"> <img src="assets/chapter-02/User_Journey_Mapping_Supervisor de Operaciones y Flota.png" alt="User Journey Segmento 2" width="550" /> </div>
+
 ### 2.3.4. Empathy Mapping
+
+####  Gestores de Aseguramiento de Calidad
+
+<div align="center"> <img src="assets/chapter-02/Empathy_Mapping_Gestores de Aseguramiento de Calidad.png" alt="Gestor de Aseguramiento de Calidad" width="550" /> </div>
+
+####  Supervisores de Operaciones y Flota
+
+<div align="center"> <img src="assets/chapter-02/Empathy_Mapping_Supervisores de Operaciones y Flota.png" alt="Supervisor de Operaciones y Flota" width="550" /> </div>
 
 ### 2.3.5. Big Picture EventStorming
 
+* EventStorming Inicial
+
+<img alt= "EventStorming inicial" src="assets/chapter-02/Event_Storming_Inicial_Plantilla de lienzo para Lean UX.jpg.jpeg">
+
+* EventStorming Final
+
+<img alt= "EventStorming final" src="assets/chapter-02/Event_Storming_Final_Plantilla de lienzo para Lean UX.jpg.jpeg">
+
 ### 2.3.6. Ubiquitous Language
+
+| Término (Inglés / Español) | Definición |
+| :--- | :--- |
+| **Cold Chain Integrity (Integridad de la Cadena de Frío)** | Mantener los medicamentos dentro de la temperatura adecuada durante todo su transporte. |
+| **Temperature Excursion (Desviación de Temperatura)** | Ocurre cuando la temperatura está por encima o por debajo del límite permitido. |
+| **Temperature Sensor (Sensor de Temperatura)** | Dispositivo que mide y registra la temperatura durante el transporte. |
+| **Real-Time Monitoring (Monitoreo en Tiempo Real)** | Seguimiento continuo de la temperatura mientras los medicamentos son transportados. |
+| **Temperature Threshold (Umbral de Temperatura)** | Temperatura mínima y máxima permitida para conservar correctamente los medicamentos. |
+| **Temperature Alert (Alerta de Temperatura)** | Aviso generado cuando la temperatura supera o baja del límite permitido. |
+| **Incident (Incidencia)** | Problema ocurrido durante el transporte que necesita ser atendido. |
+| **Corrective Action (Acción Correctiva)** | Medida tomada para solucionar una incidencia y evitar que continúe. |
+| **Temperature History (Historial de Temperatura)** | Registro de las temperaturas tomadas durante todo el transporte. |
+| **Route Monitoring (Monitoreo de Ruta)** | Seguimiento de los vehículos y sus rutas durante el transporte. |
+| **Temperature Report (Reporte de Temperatura)** | Documento que resume las temperaturas registradas durante un transporte. |
+| **Digital Evidence (Evidencia Digital)** | Registros que permiten demostrar que los medicamentos fueron transportados bajo las condiciones establecidas. |
 
 ## 2.4. Requirements specification
 
