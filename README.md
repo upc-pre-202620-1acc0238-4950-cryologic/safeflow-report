@@ -680,7 +680,77 @@ El presente apartado detalla las tácticas y lineamientos estratégicos que Cryo
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
+Segmento Objetivo 1: Empresas del sector farmacéutico
 
+1. ¿Podría indicarnos su edad, cargo actual y cuántos años de experiencia tiene en el sector farmacéutico?
+
+2. ¿En qué distrito reside y cómo es su rutina tecnológica diaria (qué dispositivos usa más: laptop, smartphone, tablet)?
+
+3. ¿Cuáles son sus principales responsabilidades respecto a la seguridad de productos termolábiles (vacunas, insulinas, biológicos)?
+
+4. ¿Qué marcas o softwares de logística e inventario reconoce como líderes o utiliza actualmente?
+
+5. ¿Cómo se describiría profesionalmente: prefiere decisiones basadas en datos analíticos o en la rapidez operativa?
+
+6. ¿Cómo es el proceso actual de registro de un producto sensible cuando ingresa a su sistema de inventario?
+
+7. ¿Cómo definen y vinculan los rangos de temperatura permitidos a cada lote de producto antes de un despacho?
+
+8. ¿Qué criterios utilizan para asignar un transporte específico a un despacho de alta sensibilidad?
+
+9. ¿Cómo se aseguran de que el transportista externo cumpla con los requisitos térmicos antes de cargar el producto?
+
+10. ¿De qué manera supervisan la temperatura mientras el camión está en tránsito hacia una provincia o clínica?
+
+11. ¿Cuál ha sido la peor experiencia que ha tenido con una ruptura de cadena de frío y quién asumió la pérdida económica?
+
+12. ¿Qué sucede exactamente en su empresa cuando un sensor detecta que la temperatura subió a un nivel crítico? ¿Quién recibe la alerta y cuánto tardan en reaccionar?
+
+13. ¿Qué es lo que más le frustra del sistema de monitoreo que usan actualmente (ej. demora en datos, falta de precisión, interfaz compleja)?
+
+14. ¿Cómo manejan actualmente las auditorías sanitarias? ¿Cuánto tiempo les toma reunir la evidencia de trazabilidad térmica de un despacho de hace un mes?
+
+15. ¿Qué impacto tendría en su bono de desempeño o en los KPIs de su área reducir las mermas por temperatura en un 20%?
+
+16. Si tuviera un dashboard que centralizara inventario, rutas y alertas en tiempo real, ¿qué métrica sería la primera que revisaría cada mañana?
+
+17. ¿Qué funcionalidad considera "no negociable" para confiar ciegamente en una plataforma web de cadena de frío?
+
+Segmento Objetivo 2: Operadores logísticos (3PL / transporte especializado)
+
+1. ¿Cuál es su edad, estado civil y nivel de estudios? ¿Cuál es su rol exacto en la operación logística?
+
+2. ¿Qué aplicaciones móviles utiliza con más frecuencia para su trabajo y para su vida personal (WhatsApp, Waze, Facebook, Apps bancarias)?
+
+3. ¿Cómo es la relación tecnológica de sus conductores? ¿Cuentan con smartphones modernos o equipos básicos?
+
+4. ¿Qué canales digitales utiliza para informarse sobre nuevas normativas de transporte o gestión de flotas (LinkedIn, grupos de Facebook, portales web)?
+
+5. ¿Cómo organizan las rutas diarias y cómo notifican a los conductores sobre sus puntos de parada y entrega?
+
+6. ¿Qué proceso siguen los conductores para reportar que han llegado a un punto de entrega y que el producto fue recibido conforme?
+
+7. ¿Cómo registran actualmente las incidencias en ruta (tráfico, fallas mecánicas, desvíos) y cómo afectan estas a la temperatura de la carga?
+
+8. ¿Utilizan alguna herramienta digital para el registro fotográfico de la entrega o siguen usando guías de remisión físicas en papel?
+
+9. ¿Cómo sabe un conductor, mientras maneja, si el equipo de frío de su furgón ha dejado de funcionar correctamente?
+
+10. ¿Reciben los conductores algún tipo de alerta visual o sonora, o dependen de que alguien desde la oficina les avise por teléfono?
+
+11. ¿Qué tan frecuente es que los sensores fallen o den lecturas erróneas? ¿Cómo gestionan esa incertidumbre con sus clientes?
+
+12. ¿Cuál es su mayor miedo o frustración cuando transportan carga de terceros valorizada en miles de dólares?
+
+13. ¿Cómo demuestran ante sus clientes corporativos que son mejores o más confiables que la competencia?
+
+14. ¿Cuánto tiempo invierte su equipo administrativo en descargar datos de los dispositivos de monitoreo para armar el reporte final del cliente?
+
+15. ¿Qué tanto valoraría que el sistema actualizara el "estado térmico" del despacho automáticamente cada 5 minutos en un mapa interactivo?
+
+16. Si pudiera elegir una mejora para su dashboard de gestión, ¿preferiría ver más mapas, más gráficos estadísticos o más alertas de texto?
+
+17. ¿Qué le impide hoy digitalizar el 100% de su operación logística (falta de presupuesto, resistencia del personal, falta de software adecuado)?
 ### 2.2.2. Registro de entrevistas
 
 ### 2.2.3. Análisis de entrevistas
