@@ -270,12 +270,20 @@ Los integrantes son:
       - [2.6.1.2. Interface Layer](#2612-interface-layer)
       - [2.6.1.3. Application Layer](#2613-application-layer)
       - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
-      - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
       - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams-1)
+        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+        - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
+    - [2.6.2. Bounded Context: inventory](#262-bounded-context-inventory)
+      - [2.6.2.1. Domain Layer](#2621-domain-layer)
+      - [2.6.2.2. Interface Layer](#2622-interface-layer)
+      - [2.6.2.3. Application Layer](#2623-application-layer)
+      - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
+      - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
         - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
         - [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)
-    - [2.6.3. Bounded Context: analytics](#263-bounded-context-analytics)
+    - [2.6.3. Bounded Context: environmental-monitoring](#263-bounded-context-environmental-monitoring)
       - [2.6.3.1. Domain Layer](#2631-domain-layer)
       - [2.6.3.2. Interface Layer](#2632-interface-layer)
       - [2.6.3.3. Application Layer](#2633-application-layer)
@@ -284,7 +292,7 @@ Los integrantes son:
       - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
         - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
         - [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)
-    - [2.6.4. Bounded Context: environmental-monitoring](#264-bounded-context-environmental-monitoring)
+    - [2.6.4. Bounded Context: alerts](#264-bounded-context-alerts)
       - [2.6.4.1. Domain Layer](#2641-domain-layer)
       - [2.6.4.2. Interface Layer](#2642-interface-layer)
       - [2.6.4.3. Application Layer](#2643-application-layer)
@@ -293,7 +301,7 @@ Los integrantes son:
       - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
         - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
         - [2.6.4.6.2. Bounded Context Database Design Diagram](#26462-bounded-context-database-design-diagram)
-    - [2.6.5. Bounded Context: inventory](#265-bounded-context-inventory)
+    - [2.6.5. Bounded Context: logistics](#265-bounded-context-logistics)
       - [2.6.5.1. Domain Layer](#2651-domain-layer)
       - [2.6.5.2. Interface Layer](#2652-interface-layer)
       - [2.6.5.3. Application Layer](#2653-application-layer)
@@ -302,7 +310,7 @@ Los integrantes son:
       - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
         - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
         - [2.6.5.6.2. Bounded Context Database Design Diagram](#26562-bounded-context-database-design-diagram)
-    - [2.6.6. Bounded Context: logistics](#266-bounded-context-logistics)
+    - [2.6.6. Bounded Context: reporting](#266-bounded-context-reporting)
       - [2.6.6.1. Domain Layer](#2661-domain-layer)
       - [2.6.6.2. Interface Layer](#2662-interface-layer)
       - [2.6.6.3. Application Layer](#2663-application-layer)
@@ -311,15 +319,6 @@ Los integrantes son:
       - [2.6.6.6. Bounded Context Software Architecture Code Level Diagrams](#2666-bounded-context-software-architecture-code-level-diagrams)
         - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26661-bounded-context-domain-layer-class-diagrams)
         - [2.6.6.6.2. Bounded Context Database Design Diagram](#26662-bounded-context-database-design-diagram)
-    - [2.6.7. Bounded Context: reporting](#267-bounded-context-reporting)
-      - [2.6.7.1. Domain Layer](#2671-domain-layer)
-      - [2.6.7.2. Interface Layer](#2672-interface-layer)
-      - [2.6.7.3. Application Layer](#2673-application-layer)
-      - [2.6.7.4. Infrastructure Layer](#2674-infrastructure-layer)
-      - [2.6.7.5. Bounded Context Software Architecture Component Level Diagrams](#2675-bounded-context-software-architecture-component-level-diagrams)
-      - [2.6.7.6. Bounded Context Software Architecture Code Level Diagrams](#2676-bounded-context-software-architecture-code-level-diagrams)
-        - [2.6.7.6.1. Bounded Context Domain Layer Class Diagrams](#26761-bounded-context-domain-layer-class-diagrams)
-        - [2.6.7.6.2. Bounded Context Database Design Diagram](#26762-bounded-context-database-design-diagram)
 
 
 <!--
@@ -1579,7 +1578,7 @@ flowchart TB
   LoginHandler --> Events
 ```
 
-#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 El Component Diagram descompone el container del bounded context IAM en sus principales componentes internos. El diagrama muestra cómo el controller recibe las solicitudes de la aplicación móvil, cómo los handlers coordinan los casos de uso, cómo el dominio aplica las reglas de identidad y cómo los adaptadores conectan la solución con la base de datos, el servicio de tokens y el bus de eventos.
 
@@ -1590,7 +1589,7 @@ El Component Diagram descompone el container del bounded context IAM en sus prin
 
 El Code Level Diagrams presenta el detalle de implementación de los componentes del bounded context IAM. Para este bounded context se incluyen dos diagramas: el diagrama UML de las clases del Domain Layer y el diagrama de la estructura de persistencia de IAM.
 
-#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 Este diagrama muestra las entidades, value objects, interfaces, enumeraciones y relaciones del Domain Layer. Incluye atributos, métodos, visibilidad y multiplicidades. Structurizr DSL está orientado al modelo C4 y no representa de forma nativa diagramas UML de clases con miembros; por ello, se recomienda elaborar este diagrama en PlantUML, Visual Paradigm o la herramienta UML indicada por el curso.
 
@@ -1689,58 +1688,7 @@ classDiagram
     User --> UserStatus
 ```
 
-##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
-
-Este diagrama representa las tablas necesarias para persistir usuarios, roles, permisos y sesiones. Las contraseñas se almacenan únicamente como hashes y las sesiones pueden revocarse sin eliminar el historial de autenticación.
-
-Diagrama de entidad-relación (MERMAID) para describir la persistencia del bounded context IAM:
-
-```mermaid
-erDiagram
-    roles {
-        UUID id PK
-        VARCHAR name
-        VARCHAR description
-    }
-
-    users {
-        UUID id PK
-        VARCHAR name
-        VARCHAR email UK
-        VARCHAR password_hash
-        VARCHAR status
-        UUID role_id FK
-        TIMESTAMP created_at
-        TIMESTAMP last_login_at
-    }
-
-    permissions {
-        UUID id PK
-        VARCHAR resource
-        VARCHAR action
-    }
-
-    role_permissions {
-        UUID role_id PK, FK
-        UUID permission_id PK, FK
-    }
-
-    sessions {
-        UUID id PK
-        UUID user_id FK
-        VARCHAR refresh_token_hash
-        TIMESTAMP expires_at
-        TIMESTAMP revoked_at
-        TIMESTAMP created_at
-    }
-
-    roles ||--o{ users : assigns
-    roles ||--o{ role_permissions : contains
-    permissions ||--o{ role_permissions : grants
-    users ||--o{ sessions : opens
-```
-
-##### 2.6.2.6.2. Bounded Context Database Design Diagram
+##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
 El diagrama de base de datos del bounded context IAM modela la persistencia de los agregados de identidad y sesión. Se emplea un esquema relacional con tablas dedicadas para usuarios, roles, permisos y sesiones, garantizando integridad referencial, restricciones de unicidad y trazabilidad de autenticación.
 
@@ -1793,93 +1741,423 @@ erDiagram
     users ||--o{ sessions : opens
 ```
 
-### 2.6.3. Bounded Context: analytics
+### 2.6.2. Bounded Context: inventory
+
+#### 2.6.2.1. Domain Layer
+El dominio administra productos, lotes, stock y rangos de temperatura. Sus principales clases son `Product`, `Batch`, `InventoryItem` y `TemperatureRange`.
+
+#### 2.6.2.2. Interface Layer
+`ProductController`, `BatchController` e `InventoryController` exponen el registro y consulta del inventario móvil.
+
+#### 2.6.2.3. Application Layer
+`RegisterProductHandler`, `RegisterBatchHandler`, `UpdateStockHandler` y `GetInventoryQueryHandler` coordinan los casos de uso del contexto.
+
+#### 2.6.2.4. Infrastructure Layer
+`InventoryRepositoryImpl` e `InventoryDbContext` persisten los productos, lotes y movimientos de stock.
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+```mermaid
+flowchart LR
+  UI[Aplicación móvil] --> API[Inventory API]
+  API --> Product[Product Controller]
+  API --> Stock[Stock Handler]
+  Product --> Domain[Inventory Domain]
+  Stock --> Domain
+  Domain --> Repo[Inventory Repository]
+  Repo --> DB[(Inventory Database)]
+```
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+```mermaid
+classDiagram
+  class Product {
+    +UUID id
+    +String name
+    +TemperatureRange range
+    +register()
+  }
+  class Batch {
+    +UUID id
+    +String code
+    +Integer quantity
+    +markAtRisk()
+  }
+  class TemperatureRange {
+    +Decimal minimum
+    +Decimal maximum
+    +contains(value) Boolean
+  }
+  class InventoryRepository {
+    <<interface>>
+    +save(product)
+    +findById(id)
+  }
+  Product "1" *-- "1..*" Batch
+  Product "1" *-- "1" TemperatureRange
+  InventoryRepository ..> Product
+```
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+```mermaid
+erDiagram
+  products {
+    UUID id PK
+    VARCHAR name
+    DECIMAL min_temperature
+    DECIMAL max_temperature
+  }
+  batches {
+    UUID id PK
+    UUID product_id FK
+    VARCHAR code
+    INT quantity
+    VARCHAR status
+  }
+  stock_movements {
+    UUID id PK
+    UUID batch_id FK
+    INT quantity
+    VARCHAR movement_type
+    TIMESTAMP created_at
+  }
+  products ||--o{ batches : contains
+  batches ||--o{ stock_movements : records
+```
+
+### 2.6.3. Bounded Context: environmental-monitoring
 
 #### 2.6.3.1. Domain Layer
+El dominio recibe telemetría y valida las lecturas contra los umbrales configurados. Sus clases son `Sensor`, `TemperatureReading`, `Threshold` y `Excursion`.
 
 #### 2.6.3.2. Interface Layer
+`TelemetryController` y `SensorController` reciben lecturas IoT y permiten consultar sensores y estados.
 
 #### 2.6.3.3. Application Layer
+`ReceiveTelemetryHandler`, `ValidateReadingHandler` y `DetectExcursionHandler` procesan las lecturas y publican eventos de anomalía.
 
 #### 2.6.3.4. Infrastructure Layer
+`SensorRepositoryImpl`, `MonitoringDbContext` y `TelemetryEventPublisher` conectan el contexto con la base de datos y el bus de eventos.
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+```mermaid
+flowchart LR
+  IoT[Sensor IoT] --> Gateway[Telemetry Gateway]
+  Gateway --> Handler[Telemetry Handler]
+  Handler --> Rules[Monitoring Domain Rules]
+  Rules --> DB[(Monitoring Database)]
+  Rules --> Bus[Domain Event Bus]
+  Bus --> Alerts[Alerts Context]
+```
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
-
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+```mermaid
+classDiagram
+  class Sensor {
+    +UUID id
+    +String serialNumber
+    +String status
+    +activate()
+    +disconnect()
+  }
+  class TemperatureReading {
+    +UUID id
+    +Decimal value
+    +DateTime recordedAt
+    +isWithin(range) Boolean
+  }
+  class Threshold {
+    +Decimal minimum
+    +Decimal maximum
+    +contains(value) Boolean
+  }
+  class Excursion {
+    +UUID id
+    +String severity
+    +DateTime detectedAt
+    +classify()
+  }
+  Sensor "1" o-- "0..*" TemperatureReading
+  TemperatureReading --> Threshold
+  TemperatureReading --> Excursion
+```
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
+```mermaid
+erDiagram
+  sensors {
+    UUID id PK
+    VARCHAR serial_number
+    VARCHAR status
+  }
+  temperature_readings {
+    UUID id PK
+    UUID sensor_id FK
+    DECIMAL value
+    TIMESTAMP recorded_at
+  }
+  excursions {
+    UUID id PK
+    UUID reading_id FK
+    VARCHAR severity
+    TIMESTAMP detected_at
+  }
+  sensors ||--o{ temperature_readings : produces
+  temperature_readings ||--o{ excursions : detects
+```
 
-### 2.6.4. Bounded Context: environmental-monitoring
+### 2.6.4. Bounded Context: alerts
 
 #### 2.6.4.1. Domain Layer
+El dominio administra alertas, severidad, notificaciones y acciones correctivas mediante `Alert`, `Notification` y `CorrectiveAction`.
 
 #### 2.6.4.2. Interface Layer
+`AlertController` permite consultar alertas, registrar acciones correctivas y resolver incidencias.
 
 #### 2.6.4.3. Application Layer
+`CreateAlertHandler`, `NotifyUsersHandler` y `ResolveAlertHandler` coordinan la atención de anomalías.
 
 #### 2.6.4.4. Infrastructure Layer
+`AlertRepositoryImpl`, `PushNotificationAdapter` y `AlertEventConsumer` implementan persistencia, notificaciones y consumo de eventos.
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+```mermaid
+flowchart LR
+  Event[Excursion Event] --> Create[Alert Handler]
+  Create --> Store[(Alerts Database)]
+  Create --> Notify[Notification Adapter]
+  Notify --> Push[Push Provider]
+  User[Usuario autorizado] --> API[Alert API]
+  API --> Resolve[Corrective Action Handler]
+  Resolve --> Store
+```
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
-
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+```mermaid
+classDiagram
+  class Alert {
+    +UUID id
+    +String severity
+    +String status
+    +activate()
+    +resolve()
+  }
+  class Notification {
+    +UUID id
+    +UUID alertId
+    +String channel
+    +send()
+  }
+  class CorrectiveAction {
+    +UUID id
+    +String description
+    +DateTime recordedAt
+    +record()
+  }
+  Alert "1" o-- "0..*" Notification
+  Alert "1" o-- "0..*" CorrectiveAction
+```
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
+```mermaid
+erDiagram
+  alerts {
+    UUID id PK
+    VARCHAR severity
+    VARCHAR status
+    TIMESTAMP created_at
+  }
+  notifications {
+    UUID id PK
+    UUID alert_id FK
+    VARCHAR channel
+    VARCHAR status
+    TIMESTAMP sent_at
+  }
+  corrective_actions {
+    UUID id PK
+    UUID alert_id FK
+    UUID user_id FK
+    VARCHAR description
+    TIMESTAMP recorded_at
+  }
+  alerts ||--o{ notifications : generates
+  alerts ||--o{ corrective_actions : receives
+```
 
-### 2.6.5. Bounded Context: inventory
+### 2.6.5. Bounded Context: logistics
 
 #### 2.6.5.1. Domain Layer
+El dominio coordina despachos, rutas, vehículos, sensores asignados y entregas mediante `Shipment`, `Route`, `Vehicle` y `Delivery`.
 
 #### 2.6.5.2. Interface Layer
+`ShipmentController`, `RouteController` y `DeliveryController` exponen las operaciones logísticas.
 
 #### 2.6.5.3. Application Layer
+`CreateShipmentHandler`, `AssignSensorHandler`, `ValidateShipmentHandler` y `ConfirmDeliveryHandler` coordinan el ciclo del despacho.
 
 #### 2.6.5.4. Infrastructure Layer
+`ShipmentRepositoryImpl`, `LogisticsDbContext` y `MonitoringClient` conectan el contexto con la persistencia y el monitoreo ambiental.
 
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+```mermaid
+flowchart LR
+  App[Aplicación móvil] --> API[Logistics API]
+  API --> Shipment[Shipment Handler]
+  Shipment --> Route[Route Service]
+  Shipment --> Sensor[Sensor Assignment]
+  Shipment --> DB[(Logistics Database)]
+  Shipment --> Monitor[Environmental Monitoring]
+```
 
 #### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
-
 ##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+```mermaid
+classDiagram
+  class Shipment {
+    +UUID id
+    +String status
+    +create()
+    +start()
+    +deliver()
+  }
+  class Route {
+    +UUID id
+    +String origin
+    +String destination
+    +calculate()
+  }
+  class Vehicle {
+    +UUID id
+    +String plate
+    +String status
+    +assign()
+  }
+  class Delivery {
+    +UUID id
+    +DateTime deliveredAt
+    +confirm()
+  }
+  Shipment "1" *-- "1" Route
+  Shipment "1" o-- "1" Vehicle
+  Shipment "1" o-- "0..1" Delivery
+```
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
+```mermaid
+erDiagram
+  shipments {
+    UUID id PK
+    UUID route_id FK
+    UUID vehicle_id FK
+    VARCHAR status
+    TIMESTAMP created_at
+  }
+  routes {
+    UUID id PK
+    VARCHAR origin
+    VARCHAR destination
+  }
+  vehicles {
+    UUID id PK
+    VARCHAR plate
+    VARCHAR status
+  }
+  deliveries {
+    UUID id PK
+    UUID shipment_id FK
+    TIMESTAMP delivered_at
+  }
+  routes ||--o{ shipments : plans
+  vehicles ||--o{ shipments : transports
+  shipments ||--o| deliveries : completes
+```
 
-### 2.6.6. Bounded Context: logistics
+### 2.6.6. Bounded Context: reporting
 
 #### 2.6.6.1. Domain Layer
+Reporting consolida historial, indicadores y evidencia digital. Sus clases principales son `TemperatureHistory`, `Kpi`, `ComplianceReport` y `EvidenceRecord`.
 
 #### 2.6.6.2. Interface Layer
+`DashboardController`, `HistoryController` y `ReportController` permiten consultar indicadores y exportar evidencia.
 
 #### 2.6.6.3. Application Layer
+`GetTemperatureHistoryHandler`, `GenerateKpiHandler` y `GenerateComplianceReportHandler` construyen las consultas de lectura.
 
 #### 2.6.6.4. Infrastructure Layer
+`ReportingProjection`, `ReadDatabase` y `ReportExporter` consumen eventos y generan proyecciones de solo lectura.
 
 #### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+```mermaid
+flowchart LR
+  Events[Domain Events] --> Projection[Reporting Projection]
+  Projection --> ReadDB[(Reporting Read Database)]
+  User[Usuario autorizado] --> API[Reporting API]
+  API --> Dashboard[Dashboard Service]
+  API --> Export[Evidence Exporter]
+  Dashboard --> ReadDB
+  Export --> ReadDB
+```
 
 #### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
-
 ##### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
+```mermaid
+classDiagram
+  class TemperatureHistory {
+    +UUID shipmentId
+    +List readings
+    +filterByDateRange()
+  }
+  class Kpi {
+    +String name
+    +Decimal value
+    +calculate()
+  }
+  class ComplianceReport {
+    +UUID id
+    +String status
+    +generate()
+  }
+  class EvidenceRecord {
+    +UUID id
+    +String hash
+    +verifyIntegrity() Boolean
+  }
+  ComplianceReport "1" o-- "0..*" EvidenceRecord
+  TemperatureHistory --> ComplianceReport
+  Kpi --> ComplianceReport
+```
 
 ##### 2.6.6.6.2. Bounded Context Database Design Diagram
-
-### 2.6.7. Bounded Context: reporting
-
-#### 2.6.7.1. Domain Layer
-
-#### 2.6.7.2. Interface Layer
-
-#### 2.6.7.3. Application Layer
-
-#### 2.6.7.4. Infrastructure Layer
-
-#### 2.6.7.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 2.6.7.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.7.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 2.6.7.6.2. Bounded Context Database Design Diagram
+```mermaid
+erDiagram
+  temperature_history {
+    UUID id PK
+    UUID shipment_id FK
+    DECIMAL temperature
+    TIMESTAMP recorded_at
+  }
+  kpis {
+    UUID id PK
+    VARCHAR name
+    DECIMAL value
+    DATE period
+  }
+  compliance_reports {
+    UUID id PK
+    UUID shipment_id FK
+    VARCHAR status
+    TIMESTAMP generated_at
+  }
+  evidence_records {
+    UUID id PK
+    UUID report_id FK
+    VARCHAR content_hash
+    TIMESTAMP created_at
+  }
+  compliance_reports ||--o{ evidence_records : contains
+  temperature_history }o--|| compliance_reports : supports
+```
 
