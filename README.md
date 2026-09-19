@@ -69,7 +69,6 @@
 | U202123362 | Sebastian Alonso Bustinza Muñoz |
 | U202316049 | Jefferson Bayron Morales Yapuchura |
 | U202219199 | Abraam Bernabe Acosta Elera |
-| U********* | --------- |
 
 
 </div>
@@ -126,25 +125,22 @@ El uso de repositorios específicos por subcomponente también contribuyó a man
 A continuación, se detallan los repositorios utilizados a lo largo del proyecto:
 
 #### Link del Repositorio del Reporte: [Repositorio del Informe](https://github.com/upc-pre-202620-1acc0238-4950-cryologic/safeflow-report.git)
-#### Link del Repositorio de la Landing Page:  [Repositorio del Landing]()
 #### Link del Repositorio del Frontend:  [Repositorio del Frontend]()
 #### Link del Repositorio del Backend:  [Repositorio del Backend]()
 
 A continuación, se detallan los Link de lo Desarrollado:
 
-#### Link de la Landing Page:  [Link de la Landing Page]()
-#### Link de la Plataforma Web:  [Link de la App Web]()
+#### Link de la Plataforma Mobile:  [Link de la App Mobile]()
 
 
   <br>
 
-| Integrante | Tareas Asignadas                                                                                                                                                                                             |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Andy Alejandro Mio Mejia | ****************** |
-| Abraam Bernabe Acosta Elera  | ******************                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Sebastian Alonso Bustinza Muñoz | ****************** |
-| Morales Yapuchura, Jefferson Bayron    | ******************                                                                                                                                                                                                                                   |
-| ******************    | ******************                                                                                                       |
+| Integrante | Tareas Asignadas |
+|------------|------------------|
+| Andy Alejandro Mio Mejia | Desarrollo del capítulo de presentación, abarcando el Startup Profile, Solution Profile, aplicación del proceso Lean UX y la definición de los segmentos objetivo. |
+| Abraam Bernabe Acosta Elera | Definición de requerimientos mediante User Stories, Impact Mapping y Product Backlog, junto con el diseño estratégico y arquitectura de software aplicando Domain-Driven Design. |
+| Sebastian Alonso Bustinza Muñoz | Ejecución del proceso de Needfinding mediante la elaboración de User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y EventStorming. |
+| Morales Yapuchura, Jefferson Bayron | Realización del análisis competitivo del producto, además del diseño, registro y análisis de entrevistas con usuarios clave. |
 
 
 El proceso de colaboración en el informe se realizó mediante commits constantes al repositorio de la organización.
@@ -156,28 +152,14 @@ Los integrantes son:
 * Andy Alejandro Mio Mejia   (AndyMio17)
 * Sebastian Alonso Bustinza Muñoz   (sebastianbustinza809)
 * Jefferson Bayron Morales Yapuchura (Fenfito)
-* ****************** (********)
-* ****************** (********)
+* Abraam Bernabe Acosta Elera (AbraamBernabe)
 
   </br>
 
 ### Github Collaboration  Informe
 
-<div align="center"><img src="" alt="collaboration 1" width="700" />  </div>        
-
-
-### Github Collaboration  Landing
-
-<div align="center"><img src="" alt="collaboration 2" width="700" />  </div>        
-
-
-### Github Collaboration  Frontend
-
-<div align="center"><img src="" alt="collaboration 3" width="700" />  </div>        
-
-### Github Collaboration  Backend
-
-<div align="center"><img src="" alt="collaboration 4" width="700" />  </div>        
+<div align="center"><img src="assets/student-profile/collaboration 1.png" alt="collaboration 1" width="700" />  </div>        
+           
 
 
 
