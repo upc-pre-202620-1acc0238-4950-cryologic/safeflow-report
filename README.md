@@ -498,6 +498,39 @@ La plataforma analiza continuamente las condiciones registradas y detecta desvia
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
+| *Integrante*            |                               Andy Alejandro Mio Mejia                  |
+|:-------------------------|:-----------------------------------------------------------------------------:|
+| *Código del Estudiante*  | U202218531                                                                    |
+| *Carrera*                | Ingeniería de Software                                                         |
+| *Descripción*            | Soy estudiante de Ingeniería de Software y me caracterizo por mi compromiso con el trabajo en equipo. Cuento con conocimientos en HTML, CSS, JavaScript y SQL, lo cual puede aportar al desarrollo del proyecto en las áreas de frontend y bases de datos. Además, tengo experiencia en Python, lo que me permite apoyar en tareas de programación, automatización y análisis cuando sea necesario. |
+| Foto                     | <img src="assets/chapter-01/foto-Andy.jpeg" alt="Integrante Andy" width="180" /> |
+
+<br>
+
+| *Integrante*            |                               Sebastian Alonso Bustinza Muñoz                 |
+|:-------------------------|:-----------------------------------------------------------------------------:|
+| *Código del Estudiante*  | U202123362                                                                    |
+| *Carrera*                | Ingeniería de Software                                                         |
+| *Descripción*            | Estudiante de Ingeniería de Software orientado al entendimiento y experiencia del usuario. Me especializo en procesos de Needfinding, creando herramientas empáticas como mapas de experiencia y perfiles de usuario (User Personas), lo cual es fundamental para asegurar que la solución resuelva problemas reales de manera intuitiva. |
+| Foto                     | <img src="assets/chapter-01/foto-Sebastian.jpeg" alt="Integrante Sebastian" width="180" /> |
+
+<br>
+
+| *Integrante*            |                               Jefferson Bayron Morales Yapuchura              |
+|:-------------------------|:-----------------------------------------------------------------------------:|
+| *Código del Estudiante*  | U202316049                                                                    |
+| *Carrera*                | Ingeniería de Software                                                         |
+| *Descripción*            | Estudiante de Ingeniería de Software con marcado perfil analítico e investigativo. Destaco por mi capacidad para analizar el entorno competitivo, identificar ventajas diferenciales y diseñar estrategias mediante la recolección activa de información en entrevistas, aportando una base sólida para la toma de decisiones estratégicas frente a la competencia. |
+| Foto                     | <img src="assets/chapter-01/foto-Jefferson.jpg" alt="Integrante Jefferson" width="180" /> |
+
+<br>
+
+| *Integrante*            |                               Abraam Bernabe Acosta Elera                     |
+|:-------------------------|:-----------------------------------------------------------------------------:|
+| *Código del Estudiante*  | U202219199                                                                    |
+| *Carrera*                | Ingeniería de Software                                                         |
+| *Descripción*            | Estudiante de Ingeniería de Software enfocado en el diseño arquitectónico y modelado de sistemas complejos. Poseo amplia capacidad analítica para estructurar soluciones escalables aplicando patrones de diseño avanzado y estrategias de Domain-Driven Design (DDD), asegurando la robustez técnica del proyecto a nivel de software. |
+| Foto                     | <img src="assets/chapter-01/foto-Abraam.jpeg" alt="Integrante Abraam" width="180" /> |
 
 ## 1.2. Solution Profile
 
