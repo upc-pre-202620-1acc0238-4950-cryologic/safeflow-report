@@ -1084,7 +1084,7 @@ sequenceDiagram
   participant Inv as Inventory
   participant Log as Logistics
   participant Mon as Environmental Monitoring
-  participant Alt as Alerts
+  participant AlertsCtx as Alerts
   actor Calidad as Responsable de calidad
   participant Rep as Reporting
 
@@ -1094,11 +1094,11 @@ sequenceDiagram
   App->>Log: Registra despacho en tránsito
   Mon->>Log: Vincula lecturas al despacho
   Mon->>Mon: Valida lectura contra el rango
-  Mon-->>Alt: Publica excursión térmica
-  Alt-->>App: Envía alerta móvil
+  Mon-->>AlertsCtx: Publica excursión térmica
+  AlertsCtx-->>App: Envía alerta móvil
   App-->>Calidad: Muestra alerta y severidad
   Calidad->>App: Registra acción correctiva
-  App->>Alt: Marca alerta como resuelta
+  App->>AlertsCtx: Marca alerta como resuelta
   Log->>Rep: Envía estado e historial del despacho
 ```
 
