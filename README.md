@@ -927,7 +927,7 @@ Segmento Objetivo 2: Operadores logísticos (3PL / transporte especializado)
 
 - **Inicio:** 00:00
 - **Duración:** 09:30
-- **URL:** [Enlace de Entrevista]()
+- **URL:** [Enlace de Entrevista](https://youtu.be/_6jH4f6HLfE)
 
 **Resumen:**
 Marlon es un Analista de Aseguramiento de la Calidad con 4 años de experiencia en el sector farmacéutico. Su gestión se centra en asegurar que los productos críticos cumplan con la normativa sanitaria manteniéndolos entre 2°C y 8°C. Actualmente, enfrenta una falta de monitoreo en la nube, calificando el proceso de transporte como una "caja negra total" , donde solo puede hacer un análisis post-mortem mediante la descarga manual de dataloggers físicos a través de USB.  
@@ -944,7 +944,7 @@ Esta falta de visibilidad causó anteriormente la pérdida de un lote valorizado
 
 - **Inicio:** 00:00
 - **Duración:** 07:32
-- **URL:** [Enlace de Entrevista]()
+- **URL:** [Enlace de Entrevista](https://youtu.be/MwVkLDa6VGk)
 
 **Resumen:**
 El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 años de experiencia en el sector farmacéutico. Su responsabilidad absoluta es garantizar la integridad biológica de productos críticos manteniéndolos entre 2°C y 8°C para cumplir con la normativa de DIGEMID. Siendo un profesional netamente analítico, su mayor debilidad actual es que el transporte es una "caja negra" sin monitoreo en la nube. Al depender de dataloggers físicos, las fallas se detectan de forma post-mortem tras descargar la información por USB, reaccionando cuando el producto ya está perdido. Esta situación ha ocasionado pérdidas de hasta 50 mil dólares y severos daños reputacionales en el pasado , además de generarle un proceso caótico de 2 a 3 días de trabajo para consolidar evidencias en auditorías. Considera como "no negociable" la integridad inalterable de los datos para respaldar las operaciones ante el Ministerio de Salud. Priorizaría un dashboard con "Alertas Críticas Activas" y proyecta que reducir las mermas en un 20% impactaría directa y positivamente en sus KPIs y bonos de desempeño.
@@ -964,7 +964,7 @@ El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 año
 
 - **Inicio:** 00:00
 - **Duración:** 08:33
-- **URL:** [Enlace de Entrevista]()
+- **URL:** [Enlace de Entrevista](https://youtu.be/MwVkLDa6VGk)
 
 ### 2.2.3. Análisis de entrevistas
 ### Segmento 1: Empresas del sector farmacéutico
