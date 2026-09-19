@@ -221,7 +221,11 @@ Los integrantes son:
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+      - [Segmento objetivo #1: Empresas del sector farmacéutico](#segmento-objetivo-1-empresas-del-sector-farmacéutico)
+      - [Segmento objetivo #2: Operadores logísticos (3PL / transporte especializado)](#segmento-objetivo-2-operadores-logísticos-3pl--transporte-especializado)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+    - [Segmento 1: Empresas del sector farmacéutico](#segmento-1-empresas-del-sector-farmacéutico)
+    - [Segmento 2: Operadores logísticos (3PL / transporte especializado)](#segmento-2-operadores-logísticos-3pl--transporte-especializado)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
       - [Segmento 2 Supervisora de Operaciones y Flota](#segmento-2-supervisora-de-operaciones-y-flota)
@@ -266,17 +270,9 @@ Los integrantes son:
       - [2.6.1.2. Interface Layer](#2612-interface-layer)
       - [2.6.1.3. Application Layer](#2613-application-layer)
       - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
-      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
-      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
-        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
-        - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
-    - [2.6.2. Bounded Context: alerts](#262-bounded-context-alerts)
-      - [2.6.2.1. Domain Layer](#2621-domain-layer)
-      - [2.6.2.2. Interface Layer](#2622-interface-layer)
-      - [2.6.2.3. Application Layer](#2623-application-layer)
-      - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
       - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
-      - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams-1)
         - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
         - [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)
     - [2.6.3. Bounded Context: analytics](#263-bounded-context-analytics)
@@ -1228,7 +1224,7 @@ sequenceDiagram
   participant Inv as Inventory
   participant Log as Logistics
   participant Mon as Environmental Monitoring
-  participant Alt as Alerts
+  participant AlertsCtx as Alerts
   actor Calidad as Responsable de calidad
   participant Rep as Reporting
 
@@ -1238,11 +1234,11 @@ sequenceDiagram
   App->>Log: Registra despacho en tránsito
   Mon->>Log: Vincula lecturas al despacho
   Mon->>Mon: Valida lectura contra el rango
-  Mon-->>Alt: Publica excursión térmica
-  Alt-->>App: Envía alerta móvil
+  Mon-->>AlertsCtx: Publica excursión térmica
+  AlertsCtx-->>App: Envía alerta móvil
   App-->>Calidad: Muestra alerta y severidad
   Calidad->>App: Registra acción correctiva
-  App->>Alt: Marca alerta como resuelta
+  App->>AlertsCtx: Marca alerta como resuelta
   Log->>Rep: Envía estado e historial del despacho
 ```
 
@@ -1482,39 +1478,320 @@ Los nodos deben proteger sus comunicaciones mediante HTTPS y credenciales admini
 
 ### 2.6.1. Bounded Context: iam
 
+El bounded context **IAM (Identity and Access Management)** administra la identidad y el acceso seguro de los usuarios de SafeFlow. Su alcance incluye el registro de usuarios, el inicio y cierre de sesión, la expiración de sesiones y el control de permisos según el rol. La aplicación móvil consume este contexto a través de la API, pero no contiene las reglas centrales de autenticación ni autorización.
+
 #### 2.6.1.1. Domain Layer
+
+La Domain Layer concentra las reglas de negocio relacionadas con la identidad. Sus clases no dependen de la aplicación móvil, de la base de datos ni del proveedor de tokens.
+
+| Clase | Categoría | Propósito | Atributos principales | Métodos principales |
+|---|---|---|---|---|
+| **User** | Entity / Aggregate Root | Representa a una persona autorizada para utilizar SafeFlow. | `id`, `name`, `email`, `passwordHash`, `status`, `roleId`, `createdAt`, `lastLoginAt` | `register()`, `changeRole()`, `activate()`, `deactivate()`, `recordLogin()` |
+| **Role** | Entity | Define el nivel de acceso del usuario. | `id`, `name`, `permissions` | `addPermission()`, `removePermission()`, `hasPermission()` |
+| **Permission** | Value Object | Representa una acción autorizada sobre un recurso. | `resource`, `action` | `matches(resource, action)` |
+| **UserId** | Value Object | Identifica de manera única a un usuario. | `value` | `equals()`, `toString()` |
+| **Email** | Value Object | Valida y representa el correo utilizado como credencial. | `value` | `validateFormat()`, `equals()` |
+| **Session** | Entity | Representa una sesión autenticada y su vigencia. | `id`, `userId`, `refreshToken`, `expiresAt`, `revokedAt` | `isActive()`, `isExpired()`, `revoke()` |
+| **UserRepository** | Domain Interface | Define la persistencia requerida por el dominio. | No aplica | `findById()`, `findByEmail()`, `save()`, `update()` |
+| **PasswordHasher** | Domain Interface | Define la operación de protección y verificación de contraseñas. | No aplica | `hash()`, `matches()` |
+
+Reglas principales del dominio:
+
+- Cada correo debe ser único dentro de IAM.
+- Un usuario desactivado no puede iniciar sesión.
+- Un usuario solo puede ejecutar acciones permitidas por su rol.
+- Una sesión expirada o revocada no puede utilizarse para acceder a recursos protegidos.
+- La contraseña no se almacena en texto plano; el dominio trabaja únicamente con su representación protegida.
 
 #### 2.6.1.2. Interface Layer
 
+La Interface Layer expone las capacidades de IAM a la aplicación móvil mediante endpoints HTTP. Los controllers reciben solicitudes, validan su estructura básica y convierten los datos externos en comandos de aplicación. No contienen reglas de negocio ni acceden directamente a la base de datos.
+
+| Clase | Tipo | Responsabilidad |
+|---|---|---|
+| **AuthController** | Controller | Atiende registro, inicio de sesión, renovación y cierre de sesión. |
+| **UserController** | Controller | Consulta y actualiza usuarios cuando el actor cuenta con permisos administrativos. |
+| **RoleController** | Controller | Administra roles y permisos para usuarios autorizados. |
+| **AuthRequest** | Request DTO | Transporta correo, contraseña y datos básicos del registro desde la aplicación móvil. |
+| **AuthResponse** | Response DTO | Devuelve el token de acceso, el refresh token, la expiración y los datos mínimos del usuario. |
+| **UserSessionMiddleware** | Middleware | Extrae las credenciales de la solicitud y adjunta el usuario autenticado al contexto de ejecución. |
+| **UnauthorizedErrorHandler** | Error Handler | Convierte errores de autenticación o autorización en respuestas consistentes para el cliente móvil. |
+
+La aplicación móvil utiliza estas capacidades para registrarse, iniciar sesión, conservar una sesión segura, cerrar sesión y ocultar funciones no autorizadas según el rol recibido.
+
 #### 2.6.1.3. Application Layer
+
+La Application Layer coordina los casos de uso de IAM. Cada handler recibe un comando o consulta, utiliza las interfaces del dominio y devuelve un resultado que puede ser transformado por la Interface Layer. Esta capa conecta las capacidades del bounded context con las historias `US-18`, `US-30`, `US-31` y `US-42`.
+
+| Clase | Tipo | Caso de uso | Flujo principal |
+|---|---|---|---|
+| **RegisterUserCommandHandler** | Command Handler | Registrarse en la aplicación. | Valida correo, crea `User`, asigna el rol inicial y persiste la cuenta. |
+| **LoginUserCommandHandler** | Command Handler | Iniciar sesión. | Busca el usuario, verifica contraseña y estado, crea `Session` y emite credenciales. |
+| **RefreshSessionCommandHandler** | Command Handler | Renovar sesión. | Valida el refresh token y crea una nueva sesión con expiración actualizada. |
+| **LogoutUserCommandHandler** | Command Handler | Cerrar sesión. | Revoca la sesión actual y elimina las credenciales locales mediante la respuesta de la API. |
+| **AuthorizeUserQueryHandler** | Query / Policy Handler | Controlar acceso por rol. | Consulta el rol y determina si el usuario puede ejecutar una acción. |
+| **GetUserProfileQueryHandler** | Query Handler | Obtener perfil autenticado. | Devuelve los datos y permisos necesarios para construir la navegación móvil. |
+| **UserRegisteredEventHandler** | Event Handler | Notificar el registro de usuario. | Publica o procesa el evento de registro para auditoría y confirmación de cuenta. |
+
+Eventos de aplicación relevantes:
+
+- `UserRegistered`: se crea una nueva cuenta.
+- `UserLoggedIn`: se inicia una sesión válida.
+- `SessionRevoked`: se cierra o invalida una sesión.
+- `UserRoleChanged`: se modifica el conjunto de permisos del usuario.
 
 #### 2.6.1.4. Infrastructure Layer
 
-#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+La Infrastructure Layer implementa las interfaces definidas por el dominio y conecta IAM con servicios externos. Esta capa contiene la persistencia, el hashing de contraseñas, la emisión de tokens y la publicación de eventos. La aplicación móvil no accede directamente a estos componentes.
 
-#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+| Clase | Tipo | Servicio externo | Responsabilidad |
+|---|---|---|---|
+| **UserRepositoryImpl** | Repository Implementation | Base de datos operacional | Persiste y consulta usuarios, roles y sesiones. |
+| **IamDbContext** | Persistence Context | Motor relacional | Configura tablas, relaciones, índices y transacciones de IAM. |
+| **BcryptPasswordHasher** | Service Adapter | Biblioteca criptográfica | Genera hashes y compara contraseñas sin almacenarlas en texto plano. |
+| **JwtTokenService** | Service Adapter | Servicio de tokens | Emite y valida access tokens y refresh tokens. |
+| **SessionCache** | Cache Adapter | Redis o caché administrada | Mantiene sesiones revocadas y datos temporales de autenticación. |
+| **IamEventPublisher** | Message Adapter | Bus de eventos | Publica `UserRegistered`, `UserLoggedIn` y `SessionRevoked`. |
+| **EmailVerificationService** | External Service Adapter | Servicio de correo | Envía la verificación de cuenta y mensajes de recuperación. |
+| **IamUnitOfWork** | Infrastructure Abstraction | Base de datos | Confirma o revierte las operaciones realizadas en un caso de uso. |
 
-##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+Relaciones principales de la implementación:
 
-##### 2.6.1.6.2. Bounded Context Database Design Diagram
+```mermaid
+flowchart TB
+  Mobile[Aplicación móvil]
+  AuthController[AuthController]
+  LoginHandler[LoginUserCommandHandler]
+  User[User Aggregate]
+  Repository[UserRepository]
+  RepositoryImpl[UserRepositoryImpl]
+  Token[JwtTokenService]
+  Database[(IAM Database)]
+  Events[IamEventPublisher]
 
-### 2.6.2. Bounded Context: alerts
-
-#### 2.6.2.1. Domain Layer
-
-#### 2.6.2.2. Interface Layer
-
-#### 2.6.2.3. Application Layer
-
-#### 2.6.2.4. Infrastructure Layer
+  Mobile --> AuthController
+  AuthController --> LoginHandler
+  LoginHandler --> User
+  LoginHandler --> Repository
+  Repository --> RepositoryImpl
+  RepositoryImpl --> Database
+  LoginHandler --> Token
+  LoginHandler --> Events
+```
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+El Component Diagram descompone el container del bounded context IAM en sus principales componentes internos. El diagrama muestra cómo el controller recibe las solicitudes de la aplicación móvil, cómo los handlers coordinan los casos de uso, cómo el dominio aplica las reglas de identidad y cómo los adaptadores conectan la solución con la base de datos, el servicio de tokens y el bus de eventos.
+
+<div align="center"> <img src="assets/chapter-02/IamComponentsView-dark.png" lt="User Segmento 2" width="550" /> </div>
+
+
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+El Code Level Diagrams presenta el detalle de implementación de los componentes del bounded context IAM. Para este bounded context se incluyen dos diagramas: el diagrama UML de las clases del Domain Layer y el diagrama de la estructura de persistencia de IAM.
+
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+Este diagrama muestra las entidades, value objects, interfaces, enumeraciones y relaciones del Domain Layer. Incluye atributos, métodos, visibilidad y multiplicidades. Structurizr DSL está orientado al modelo C4 y no representa de forma nativa diagramas UML de clases con miembros; por ello, se recomienda elaborar este diagrama en PlantUML, Visual Paradigm o la herramienta UML indicada por el curso.
+
+Diagrama de clases del dominio IAM en Mermaid:
+
+```mermaid
+classDiagram
+    class User {
+        <<Aggregate Root>>
+        -UserId id
+        -String name
+        -Email email
+        -String passwordHash
+        -UserStatus status
+        -Role role
+        -Date createdAt
+        -Date lastLoginAt
+        +register()
+        +changeRole(role: Role)
+        +activate()
+        +deactivate()
+        +recordLogin(at: Date)
+    }
+
+    class Role {
+        <<Entity>>
+        -String id
+        -String name
+        -Set~Permission~ permissions
+        +addPermission(permission: Permission)
+        +removePermission(permission: Permission)
+        +hasPermission(resource: String, action: String) Boolean
+    }
+
+    class Permission {
+        <<Value Object>>
+        -String resource
+        -String action
+        +matches(resource: String, action: String) Boolean
+    }
+
+    class UserId {
+        <<Value Object>>
+        -UUID value
+        +equals(other: UserId) Boolean
+    }
+
+    class Email {
+        <<Value Object>>
+        -String value
+        +validateFormat() Boolean
+        +equals(other: Email) Boolean
+    }
+
+    class Session {
+        <<Entity>>
+        -UUID id
+        -UserId userId
+        -String refreshToken
+        -Date expiresAt
+        -Date revokedAt
+        +isActive() Boolean
+        +isExpired() Boolean
+        +revoke()
+    }
+
+    class UserRepository {
+        <<Repository>>
+        +findById(id: UserId) User
+        +findByEmail(email: Email) User
+        +save(user: User)
+        +update(user: User)
+    }
+
+    class PasswordHasher {
+        <<Domain Port>>
+        +hash(password: String) String
+        +matches(password: String, hash: String) Boolean
+    }
+
+    class UserStatus {
+        <<enumeration>>
+        ACTIVE
+        INACTIVE
+        LOCKED
+    }
+
+    User *-- UserId
+    User *-- Email
+    User o-- Role
+    Role *-- Permission
+    User o-- Session
+    Session --> UserId
+    UserRepository ..> User
+    PasswordHasher ..> User
+    User --> UserStatus
+```
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
+Este diagrama representa las tablas necesarias para persistir usuarios, roles, permisos y sesiones. Las contraseñas se almacenan únicamente como hashes y las sesiones pueden revocarse sin eliminar el historial de autenticación.
+
+Diagrama de entidad-relación (MERMAID) para describir la persistencia del bounded context IAM:
+
+```mermaid
+erDiagram
+    roles {
+        UUID id PK
+        VARCHAR name
+        VARCHAR description
+    }
+
+    users {
+        UUID id PK
+        VARCHAR name
+        VARCHAR email UK
+        VARCHAR password_hash
+        VARCHAR status
+        UUID role_id FK
+        TIMESTAMP created_at
+        TIMESTAMP last_login_at
+    }
+
+    permissions {
+        UUID id PK
+        VARCHAR resource
+        VARCHAR action
+    }
+
+    role_permissions {
+        UUID role_id PK, FK
+        UUID permission_id PK, FK
+    }
+
+    sessions {
+        UUID id PK
+        UUID user_id FK
+        VARCHAR refresh_token_hash
+        TIMESTAMP expires_at
+        TIMESTAMP revoked_at
+        TIMESTAMP created_at
+    }
+
+    roles ||--o{ users : assigns
+    roles ||--o{ role_permissions : contains
+    permissions ||--o{ role_permissions : grants
+    users ||--o{ sessions : opens
+```
+
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+El diagrama de base de datos del bounded context IAM modela la persistencia de los agregados de identidad y sesión. Se emplea un esquema relacional con tablas dedicadas para usuarios, roles, permisos y sesiones, garantizando integridad referencial, restricciones de unicidad y trazabilidad de autenticación.
+
+En este diseño, cada usuario pertenece a un único rol, cada rol puede tener múltiples permisos a través de la tabla `role_permissions` y cada usuario puede abrir múltiples sesiones. La columna `password_hash` evita almacenar contraseñas en texto plano, mientras que `refresh_token_hash` protege los tokens de renovación. Los campos `expires_at` y `revoked_at` permiten validar el estado de la sesión y mantener evidencia del cierre o invalidación.
+
+La relación principal se implementa mediante `role_id` en `users`, la tabla de unión `role_permissions` y la clave foránea `user_id` en `sessions`. Este modelo respalda el control de acceso seguro, la revocación de sesiones y la conservación del historial de autenticación sin duplicar reglas de seguridad en otros bounded contexts.
+
+```mermaid
+erDiagram
+    roles {
+        UUID id PK
+        VARCHAR name
+        VARCHAR description
+    }
+
+    users {
+        UUID id PK
+        VARCHAR name
+        VARCHAR email UK
+        VARCHAR password_hash
+        VARCHAR status
+        UUID role_id FK
+        TIMESTAMP created_at
+        TIMESTAMP last_login_at
+    }
+
+    permissions {
+        UUID id PK
+        VARCHAR resource
+        VARCHAR action
+    }
+
+    role_permissions {
+        UUID role_id PK, FK
+        UUID permission_id PK, FK
+    }
+
+    sessions {
+        UUID id PK
+        UUID user_id FK
+        VARCHAR refresh_token_hash
+        TIMESTAMP expires_at
+        TIMESTAMP revoked_at
+        TIMESTAMP created_at
+    }
+
+    roles ||--o{ users : assigns
+    roles ||--o{ role_permissions : contains
+    permissions ||--o{ role_permissions : grants
+    users ||--o{ sessions : opens
+```
 
 ### 2.6.3. Bounded Context: analytics
 
