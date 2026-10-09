@@ -709,22 +709,21 @@ Esta sección documenta las entrevistas realizadas a cada segmento. Para cada en
 
 <div align="center"><img src="assets/chapter-02/interview-picture-2.png" alt="Captura de la Entrevista 2, Marlon Vilca" width="550"/></div>
 
-<p><strong><em>Nota.</em></strong> Captura del video de la entrevista, que documenta el desarrollo de la sesión con el entrevistado del segmento 1.</p>
 
-**Entrevista 2**
+**Entrevista 1**
 
-- **Nombres y apellidos:** Marlon Vilca
-- **Edad:** 27 años
-- **Distrito:** Jesús María
-- **Inicio:** 00:00
-- **Duración:** 09:30
+- **Nombres y apellidos:** Sebastian Mendoza
+- **Edad:** 35 años
+- **Distrito:** San Borja
+- **Inicio:** 01:15
+- **Duración:** 07:54
 
-> Pendiente: enlace al video de la entrevista.
+- **URL:** [https://youtu.be/v0ob7pnyQcw]()
 
 **Resumen:**
-Marlon es un Analista de Aseguramiento de la Calidad con 4 años de experiencia en el sector farmacéutico. Su gestión se centra en asegurar que los productos críticos cumplan con la normativa sanitaria manteniéndolos entre 2°C y 8°C. Actualmente enfrenta una falta de monitoreo en la nube, y califica el proceso de transporte como una "caja negra total", donde solo puede hacer un análisis post-mortem mediante la descarga manual de dataloggers físicos a través de USB.
+Sebastian es un Jefe de Aseguramiento de la Calidad con 10 años de experiencia en el sector farmacéutico. Su gestión se centra en garantizar que productos críticos (vacunas e insulinas) se mantengan estrictamente entre 2°C y 8°C. Actualmente, enfrenta una grave falta de visibilidad durante el transporte, calificándolo como una "caja negra" donde solo detecta fallos post-mortem mediante la descarga manual de dataloggers.
 
-Esta falta de visibilidad causó anteriormente la pérdida de un lote valorizado en decenas de miles de dólares. Marlon tiene un perfil analítico que se frustra con la demora de la información y el desorden de las auditorías sanitarias, que le exigen hasta 2 o 3 días de trabajo manual. Considera no negociable la integridad inalterable de los datos y priorizaría un dashboard con alertas críticas activas para reducir las mermas, lo cual le quitaría estrés operativo e impactaría positivamente en su evaluación de desempeño y sus KPIs.
+Esta falta de monitoreo en tiempo real ha causado pérdidas económicas de hasta 50 mil dólares y daños reputacionales severos. Sebastian es un perfil altamente analítico que sufre con la demora de los datos y el caos administrativo de las auditorías sanitarias (que le toman hasta 3 días de trabajo). Valora por encima de todo la integridad inalterable de los datos y espera que SafeFlow le proporcione alertas preventivas y un dashboard centralizado para reducir mermas, lo cual impactaría directamente en sus KPIs y bonificaciones profesionales.
 
 <p><strong>Figura 4.</strong> <em>Captura de la Entrevista 3 (Joan Aguirre)</em></p>
 
@@ -740,7 +739,7 @@ Esta falta de visibilidad causó anteriormente la pérdida de un lote valorizado
 - **Inicio:** 00:00
 - **Duración:** 07:32
 
-> Pendiente: enlace al video de la entrevista.
+- **URL:** [https://www.youtube.com/watch?v=ZWq9LLy3t9c]()
 
 **Resumen:**
 El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 años de experiencia en el sector farmacéutico. Su responsabilidad es garantizar la integridad biológica de productos críticos manteniéndolos entre 2°C y 8°C para cumplir con la normativa de DIGEMID. Siendo un profesional netamente analítico, su mayor debilidad actual es que el transporte es una "caja negra" sin monitoreo en la nube. Al depender de dataloggers físicos, las fallas se detectan de forma post-mortem tras descargar la información por USB, reaccionando cuando el producto ya está perdido. Esta situación ha ocasionado pérdidas de hasta 50 mil dólares y severos daños reputacionales en el pasado, además de generarle un proceso caótico de 2 a 3 días de trabajo para consolidar evidencias en auditorías. Considera como "no negociable" la integridad inalterable de los datos para respaldar las operaciones ante el Ministerio de Salud. Priorizaría un dashboard con "Alertas Críticas Activas" y proyecta que reducir las mermas en un 20% impactaría directa y positivamente en sus KPIs y bonos de desempeño.
@@ -760,8 +759,7 @@ El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 año
 - **Distrito:** Surquillo
 - **Inicio:** 00:00
 - **Duración:** 08:33
-
-> Pendiente: enlaces a los videos de las entrevistas; resumen de la Entrevista 6; y registro de las entrevistas faltantes de ambos segmentos (el enunciado requiere de 3 a 5 por segmento; hoy constan las entrevistas 2, 3 y 6).
+- **URL:** [https://youtu.be/6a17Hf1BH-g]()
 
 ### 2.2.3. Análisis de entrevistas
 
