@@ -1,0 +1,21 @@
+flowchart LR
+  subgraph DEV1["Dispositivo Android, celular o tableta"]
+    APP["SafeFlow Android App"]
+    LOC[("Almacenamiento local<br/>Room y DataStore")]
+    NOT["Servicio de notificaciones<br/>del sistema operativo"]
+  end
+
+  subgraph DEV2["Dispositivo Android con emuladora"]
+    EMU["Emulator Android App"]
+  end
+
+  subgraph CLOUD["Servicio compartido en la nube"]
+    API["Shared Service<br/>API REST"]
+    SDB[("Base de datos del servicio")]
+  end
+
+  APP --- LOC
+  APP --- NOT
+  APP -->|"HTTPS"| API
+  EMU -->|"HTTPS"| API
+  API --- SDB

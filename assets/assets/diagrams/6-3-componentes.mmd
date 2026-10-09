@@ -1,0 +1,37 @@
+flowchart TB
+  subgraph PRES["Presentation"]
+    CT["CurrentTemperatureScreen<br/>y ViewModel"]
+    TH["ThermalHistoryScreen<br/>y ThermalChart"]
+    RK["ProductsAtRiskScreen"]
+  end
+  subgraph APP["Application"]
+    SYNC["SyncMeasurements<br/>ProcessMeasurement"]
+    QRY["Get* UseCases"]
+    EH["Event handlers"]
+  end
+  subgraph DOM["Domain"]
+    AG["Sensor, Reading<br/>ThermalAnomaly"]
+    EV["ThermalDeviationEvaluator<br/>ReadingFactory"]
+    REPO["Repositories<br/>y RangeProvider"]
+  end
+  subgraph INF["Infrastructure"]
+    ACL["MeasurementTranslator<br/>ACL"]
+    IMPL["Repository<br/>implementations"]
+    API["MonitoringApiService"]
+    ROOM["Room<br/>MonitoringDatabase"]
+    RNG["InventoryRangeAdapter"]
+  end
+  SRV[("Servicio compartido<br/>y emuladora")]
+  CT --> QRY
+  TH --> QRY
+  RK --> QRY
+  SYNC --> EV
+  SYNC --> AG
+  SYNC --> EH
+  QRY --> REPO
+  IMPL -.->|implementa| REPO
+  RNG -.->|implementa| REPO
+  ACL --> API
+  API --> SRV
+  IMPL --> ROOM
+  SYNC --> ACL

@@ -1,0 +1,85 @@
+classDiagram
+  class Sensor {
+    <<Aggregate Root>>
+    -String id
+    -String productId
+    -SensorAvailability availability
+    -Instant lastReadingAt
+    +markDisconnected()
+    +markRecovered(at: Instant)
+  }
+  class SensorAvailability {
+    <<enumeration>>
+    AVAILABLE
+    DISCONNECTED
+  }
+  class Reading {
+    <<Aggregate Root>>
+    -String id
+    -String sensorId
+    -Temperature temperature
+    -Instant recordedAt
+    -ThermalStatus status
+    +isExcursion() Boolean
+  }
+  class Temperature {
+    <<Value Object>>
+    -Double celsius
+    +isFinite() Boolean
+  }
+  class ThermalStatus {
+    <<enumeration>>
+    WITHIN_RANGE
+    WARNING
+    EXCURSION
+  }
+  class ThermalRange {
+    <<Value Object>>
+    -Double min
+    -Double max
+    +contains(t: Temperature) Boolean
+  }
+  class ThermalAnomaly {
+    <<Aggregate Root>>
+    -String id
+    -String productId
+    -Temperature peak
+    -Instant detectedAt
+    -RiskLevel risk
+  }
+  class RiskLevel {
+    <<enumeration>>
+    LOW
+    MEDIUM
+    HIGH
+  }
+  class ThermalDeviationEvaluator {
+    <<Domain Service>>
+    +evaluate(t: Temperature, range: ThermalRange, margin: Double) ThermalStatus
+  }
+  class ReadingFactory {
+    <<Factory>>
+    +create(sensorId: String, rawValue: String, at: Instant) Reading
+  }
+  class SensorRepository {
+    <<interface>>
+    +findById(id: String) Sensor
+    +save(sensor: Sensor)
+  }
+  class ReadingRepository {
+    <<interface>>
+    +save(reading: Reading)
+    +latest(sensorId: String) Reading
+    +history(sensorId: String, from: Instant, to: Instant) List~Reading~
+  }
+  Sensor "1" --> "1" SensorAvailability : esta
+  Sensor "1" --> "0..*" Reading : produce
+  Reading "1" *-- "1" Temperature : mide
+  Reading "0..*" --> "1" ThermalStatus : se clasifica como
+  ThermalAnomaly "0..*" --> "1" RiskLevel : tiene
+  ThermalAnomaly "0..*" --> "1" Reading : nace de
+  ThermalDeviationEvaluator ..> ThermalRange : compara con
+  ThermalDeviationEvaluator ..> ThermalStatus : determina
+  ReadingFactory ..> Reading : crea
+  SensorRepository ..> Sensor : persiste
+  ReadingRepository ..> Reading : persiste

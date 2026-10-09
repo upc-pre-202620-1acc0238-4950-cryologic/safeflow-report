@@ -1,0 +1,17 @@
+flowchart TD
+    A["Despachos"] --> B["Registrar despacho"]
+    B --> C{Datos y referencias válidos?}
+    C -->|No| D["Error de datos<br/>o cantidad"]
+    D --> B
+    C -->|Sí| E["Despacho en preparación"]
+    E --> F["Validación del despacho"]
+    F --> G{Condición térmica}
+    G -->|Dentro del rango| H["Continuar con el despacho<br/>Envío autorizado"]
+    G -->|Riesgo| I["Confirmación autorizada"]
+    G -->|Sin datos| J["Envío bloqueado"]
+    I -->|Autorizada| H
+    I -->|No autorizada| J
+    J --> A
+    H --> K["En tránsito"]
+    K --> L["Confirmar entrega"]
+    L --> M["Entregado"]

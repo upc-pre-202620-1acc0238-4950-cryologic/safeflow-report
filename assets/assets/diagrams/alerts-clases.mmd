@@ -1,0 +1,70 @@
+classDiagram
+  class Alert {
+    -id AlertId
+    -anomalyKey AnomalyKey
+    -severity Severity
+    -status AlertStatus
+    -location Location
+    -description String
+    -occurrences Int
+    -firstDetectedAt Instant
+    -lastDetectedAt Instant
+    +groupRepetition(at Instant) AlertGrouped
+    +recordAction(action CorrectiveAction) AlertResolved
+    +isActive() Boolean
+  }
+  class CorrectiveAction {
+    -id ActionId
+    -authorId UserId
+    -description String
+    -recordedAt Instant
+  }
+  class AnomalyKey {
+    <<value object>>
+    +sensorId SensorId
+    +type AnomalyType
+  }
+  class Location {
+    <<value object>>
+    +name String
+  }
+  class Severity {
+    <<enumeration>>
+    WARNING
+    CRITICAL
+  }
+  class AlertStatus {
+    <<enumeration>>
+    ACTIVE
+    RESOLVED
+  }
+  class AnomalyType {
+    <<enumeration>>
+    EXCURSION
+    WARNING
+    SENSOR_DISCONNECTED
+  }
+  class AlertGroupingPolicy {
+    <<domain service>>
+    +register(signal MonitoringSignal, active Alert) GroupingDecision
+  }
+  class AlertFactory {
+    <<factory>>
+    +create(signal MonitoringSignal) Alert
+  }
+  class AlertRepository {
+    <<interface>>
+    +findActiveByKey(key AnomalyKey) Alert
+    +observeActive() Flow
+    +observeHistory() Flow
+    +save(alert Alert)
+  }
+  Alert "1" *-- "0..*" CorrectiveAction : accumulates history
+  Alert "1" --> "1" AnomalyKey : identifies origin by
+  Alert "1" --> "1" Location : occurs at
+  Alert "1" --> "1" Severity : classified as
+  Alert "1" --> "1" AlertStatus : is in
+  AnomalyKey "1" --> "1" AnomalyType : of type
+  AlertFactory ..> Alert : creates
+  AlertGroupingPolicy ..> Alert : evaluates
+  AlertRepository ..> Alert : persists

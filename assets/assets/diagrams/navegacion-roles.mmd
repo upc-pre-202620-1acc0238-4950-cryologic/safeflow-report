@@ -1,0 +1,9 @@
+flowchart TD
+    V["VISITANTE<br/>Iniciar sesión · Crear cuenta"] -->|Sesión iniciada| R{Rol de la cuenta}
+    R -->|OPERADOR| O["Inventario · Despachos · Cuenta"]
+    R -->|SUPERVISOR| S["Resumen · Riesgos · Alertas · Cuenta"]
+    R -->|ADMIN| A["Permisos · Cuenta"]
+    O --> C["Cuenta"]
+    S --> C
+    A --> C
+    C -->|Cerrar sesión o sesión expirada| V

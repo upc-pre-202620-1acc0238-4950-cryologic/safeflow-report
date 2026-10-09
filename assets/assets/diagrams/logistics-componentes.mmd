@@ -1,0 +1,32 @@
+flowchart LR
+  subgraph PRES["Presentation"]
+    SCR["Pantallas de despachos"]
+    VM["ViewModels"]
+  end
+  subgraph APP["Application"]
+    UC["Casos de uso<br/>de despacho"]
+  end
+  subgraph DOM["Domain"]
+    SHP["Shipment"]
+    POL["ThermalDispatchPolicy<br/>RegistrationPolicy"]
+    PRT["ShipmentRepository<br/>Puertos de referencia<br/>ThermalReadingsPort"]
+  end
+  subgraph INF["Infrastructure"]
+    REPO["ShipmentRepositoryImpl"]
+    INV["InventoryReferenceAdapter"]
+    ACL["ThermalReadingsAdapter<br/>ACL"]
+  end
+  API["Servicio compartido"]
+  DB[("Room local")]
+  SCR --> VM
+  VM --> UC
+  UC --> SHP
+  UC --> POL
+  UC --> PRT
+  REPO -.->|implementa| PRT
+  INV -.->|implementa| PRT
+  ACL -.->|implementa| PRT
+  REPO --> API
+  REPO --> DB
+  INV --> API
+  ACL --> API

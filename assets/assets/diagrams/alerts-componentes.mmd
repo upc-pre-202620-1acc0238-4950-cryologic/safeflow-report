@@ -1,0 +1,33 @@
+flowchart LR
+  subgraph PRES["Presentation"]
+    AS["AlertsScreen"]
+    AVM["AlertsViewModel"]
+  end
+  subgraph APP["Application"]
+    UC["Casos de uso<br/>de alertas"]
+    EH["Event handlers<br/>de Monitoring"]
+  end
+  subgraph DOM["Domain"]
+    AGG["Alert<br/>CorrectiveAction"]
+    PORTS["AlertRepository<br/>AlertNotifier<br/>MonitoringSignalSource"]
+  end
+  subgraph INF["Infrastructure"]
+    REPO["AlertRepositoryImpl"]
+    NOTI["AlertNotificationAdapter"]
+    SRC["MonitoringSignalSourceImpl"]
+  end
+  API["Servicio compartido"]
+  DB[("Room local")]
+  OS["Notificaciones Android"]
+  AS --> AVM
+  AVM --> UC
+  EH --> UC
+  UC --> AGG
+  UC --> PORTS
+  REPO -.->|implementa| PORTS
+  NOTI -.->|implementa| PORTS
+  SRC -.->|implementa| PORTS
+  REPO --> API
+  REPO --> DB
+  NOTI --> OS
+  SRC --> API

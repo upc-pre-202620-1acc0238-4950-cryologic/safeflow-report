@@ -1,0 +1,36 @@
+erDiagram
+  sensor {
+    TEXT id PK
+    TEXT product_id
+    TEXT availability
+    INTEGER last_reading_at
+  }
+  reading {
+    TEXT id PK
+    TEXT sensor_id FK
+    REAL celsius
+    INTEGER recorded_at
+    TEXT status
+  }
+  rejected_reading {
+    TEXT id PK
+    TEXT sensor_id FK
+    TEXT reason
+    INTEGER received_at
+  }
+  thermal_anomaly {
+    TEXT id PK
+    TEXT reading_id FK
+    TEXT product_id
+    TEXT type
+    TEXT risk
+    INTEGER detected_at
+  }
+  product_range {
+    TEXT product_id PK
+    REAL min_temperature
+    REAL max_temperature
+  }
+  sensor ||--o{ reading : produce
+  sensor ||--o{ rejected_reading : descarta
+  reading ||--o| thermal_anomaly : origina

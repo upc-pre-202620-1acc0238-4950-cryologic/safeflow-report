@@ -1,0 +1,23 @@
+sequenceDiagram
+  autonumber
+  actor Op as Operador
+  box Logistics
+    participant Log as Logistics
+  end
+  box Inventory
+    participant Inv as Inventory
+  end
+  box Environmental Monitoring
+    participant Mon as Monitoring
+  end
+  Op->>Log: CMD Registrar despacho
+  Log->>Inv: QRY Stock disponible del lote
+  Inv-->>Log: RES Cantidad disponible
+  Log-->>Op: EVT Despacho registrado
+  Op->>Log: CMD Validar condición térmica
+  Log->>Mon: QRY Última lectura del sensor
+  Mon-->>Log: RES Lectura o ausencia de datos
+  Log-->>Op: EVT Condición térmica validada
+  Log-->>Op: EVT Envío autorizado o Envío bloqueado
+  Op->>Log: CMD Iniciar envío
+  Log-->>Op: EVT Envío iniciado

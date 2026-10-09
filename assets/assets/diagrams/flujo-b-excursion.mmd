@@ -1,0 +1,17 @@
+sequenceDiagram
+  autonumber
+  box Environmental Monitoring
+    participant Mon as Monitoring
+  end
+  box Alerts
+    participant AlertsBC as Alerts
+  end
+  actor Sup as Supervisor
+  Mon-->>AlertsBC: EVT Lectura registrada
+  Mon-->>AlertsBC: EVT Excursión térmica detectada
+  AlertsBC-->>Sup: EVT Alerta generada o Alerta agrupada
+  Sup->>AlertsBC: QRY Alertas activas por severidad
+  AlertsBC-->>Sup: RES Detalle de la alerta
+  Sup->>AlertsBC: CMD Registrar acción correctiva
+  AlertsBC-->>Sup: EVT Acción correctiva registrada
+  AlertsBC-->>Sup: EVT Alerta resuelta

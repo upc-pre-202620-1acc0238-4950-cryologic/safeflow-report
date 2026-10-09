@@ -1,0 +1,12 @@
+flowchart TD
+    A["Iniciar sesión"] --> B{Credenciales correctas?}
+    B -->|Sí| C["Primer destino del rol"]
+    B -->|No| D["Error de credenciales"]
+    D --> E{Intentos fallidos repetidos?}
+    E -->|No| A
+    E -->|Sí| F["Bloqueo temporal"]
+    F --> A
+    C --> G{Sesión vigente?}
+    G -->|Cierra sesión o expira| H["Sesión cerrada<br/>vuelve a Iniciar sesión"]
+    H --> A
+    G -->|Sí| C

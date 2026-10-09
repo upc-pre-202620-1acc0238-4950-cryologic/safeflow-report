@@ -1,0 +1,8 @@
+flowchart LR
+    F["feature/*"] -->|"Pull Request"| D["develop"]
+    D -->|"estabilizar"| R["release/*"]
+    R -->|"tag vX.Y.Z"| M["main"]
+    R -->|"merge"| D
+    M -->|"defecto crítico"| H["hotfix/*"]
+    H -->|"tag vX.Y.Z"| M
+    H -->|"merge"| D

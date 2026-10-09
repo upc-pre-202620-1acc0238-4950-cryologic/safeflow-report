@@ -1,0 +1,11 @@
+flowchart TD
+    A["Inventario"] --> B["Registrar producto"]
+    B --> C{Datos válidos?}
+    C -->|Faltan datos o rango invertido| D["Error en el formulario"]
+    D --> B
+    C -->|Sí| E["Producto registrado<br/>Detalle de producto"]
+    E --> F["Registrar lote"]
+    F --> G{Identificación válida?}
+    G -->|Vacía o existente| H["Error en el campo"]
+    H --> F
+    G -->|Sí| I["Lote registrado<br/>Lotes del producto"]

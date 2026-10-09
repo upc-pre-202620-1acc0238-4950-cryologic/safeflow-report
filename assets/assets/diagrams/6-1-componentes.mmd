@@ -1,0 +1,38 @@
+flowchart TB
+  subgraph PRES["Presentation"]
+    SI["SignInScreen<br/>y ViewModel"]
+    CA["CreateAccountScreen<br/>y ViewModel"]
+    PR["PermissionsByRoleScreen<br/>y ViewModel"]
+    SV["SessionViewModel"]
+  end
+  subgraph APP["Application"]
+    UC1["SignIn<br/>CreateAccount<br/>SignOut"]
+    UC2["UpdateRolePermissions<br/>CheckPermission"]
+    EH["SessionExpiredHandler"]
+  end
+  subgraph DOM["Domain"]
+    AG["Account, Session<br/>RolePermissions"]
+    SVC["AuthorizationService"]
+    RP["Repositories<br/>interfaces"]
+  end
+  subgraph INF["Infrastructure"]
+    IMPL["Repository<br/>implementations"]
+    API["AuthApiService<br/>Retrofit"]
+    DS["EncryptedSession<br/>DataSource"]
+    ROOM["Room<br/>IamDatabase"]
+  end
+  SRV[("Servicio compartido")]
+  SI --> UC1
+  CA --> UC1
+  PR --> UC2
+  SV --> UC1
+  SV --> EH
+  UC1 --> AG
+  UC2 --> SVC
+  UC1 --> RP
+  UC2 --> RP
+  IMPL -.->|implementa| RP
+  IMPL --> API
+  IMPL --> DS
+  IMPL --> ROOM
+  API --> SRV

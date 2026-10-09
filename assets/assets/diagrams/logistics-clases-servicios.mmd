@@ -1,0 +1,44 @@
+classDiagram
+  class ShipmentRegistrationPolicy {
+    <<domain service>>
+    +validate(draft ShipmentDraft, refs References) RegistrationResult
+  }
+  class ThermalDispatchPolicy {
+    <<domain service>>
+    +evaluate(readings List~ThermalReading~, range ThermalRange) ThermalCheck
+  }
+  class ShipmentFactory {
+    <<factory>>
+    +create(draft ShipmentDraft) Shipment
+  }
+  class ThermalReading {
+    <<value object>>
+    +value Double
+    +recordedAt Instant
+  }
+  class ShipmentRepository {
+    <<interface>>
+    +save(shipment Shipment)
+    +findById(id ShipmentId) Shipment
+    +observeByStatus(status ShipmentStatus) Flow
+  }
+  class InventoryReferencePort {
+    <<interface>>
+    +availableStock(batchId String) Int
+    +thermalRange(productId String) ThermalRange
+  }
+  class SensorReferencePort {
+    <<interface>>
+    +exists(sensorId String) Boolean
+  }
+  class ThermalReadingsPort {
+    <<interface>>
+    +readingsFor(sensorId String) List~ThermalReading~
+  }
+  class Shipment
+  ShipmentFactory ..> Shipment : creates
+  ShipmentRegistrationPolicy ..> InventoryReferencePort : consults
+  ShipmentRegistrationPolicy ..> SensorReferencePort : consults
+  ThermalDispatchPolicy ..> ThermalReading : evaluates
+  ThermalReadingsPort "1" --> "0..*" ThermalReading : provides
+  ShipmentRepository ..> Shipment : persists

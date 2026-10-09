@@ -1,0 +1,8 @@
+stateDiagram-v2
+  [*] --> PREPARATION : Despacho registrado
+  PREPARATION --> VALIDATION : Condicion termica validada
+  VALIDATION --> IN_TRANSIT : Envio autorizado e iniciado
+  VALIDATION --> BLOCKED : Envio bloqueado
+  IN_TRANSIT --> DELIVERED : Entrega confirmada
+  BLOCKED --> [*]
+  DELIVERED --> [*]
