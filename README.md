@@ -135,8 +135,7 @@ A lo largo del desarrollo del trabajo se evidenció una participación activa, c
 El informe se mantiene en el repositorio de la organización del equipo, donde cada integrante registra sus aportes mediante commits.
 
 - Repositorio del informe: [safeflow-report](https://github.com/upc-pre-202620-1acc0238-4950-cryologic/safeflow-report.git)
-- Repositorio de la aplicación móvil: `Pendiente: URL de la organización del equipo`
-- Repositorio de los servicios: `Pendiente: URL de la organización del equipo`
+- Repositorio de la aplicación <https://github.com/https://github.com/upc-pre-202620-1acc0238-4950-cryologic/safeflow-android-app>
 
 La tabla siguiente detalla las tareas asignadas a cada integrante en las entregas AV1 y TB1 y su relación con las secciones del informe.
 
