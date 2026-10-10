@@ -704,9 +704,9 @@ Esta sección documenta las entrevistas realizadas a cada segmento. Para cada en
 
 #### Segmento objetivo 1: Empresas del sector farmacéutico
 
-<p><strong>Figura 3.</strong> <em>Captura de la Entrevista 2 (Marlon Vilca)</em></p>
+<p><strong>Figura 3.</strong> <em>Captura de la Entrevista 1 (Sebastian Mendoza)</em></p>
 
-<div align="center"><img src="assets/chapter-02/interview-picture-2.png" alt="Captura de la Entrevista 2, Marlon Vilca" width="550"/></div>
+<div align="center"><img src="assets/chapter-02/interview-picture-2.png" alt="Captura de la Entrevista 1, Sebastian Mendoza" width="550"/></div>
 
 
 **Entrevista 1**
@@ -724,13 +724,13 @@ Sebastian es un Jefe de Aseguramiento de la Calidad con 10 años de experiencia 
 
 Esta falta de monitoreo en tiempo real ha causado pérdidas económicas de hasta 50 mil dólares y daños reputacionales severos. Sebastian es un perfil altamente analítico que sufre con la demora de los datos y el caos administrativo de las auditorías sanitarias (que le toman hasta 3 días de trabajo). Valora por encima de todo la integridad inalterable de los datos y espera que SafeFlow le proporcione alertas preventivas y un dashboard centralizado para reducir mermas, lo cual impactaría directamente en sus KPIs y bonificaciones profesionales.
 
-<p><strong>Figura 4.</strong> <em>Captura de la Entrevista 3 (Joan Aguirre)</em></p>
+<p><strong>Figura 4.</strong> <em>Captura de la Entrevista 2 (Joan Aguirre)</em></p>
 
-<div align="center"><img src="assets/chapter-02/interview-picture-3.png" alt="Captura de la Entrevista 3, Joan Aguirre" width="550"/></div>
+<div align="center"><img src="assets/chapter-02/interview-picture-3.png" alt="Captura de la Entrevista 2, Joan Aguirre" width="550"/></div>
 
 <p><strong><em>Nota.</em></strong> Captura del video de la entrevista, que documenta el desarrollo de la sesión con el segundo entrevistado del segmento 1.</p>
 
-**Entrevista 3**
+**Entrevista 2**
 
 - **Nombres y apellidos:** Joan Aguirre
 - **Edad:** 26 años
@@ -745,13 +745,13 @@ El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 año
 
 #### Segmento objetivo 2: Operadores logísticos (3PL / transporte especializado)
 
-<p><strong>Figura 5.</strong> <em>Captura de la Entrevista 6 (Henry Ruiz)</em></p>
+<p><strong>Figura 5.</strong> <em>Captura de la Entrevista 3 (Henry Ruiz)</em></p>
 
-<div align="center"><img src="assets/chapter-02/interview-picture-4.png" alt="Captura de la Entrevista 6, Henry Ruiz" width="550"/></div>
+<div align="center"><img src="assets/chapter-02/interview-picture-4.png" alt="Captura de la Entrevista 3, Henry Ruiz" width="550"/></div>
 
 <p><strong><em>Nota.</em></strong> Captura del video de la entrevista con el entrevistado del segmento 2.</p>
 
-**Entrevista 6**
+**Entrevista 3**
 
 - **Nombres y apellidos:** Henry Ruiz
 - **Edad:** 26 años
@@ -760,49 +760,54 @@ El entrevistado es un Jefe de Aseguramiento de la Calidad de 26 años con 3 año
 - **Duración:** 08:33
 - **URL:** [https://youtu.be/6a17Hf1BH-g]()
 
+**Resumen:**
+Henry es un responsable de operaciones logísticas que coordina despachos, supervisa conductores y mantiene la comunicación operativa durante las rutas. Actualmente utiliza WhatsApp, registros en papel y fotografías enviadas por los choferes como evidencia de las entregas. La falta de alertas en cabina dificulta que los conductores detecten a tiempo una falla del equipo de frío y deja a la empresa expuesta ante reclamos de sus clientes.
+
+También identifica una carga administrativa importante al descargar datos de los dispositivos de monitoreo y preparar reportes en Excel. Valora que el estado térmico de cada despacho se actualice automáticamente en un mapa interactivo y considera que una solución fácil de usar, similar a WhatsApp, facilitaría la adopción por parte de los conductores. Para diferenciarse frente a otros operadores, necesita demostrar con evidencia confiable que sus cargas se transportaron bajo condiciones adecuadas.
+
 ### 2.2.3. Análisis de entrevistas
 
-El análisis de entrevistas identifica, por segmento, las características objetivas y subjetivas más comunes entre los entrevistados, expresadas como porcentaje sobre las entrevistas de cada segmento. Estos hallazgos son la base de las fichas de User Persona. Las tablas siguientes sintetizan los resultados; los porcentajes se calculan sobre las entrevistas registradas en la sección 2.2.2 y deberán recalcularse cuando se incorporen las entrevistas pendientes.
+El análisis de entrevistas identifica, por segmento, las características objetivas y subjetivas más comunes entre los tres entrevistados disponibles. Para mantener una base de cálculo única, los porcentajes de las Tablas 9 y 10 se calculan sobre el total de entrevistas registradas (`n = 3`): Sebastian Mendoza y Joan Aguirre pertenecen al segmento farmacéutico, mientras que Henry Ruiz pertenece al segmento de operadores logísticos. Por ello, un hallazgo compartido por los dos entrevistados del segmento farmacéutico representa 67% del total y un hallazgo reportado por el entrevistado logístico representa 33%. Estos resultados son exploratorios y sirven como base para las fichas de User Persona.
 
-La Tabla 9 resume los resultados del segmento 1, empresas del sector farmacéutico, e indica el sustento de cada característica en las entrevistas 2 y 3.
+La Tabla 9 resume los resultados del segmento 1, empresas del sector farmacéutico, e indica el sustento de cada característica en las entrevistas 1 y 2.
 
 <p><strong>Tabla 9.</strong> <em>Análisis de entrevistas del segmento 1: empresas del sector farmacéutico</em></p>
 
 | Categoría | Hallazgo | Porcentaje |
 | :--- | :--- | :---: |
-| Rol principal | Asegura la integridad biológica de productos termolábiles (2°C a 8°C) y garantiza el cumplimiento de normativas sanitarias (DIGEMID). | 100% |
-| Gestión de datos | Se describe como un perfil analítico que no toma decisiones sin reportes de datos sustentados. | 100% |
-| Herramientas actuales | Utiliza ERPs robustos (SAP) y dataloggers físicos. | 100% |
+| Rol principal | Asegura la integridad biológica de productos termolábiles (2°C a 8°C) y garantiza el cumplimiento de normativas sanitarias (DIGEMID). | 67% |
+| Gestión de datos | Se describe como un perfil analítico que no toma decisiones sin reportes de datos sustentados. | 67% |
+| Herramientas actuales | Utiliza ERPs robustos (SAP) y dataloggers físicos. | 67% |
 | Herramientas actuales | Cuenta con monitoreo en la nube en tiempo real. | 0% |
-| Problemas comunes | Califica el transporte como una "caja negra" sin visibilidad en tránsito. | 100% |
-| Problemas comunes | Reporta procesos caóticos de auditoría (entre 2 y 3 días para consolidar evidencias). | 100% |
-| Problemas comunes | Menciona falta de alertas inmediatas ante fallas mecánicas o humanas. | 100% |
-| Indicadores valorados | Prioriza el conteo de "Alertas Críticas Activas" y la trazabilidad histórica inalterable. | 100% |
-| Impacto de la solución | Afirma que una reducción del 20% en mermas impacta directamente en sus bonos de desempeño y KPIs. | 100% |
-| Factor no negociable | Exige integridad total de los datos (registros no editables). | 100% |
+| Problemas comunes | Califica el transporte como una "caja negra" sin visibilidad en tránsito. | 67% |
+| Problemas comunes | Reporta procesos caóticos de auditoría (entre 2 y 3 días para consolidar evidencias). | 67% |
+| Problemas comunes | Menciona falta de alertas inmediatas ante fallas mecánicas o humanas. | 67% |
+| Indicadores valorados | Prioriza el conteo de "Alertas Críticas Activas" y la trazabilidad histórica inalterable. | 67% |
+| Impacto de la solución | Afirma que una reducción del 20% en mermas impacta directamente en sus bonos de desempeño y KPIs. | 67% |
+| Factor no negociable | Exige integridad total de los datos (registros no editables). | 67% |
 
-<p><strong><em>Nota.</em></strong> Elaboración propia a partir de las entrevistas 2 y 3 del segmento 1.</p>
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de las entrevistas 1 y 2 del segmento 1; porcentajes calculados sobre las tres entrevistas disponibles.</p>
 
-La Tabla 10 resume los resultados del segmento 2, operadores logísticos, cuyo sustento se encuentra en la entrevista 6 y en las respuestas registradas en video.
+La Tabla 10 resume los resultados del segmento 2, operadores logísticos, cuyo sustento se encuentra en la entrevista 3 y en las respuestas registradas en video.
 
 <p><strong>Tabla 10.</strong> <em>Análisis de entrevistas del segmento 2: operadores logísticos</em></p>
 
 | Categoría | Hallazgo | Porcentaje |
 | :--- | :--- | :---: |
-| Rol principal | Coordina despachos, supervisa conductores y gestiona la comunicación operativa en ruta. | 100% |
-| Canales digitales | Utiliza WhatsApp para coordinar rutas y Facebook o LinkedIn para actualizarse en normativas. | 100% |
-| Herramientas actuales | Usa pizarras acrílicas y registros en papel. | 100% |
-| Herramientas actuales | Depende de fotos enviadas por los choferes como evidencia. | 50% |
-| Problemas comunes | Reporta vulnerabilidad ante reclamos de clientes por falta de pruebas de temperatura en vivo. | 100% |
-| Problemas comunes | Menciona que los choferes no detectan fallas de frío a tiempo por falta de alertas en cabina. | 100% |
-| Problemas comunes | Identifica una pérdida de 5 horas semanales en la descarga manual de datos USB y el armado de reportes en Excel. | 100% |
-| Indicadores valorados | Prioriza la visualización de unidades en mapas interactivos con estado térmico actualizado cada 5 minutos. | 100% |
-| Adopción de la aplicación | Está dispuesto a adoptarla siempre que sea "fácil de usar como WhatsApp" y apta para conductores con baja alfabetización digital. | 100% |
-| Diferenciación | Considera que la falta de una plataforma de monitoreo les hace perder grandes clientes corporativos. | 100% |
+| Rol principal | Coordina despachos, supervisa conductores y gestiona la comunicación operativa en ruta. | 33% |
+| Canales digitales | Utiliza WhatsApp para coordinar rutas y Facebook o LinkedIn para actualizarse en normativas. | 33% |
+| Herramientas actuales | Usa pizarras acrílicas y registros en papel. | 33% |
+| Herramientas actuales | Depende de fotos enviadas por los choferes como evidencia. | 33% |
+| Problemas comunes | Reporta vulnerabilidad ante reclamos de clientes por falta de pruebas de temperatura en vivo. | 33% |
+| Problemas comunes | Menciona que los choferes no detectan fallas de frío a tiempo por falta de alertas en cabina. | 33% |
+| Problemas comunes | Identifica una pérdida de 5 horas semanales en la descarga manual de datos USB y el armado de reportes en Excel. | 33% |
+| Indicadores valorados | Prioriza la visualización de unidades en mapas interactivos con estado térmico actualizado cada 5 minutos. | 33% |
+| Adopción de la aplicación | Está dispuesto a adoptarla siempre que sea "fácil de usar como WhatsApp" y apta para conductores con baja alfabetización digital. | 33% |
+| Diferenciación | Considera que la falta de una plataforma de monitoreo les hace perder grandes clientes corporativos. | 33% |
 
-<p><strong><em>Nota.</em></strong> Elaboración propia a partir de las respuestas del segmento 2 registradas en video.</p>
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la entrevista 3 del segmento 2; porcentajes calculados sobre las tres entrevistas disponibles.</p>
 
-En conjunto, ambos segmentos coinciden en la falta de visibilidad durante el transporte y en el esfuerzo manual para generar evidencia. El segmento 1 enfatiza la integridad y la trazabilidad de los datos para auditorías y KPIs, mientras que el segmento 2 enfatiza la simplicidad de uso, las alertas en ruta y la reducción de trabajo administrativo.
+En conjunto, los tres entrevistados coinciden en la necesidad de contar con evidencia confiable y oportuna sobre las condiciones de transporte. Las entrevistas 1 y 2 enfatizan la integridad de los datos, la trazabilidad para auditorías y las alertas críticas; la entrevista 3 enfatiza la simplicidad de uso, las alertas para los conductores y la reducción del trabajo administrativo. La principal brecha del registro actual es que el segmento logístico cuenta con una sola entrevista, por lo que sus hallazgos deben considerarse indicios iniciales y no conclusiones generalizables.
 
 ## 2.3. Needfinding
 
@@ -3022,7 +3027,7 @@ La Tabla 86 evidencia dos reglas: los botones usan verbos en imperativo y los es
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
-SafeFlow se distribuye como aplicación Android, por lo que el equivalente a las etiquetas SEO son los elementos de App Store Optimization (ASO) de su ficha en la tienda. La Tabla 87 propone los valores. La landing page está fuera del alcance de esta entrega, por lo que no se definen sus etiquetas Title, Description, Keywords y Author.
+SafeFlow se distribuye como aplicación Android, por lo que el equivalente a las etiquetas SEO son los elementos de App Store Optimization (ASO) de su ficha en la tienda. La Tabla 87 propone los valores. Aunque en esta entrega ya se presenta el diseño de la landing page en la sección 3.1.3, sus etiquetas Title, Description, Keywords y Author quedan pendientes de definición para la implementación web.
 
 <p><strong>Tabla 87.</strong> <em>Elementos ASO de la ficha de SafeFlow</em></p>
 
@@ -3036,7 +3041,7 @@ SafeFlow se distribuye como aplicación Android, por lo que el equivalente a las
 
 <p><strong><em>Nota.</em></strong> Textos propuestos por el equipo para la publicación futura; el título y el subtítulo respetan los límites habituales de la tienda.</p>
 
-> Pendiente: SEO Tags y Meta Tags de la landing page (Title, Description, Keywords, Author); la landing page está fuera del alcance de esta entrega.
+> Pendiente: SEO Tags y Meta Tags de la landing page (Title, Description, Keywords, Author), que se definirán junto con su implementación web.
 
 La Tabla 87 mantiene coherencia con el producto real: menciona únicamente capacidades diseñadas (inventario, monitoreo, alertas, despachos y permisos) y usa el vocabulario del dominio para que los términos de búsqueda coincidan con lo que el usuario espera encontrar.
 
@@ -3075,15 +3080,103 @@ La Figura 51 confirma que existe una sola salida común (Cuenta) y que el rol de
 
 ### 3.1.3. Landing Page UI Design
 
-El alcance de esta entrega comprende únicamente la aplicación móvil Android de SafeFlow. En el archivo de Figma no existe un diseño de landing page, ni para escritorio ni para navegador móvil, por lo que no se presentan wireframes ni mock-ups de ese producto. Las decisiones de estilo de la sección 3.1.1 y de arquitectura de información de la sección 3.1.2 se han formulado de modo que puedan reutilizarse cuando se diseñe una landing page.
+La landing page de SafeFlow presenta la propuesta de valor de la solución para empresas farmacéuticas, alimentarias y operadores logísticos que necesitan controlar su cadena de frío. Su arquitectura de información organiza el contenido en una navegación principal, una sección hero, la propuesta de valor, las funcionalidades, el flujo de uso, la tecnología, los planes, los beneficios, el equipo, los sectores beneficiados, las preguntas frecuentes y un formulario de contacto. El diseño mantiene el lenguaje visual definido en la sección 3.1.1 y utiliza llamadas a la acción orientadas a solicitar una demostración o iniciar una conversación comercial.
 
 #### 3.1.3.1. Wireframe
 
-> Pendiente: wireframe y mock-up de la landing page
+Los wireframes de la landing page representan la estructura, la jerarquía y la distribución de los contenidos antes de aplicar colores, fotografías e iconografía. Se definieron siete bloques de baja fidelidad para comprobar el recorrido completo de la página: encabezado y hero, propuesta de valor, funcionalidades y proceso, tecnología y confianza, planes, beneficios y equipo, y preguntas frecuentes con contacto y pie de página. La navegación superior permanece visible como referencia y las llamadas a la acción se ubican en los puntos de conversión principales.
+
+La Figura 52 presenta el wireframe general de la landing page: encabezado, hero, tarjetas de funcionalidades, bloque de preguntas frecuentes y pie de página.
+
+<p><strong>Figura 52.</strong> <em>Wireframe general de la landing page</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe1.png" alt="Wireframe general de la landing page de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
+
+La Figura 53 muestra el bloque de contacto, con un formulario de datos a la izquierda y la información de contacto junto con un espacio para mapa o ubicación a la derecha.
+
+<p><strong>Figura 53.</strong> <em>Wireframe del formulario de contacto</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe2.png" alt="Wireframe del formulario de contacto de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
+
+La Figura 54 organiza la propuesta de valor y la vista de plataforma mediante tarjetas informativas, una imagen de apoyo y una galería de dispositivos o pantallas.
+
+<p><strong>Figura 54.</strong> <em>Wireframe de la propuesta de valor y la plataforma</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe3.png" alt="Wireframe de la propuesta de valor y la plataforma de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
+
+La Figura 55 presenta la distribución de las funcionalidades, el proceso de uso y los elementos de confianza, con tarjetas repetibles y una imagen destacada.
+
+<p><strong>Figura 55.</strong> <em>Wireframe de funcionalidades, proceso y tecnología</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe4.png" alt="Wireframe de funcionalidades, proceso y tecnología de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
+
+La Figura 56 muestra la sección de planes, con tres alternativas de servicio y sus respectivas listas de beneficios y llamadas a la acción.
+
+<p><strong>Figura 56.</strong> <em>Wireframe de planes comerciales</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe5.png" alt="Wireframe de los planes comerciales de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
+
+La Figura 57 presenta los beneficios de SafeFlow, la descripción del equipo y los sectores que pueden utilizar la solución, organizados en bloques comparables.
+
+<p><strong>Figura 57.</strong> <em>Wireframe de beneficios, equipo y sectores</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe6.png" alt="Wireframe de beneficios, equipo y sectores de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
+
+La Figura 58 cierra el recorrido con las preguntas frecuentes, la llamada a la acción final, el formulario de contacto y el pie de página con enlaces de navegación.
+
+<p><strong>Figura 58.</strong> <em>Wireframe de preguntas frecuentes y cierre</em></p>
+
+<div align="center"><img src="assets/chapter-03/wireframe7.png" alt="Wireframe de preguntas frecuentes y cierre de la landing page de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir de la estructura de la landing page de SafeFlow.</p>
 
 #### 3.1.3.2. Mock-up
 
-> Pendiente: wireframe y mock-up de la landing page
+Los mock-ups aplican el sistema visual de SafeFlow a la estructura definida en los wireframes. La propuesta utiliza una base clara, azul como color de acción y confianza, naranja para destacar llamadas de atención y fotografías relacionadas con almacenes, transporte y operaciones de cadena de frío. Las composiciones priorizan una lectura progresiva: primero se comunica el problema y la propuesta de valor, luego se explican las capacidades y finalmente se facilita la conversión mediante planes, preguntas frecuentes y contacto.
+
+La Figura 59 muestra la sección de funcionalidades y el proceso de uso de SafeFlow, con tarjetas para el monitoreo, las alertas, el inventario, la trazabilidad, la aplicación móvil y la seguridad.
+
+<p><strong>Figura 59.</strong> <em>Mock-up de funcionalidades y proceso de uso</em></p>
+
+<div align="center"><img src="assets/chapter-03/mock1.png" alt="Mock-up de funcionalidades y proceso de uso de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. La composición aplica el sistema visual de SafeFlow a la landing page.</p>
+
+La Figura 60 presenta el hero de la landing page y la propuesta de valor: el mensaje principal, la llamada a ver una demostración, los segmentos atendidos, los resultados esperados y una vista de la plataforma.
+
+<p><strong>Figura 60.</strong> <em>Mock-up del hero y la propuesta de valor</em></p>
+
+<div align="center"><img src="assets/chapter-03/mock2.png" alt="Mock-up del hero y la propuesta de valor de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. La composición aplica el sistema visual de SafeFlow a la landing page.</p>
+
+La Figura 61 muestra las preguntas frecuentes y el cierre de conversión, incluyendo el formulario para dejar los datos, los canales de contacto, la ubicación y el pie de página.
+
+<p><strong>Figura 61.</strong> <em>Mock-up de preguntas frecuentes y contacto</em></p>
+
+<div align="center"><img src="assets/chapter-03/mock3.png" alt="Mock-up de preguntas frecuentes y contacto de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. La composición aplica el sistema visual de SafeFlow a la landing page.</p>
+
+La Figura 62 presenta los modelos de negocio y los planes comerciales, junto con los beneficios, el equipo y los sectores beneficiados por SafeFlow.
+
+<p><strong>Figura 62.</strong> <em>Mock-up de planes, beneficios y sectores</em></p>
+
+<div align="center"><img src="assets/chapter-03/mock4.png" alt="Mock-up de planes, beneficios y sectores de SafeFlow" width="900"/></div>
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. La composición aplica el sistema visual de SafeFlow a la landing page.</p>
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
@@ -3093,121 +3186,121 @@ Esta sección presenta la propuesta visual y de interacción de la aplicación m
 
 Los wireframes representan la estructura de cada pantalla sin color de marca ni imágenes: bloques de encabezado, filtros, tarjetas, campos y barra inferior, ubicados según la arquitectura de información de 3.1.2. Existe un wireframe por cada mock-up y estado, en la página de wireframes de Figma, organizada por actor (VISITANTE, USUARIO AUTENTICADO, OPERADOR, SUPERVISOR, ADMIN) y por dispositivo (celular de 390 x 844 dp y tableta de 768 x 1024 dp) sobre una grilla de cinco columnas. Los wireframes aplican el principio de consistencia (misma posición del encabezado, el filtro y la acción principal en todas las pantallas), el diseño inclusivo (objetivos táctiles de 48 dp y etiquetas visibles) y la jerarquía de la información (el valor térmico se destaca sobre el detalle). Las figuras siguientes muestran una pantalla representativa por cada tarea principal; el conjunto completo está en el archivo de Figma [SafeFlow](https://www.figma.com/design/ebf6YJVRmfKTHq2EDicpix/Safeflow?node-id=3-3705).
 
-La Figura 52 presenta el wireframe de Iniciar sesión (VISITANTE, US-31): campos de correo y contraseña, acción principal y acceso a la recuperación de acceso.
+La Figura 63 presenta el wireframe de Iniciar sesión (VISITANTE, US-31): campos de correo y contraseña, acción principal y acceso a la recuperación de acceso.
 
-<p><strong>Figura 52.</strong> <em>Wireframe Iniciar sesión</em></p>
+<p><strong>Figura 63.</strong> <em>Wireframe Iniciar sesión</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-iniciar-sesion.png" alt="Wireframe de Iniciar sesión" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección VISITANTE.</p>
 
-La Figura 53 presenta el wireframe de Crear cuenta (VISITANTE, US-30): campos de registro, aceptación de términos y acción principal.
+La Figura 64 presenta el wireframe de Crear cuenta (VISITANTE, US-30): campos de registro, aceptación de términos y acción principal.
 
-<p><strong>Figura 53.</strong> <em>Wireframe Crear cuenta</em></p>
+<p><strong>Figura 64.</strong> <em>Wireframe Crear cuenta</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-crear-cuenta.png" alt="Wireframe de Crear cuenta" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección VISITANTE.</p>
 
-La Figura 54 presenta el wireframe de Resumen (SUPERVISOR, US-13): indicadores consolidados de productos, alertas y despachos.
+La Figura 65 presenta el wireframe de Resumen (SUPERVISOR, US-13): indicadores consolidados de productos, alertas y despachos.
 
-<p><strong>Figura 54.</strong> <em>Wireframe Resumen</em></p>
+<p><strong>Figura 65.</strong> <em>Wireframe Resumen</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-resumen.png" alt="Wireframe de Resumen" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección SUPERVISOR.</p>
 
-La Figura 55 presenta el wireframe de Inventario (OPERADOR, US-10): chips de filtro por estado, acción Registrar producto y tarjetas con temperatura, rango y estado.
+La Figura 66 presenta el wireframe de Inventario (OPERADOR, US-10): chips de filtro por estado, acción Registrar producto y tarjetas con temperatura, rango y estado.
 
-<p><strong>Figura 55.</strong> <em>Wireframe Inventario</em></p>
+<p><strong>Figura 66.</strong> <em>Wireframe Inventario</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-inventario.png" alt="Wireframe de Inventario" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 56 presenta el wireframe de Registrar producto (OPERADOR, US-01): campos de nombre y rango térmico mínimo y máximo, con acción de guardado.
+La Figura 67 presenta el wireframe de Registrar producto (OPERADOR, US-01): campos de nombre y rango térmico mínimo y máximo, con acción de guardado.
 
-<p><strong>Figura 56.</strong> <em>Wireframe Registrar producto</em></p>
+<p><strong>Figura 67.</strong> <em>Wireframe Registrar producto</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-registrar-producto.png" alt="Wireframe de Registrar producto" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 57 presenta el wireframe de Detalle de producto (OPERADOR, US-03): temperatura actual, disponibilidad del sensor y datos del producto.
+La Figura 68 presenta el wireframe de Detalle de producto (OPERADOR, US-03): temperatura actual, disponibilidad del sensor y datos del producto.
 
-<p><strong>Figura 57.</strong> <em>Wireframe Detalle de producto</em></p>
+<p><strong>Figura 68.</strong> <em>Wireframe Detalle de producto</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-detalle-producto.png" alt="Wireframe de Detalle de producto" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 58 presenta el wireframe de Registrar lote (OPERADOR, US-19): campo de identificación del lote y producto al que se asocia.
+La Figura 69 presenta el wireframe de Registrar lote (OPERADOR, US-19): campo de identificación del lote y producto al que se asocia.
 
-<p><strong>Figura 58.</strong> <em>Wireframe Registrar lote</em></p>
+<p><strong>Figura 69.</strong> <em>Wireframe Registrar lote</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-registrar-lote.png" alt="Wireframe de Registrar lote" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 59 presenta el wireframe de Registrar ingreso (OPERADOR, US-02): stock actual y campo de cantidad de unidades que ingresan.
+La Figura 70 presenta el wireframe de Registrar ingreso (OPERADOR, US-02): stock actual y campo de cantidad de unidades que ingresan.
 
-<p><strong>Figura 59.</strong> <em>Wireframe Registrar ingreso</em></p>
+<p><strong>Figura 70.</strong> <em>Wireframe Registrar ingreso</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-registrar-ingreso.png" alt="Wireframe de Registrar ingreso" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 60 presenta el wireframe de Historial térmico (SUPERVISOR, US-17): selector de periodo y lista de lecturas con fecha, hora y estado.
+La Figura 71 presenta el wireframe de Historial térmico (SUPERVISOR, US-17): selector de periodo y lista de lecturas con fecha, hora y estado.
 
-<p><strong>Figura 60.</strong> <em>Wireframe Historial térmico</em></p>
+<p><strong>Figura 71.</strong> <em>Wireframe Historial térmico</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-historial-termico.png" alt="Wireframe de Historial térmico" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección SUPERVISOR.</p>
 
-La Figura 61 presenta el wireframe de Alertas (SUPERVISOR, US-55): alertas activas con severidad y acceso al detalle del incidente.
+La Figura 72 presenta el wireframe de Alertas (SUPERVISOR, US-55): alertas activas con severidad y acceso al detalle del incidente.
 
-<p><strong>Figura 61.</strong> <em>Wireframe Alertas</em></p>
+<p><strong>Figura 72.</strong> <em>Wireframe Alertas</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-alertas.png" alt="Wireframe de Alertas" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección SUPERVISOR.</p>
 
-La Figura 62 presenta el wireframe de Despachos (OPERADOR, US-25): chips por estado, acción Registrar despacho y tarjetas de cada despacho.
+La Figura 73 presenta el wireframe de Despachos (OPERADOR, US-25): chips por estado, acción Registrar despacho y tarjetas de cada despacho.
 
-<p><strong>Figura 62.</strong> <em>Wireframe Despachos</em></p>
+<p><strong>Figura 73.</strong> <em>Wireframe Despachos</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-despachos.png" alt="Wireframe de Despachos" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 63 presenta el wireframe de Validación del despacho (OPERADOR, US-47): resultado de la condición térmica y acciones para continuar, confirmar o volver.
+La Figura 74 presenta el wireframe de Validación del despacho (OPERADOR, US-47): resultado de la condición térmica y acciones para continuar, confirmar o volver.
 
-<p><strong>Figura 63.</strong> <em>Wireframe Validación del despacho</em></p>
+<p><strong>Figura 74.</strong> <em>Wireframe Validación del despacho</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-validacion-despacho.png" alt="Wireframe de Validación del despacho" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 64 presenta el wireframe de Permisos por rol (ADMIN, US-18): operaciones configurables por rol y acción de guardado.
+La Figura 75 presenta el wireframe de Permisos por rol (ADMIN, US-18): operaciones configurables por rol y acción de guardado.
 
-<p><strong>Figura 64.</strong> <em>Wireframe Permisos por rol</em></p>
+<p><strong>Figura 75.</strong> <em>Wireframe Permisos por rol</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-permisos-por-rol.png" alt="Wireframe de Permisos por rol" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección ADMIN.</p>
 
-La Figura 65 presenta el wireframe de Registrar despacho (OPERADOR, US-61): selección de producto, lote, cantidad, destino y sensor.
+La Figura 76 presenta el wireframe de Registrar despacho (OPERADOR, US-61): selección de producto, lote, cantidad, destino y sensor.
 
-<p><strong>Figura 65.</strong> <em>Wireframe Registrar despacho</em></p>
+<p><strong>Figura 76.</strong> <em>Wireframe Registrar despacho</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-registrar-despacho.png" alt="Wireframe de Registrar despacho" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de la página safeflow_wireframes de Figma, sección OPERADOR.</p>
 
-La Figura 66 presenta el wireframe de Inventario en tableta (OPERADOR, US-34): la misma pantalla de inventario adaptada al ancho de 768 dp.
+La Figura 77 presenta el wireframe de Inventario en tableta (OPERADOR, US-34): la misma pantalla de inventario adaptada al ancho de 768 dp.
 
-<p><strong>Figura 66.</strong> <em>Wireframe Inventario en tableta</em></p>
+<p><strong>Figura 77.</strong> <em>Wireframe Inventario en tableta</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireframe-inventario-tableta.png" alt="Wireframe de Inventario en tableta" width="480"/></div>
 
@@ -3217,139 +3310,139 @@ La Figura 66 presenta el wireframe de Inventario en tableta (OPERADOR, US-34): l
 
 Los wireflows enlazan los wireframes de una misma tarea para mostrar cómo cambia la pantalla tras cada interacción. Cada wireflow parte de un actor y de una pantalla de inicio, representa las decisiones del sistema con nodos de decisión y recorre tanto la ruta esperada como las alternativas de error, vacío o bloqueo, de modo que cada estado diseñado queda alcanzable desde su inicio. Se elaboró un wireflow por objetivo de usuario (17 en total, versión celular), en una sola página de Figma ([SafeFlow](https://www.figma.com/design/ebf6YJVRmfKTHq2EDicpix/Safeflow?node-id=3-3704)). Las figuras siguientes los presentan en el orden de la página.
 
-Por ejemplo, la Figura 78 muestra el flujo de validación previa al envío: el operador revisa un despacho en preparación y el sistema evalúa la condición térmica. Si está dentro del rango, el despacho puede continuar; si está en riesgo, exige una confirmación autorizada que conserva la advertencia térmica; y si no hay datos térmicos, el envío se impide y no puede confirmarse ni omitirse la validación.
+Por ejemplo, la Figura 89 muestra el flujo de validación previa al envío: el operador revisa un despacho en preparación y el sistema evalúa la condición térmica. Si está dentro del rango, el despacho puede continuar; si está en riesgo, exige una confirmación autorizada que conserva la advertencia térmica; y si no hay datos térmicos, el envío se impide y no puede confirmarse ni omitirse la validación.
 
-La Figura 67 corresponde al wireflow de Crear cuenta (VISITANTE; cobertura de US-30).
+La Figura 78 corresponde al wireflow de Crear cuenta (VISITANTE; cobertura de US-30).
 
-<p><strong>Figura 67.</strong> <em>Wireflow Crear cuenta</em></p>
+<p><strong>Figura 78.</strong> <em>Wireflow Crear cuenta</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-01-crear-cuenta.png" alt="Wireflow Crear cuenta" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Crear cuenta para el actor VISITANTE.</p>
 
-La Figura 68 corresponde al wireflow de Iniciar sesión (VISITANTE; cobertura de US-31).
+La Figura 79 corresponde al wireflow de Iniciar sesión (VISITANTE; cobertura de US-31).
 
-<p><strong>Figura 68.</strong> <em>Wireflow Iniciar sesión</em></p>
+<p><strong>Figura 79.</strong> <em>Wireflow Iniciar sesión</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-02-iniciar-sesion.png" alt="Wireflow Iniciar sesión" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Iniciar sesión para el actor VISITANTE.</p>
 
-La Figura 69 corresponde al wireflow de Productos e inventario (OPERADOR; cobertura de US-01 y US-10).
+La Figura 80 corresponde al wireflow de Productos e inventario (OPERADOR; cobertura de US-01 y US-10).
 
-<p><strong>Figura 69.</strong> <em>Wireflow Productos e inventario</em></p>
+<p><strong>Figura 80.</strong> <em>Wireflow Productos e inventario</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-03-productos-inventario.png" alt="Wireflow Productos e inventario" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Productos e inventario para el actor OPERADOR.</p>
 
-La Figura 70 corresponde al wireflow de Lotes (OPERADOR; cobertura de US-19).
+La Figura 81 corresponde al wireflow de Lotes (OPERADOR; cobertura de US-19).
 
-<p><strong>Figura 70.</strong> <em>Wireflow Lotes</em></p>
+<p><strong>Figura 81.</strong> <em>Wireflow Lotes</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-04-lotes.png" alt="Wireflow Lotes" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Lotes para el actor OPERADOR.</p>
 
-La Figura 71 corresponde al wireflow de Ingresos de stock (OPERADOR; cobertura de US-02).
+La Figura 82 corresponde al wireflow de Ingresos de stock (OPERADOR; cobertura de US-02).
 
-<p><strong>Figura 71.</strong> <em>Wireflow Ingresos de stock</em></p>
+<p><strong>Figura 82.</strong> <em>Wireflow Ingresos de stock</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-05-ingresos-stock.png" alt="Wireflow Ingresos de stock" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Ingresos de stock para el actor OPERADOR.</p>
 
-La Figura 72 corresponde al wireflow de Monitoreo térmico (OPERADOR; cobertura de US-03 y US-52).
+La Figura 83 corresponde al wireflow de Monitoreo térmico (OPERADOR; cobertura de US-03 y US-52).
 
-<p><strong>Figura 72.</strong> <em>Wireflow Monitoreo térmico</em></p>
+<p><strong>Figura 83.</strong> <em>Wireflow Monitoreo térmico</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-06-monitoreo-termico.png" alt="Wireflow Monitoreo térmico" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Monitoreo térmico para el actor OPERADOR.</p>
 
-La Figura 73 corresponde al wireflow de Riesgos y anomalías (SUPERVISOR; cobertura de US-04 y US-20).
+La Figura 84 corresponde al wireflow de Riesgos y anomalías (SUPERVISOR; cobertura de US-04 y US-20).
 
-<p><strong>Figura 73.</strong> <em>Wireflow Riesgos y anomalías</em></p>
+<p><strong>Figura 84.</strong> <em>Wireflow Riesgos y anomalías</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-07-riesgos-anomalias.png" alt="Wireflow Riesgos y anomalías" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Riesgos y anomalías para el actor SUPERVISOR.</p>
 
-La Figura 74 corresponde al wireflow de Historial térmico (SUPERVISOR; cobertura de US-17).
+La Figura 85 corresponde al wireflow de Historial térmico (SUPERVISOR; cobertura de US-17).
 
-<p><strong>Figura 74.</strong> <em>Wireflow Historial térmico</em></p>
+<p><strong>Figura 85.</strong> <em>Wireflow Historial térmico</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-08-historial-termico.png" alt="Wireflow Historial térmico" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Historial térmico para el actor SUPERVISOR.</p>
 
-La Figura 75 corresponde al wireflow de Alertas e incidencias (SUPERVISOR; cobertura de US-05, US-06 y US-55).
+La Figura 86 corresponde al wireflow de Alertas e incidencias (SUPERVISOR; cobertura de US-05, US-06 y US-55).
 
-<p><strong>Figura 75.</strong> <em>Wireflow Alertas e incidencias</em></p>
+<p><strong>Figura 86.</strong> <em>Wireflow Alertas e incidencias</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-09-alertas-incidencias.png" alt="Wireflow Alertas e incidencias" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Alertas e incidencias para el actor SUPERVISOR.</p>
 
-La Figura 76 corresponde al wireflow de Seguimiento de despachos (OPERADOR; cobertura de US-07 y US-25).
+La Figura 87 corresponde al wireflow de Seguimiento de despachos (OPERADOR; cobertura de US-07 y US-25).
 
-<p><strong>Figura 76.</strong> <em>Wireflow Seguimiento de despachos</em></p>
+<p><strong>Figura 87.</strong> <em>Wireflow Seguimiento de despachos</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-10-seguimiento-despachos.png" alt="Wireflow Seguimiento de despachos" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Seguimiento de despachos para el actor OPERADOR.</p>
 
-La Figura 77 corresponde al wireflow de Confirmar entrega (OPERADOR; cobertura de US-24).
+La Figura 88 corresponde al wireflow de Confirmar entrega (OPERADOR; cobertura de US-24).
 
-<p><strong>Figura 77.</strong> <em>Wireflow Confirmar entrega</em></p>
+<p><strong>Figura 88.</strong> <em>Wireflow Confirmar entrega</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-11-confirmar-entrega.png" alt="Wireflow Confirmar entrega" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Confirmar entrega para el actor OPERADOR.</p>
 
-La Figura 78 corresponde al wireflow de Validación previa al envío (OPERADOR; cobertura de US-47).
+La Figura 89 corresponde al wireflow de Validación previa al envío (OPERADOR; cobertura de US-47).
 
-<p><strong>Figura 78.</strong> <em>Wireflow Validación previa al envío</em></p>
+<p><strong>Figura 89.</strong> <em>Wireflow Validación previa al envío</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-12-validacion-previa-envio.png" alt="Wireflow Validación previa al envío" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Validación previa al envío para el actor OPERADOR.</p>
 
-La Figura 79 corresponde al wireflow de Resumen operativo (SUPERVISOR; cobertura de US-13).
+La Figura 90 corresponde al wireflow de Resumen operativo (SUPERVISOR; cobertura de US-13).
 
-<p><strong>Figura 79.</strong> <em>Wireflow Resumen operativo</em></p>
+<p><strong>Figura 90.</strong> <em>Wireflow Resumen operativo</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-13-resumen-operativo.png" alt="Wireflow Resumen operativo" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Resumen operativo para el actor SUPERVISOR.</p>
 
-La Figura 80 corresponde al wireflow de Permisos por rol (ADMIN; cobertura de US-18).
+La Figura 91 corresponde al wireflow de Permisos por rol (ADMIN; cobertura de US-18).
 
-<p><strong>Figura 80.</strong> <em>Wireflow Permisos por rol</em></p>
+<p><strong>Figura 91.</strong> <em>Wireflow Permisos por rol</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-14-permisos-por-rol.png" alt="Wireflow Permisos por rol" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Permisos por rol para el actor ADMIN.</p>
 
-La Figura 81 corresponde al wireflow de Cuenta y sesión compartida (USUARIO AUTENTICADO; cobertura de US-42).
+La Figura 92 corresponde al wireflow de Cuenta y sesión compartida (USUARIO AUTENTICADO; cobertura de US-42).
 
-<p><strong>Figura 81.</strong> <em>Wireflow Cuenta y sesión compartida</em></p>
+<p><strong>Figura 92.</strong> <em>Wireflow Cuenta y sesión compartida</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-15-cuenta-sesion.png" alt="Wireflow Cuenta y sesión compartida" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Cuenta y sesión compartida para el actor USUARIO AUTENTICADO.</p>
 
-La Figura 82 corresponde al wireflow de Uso móvil en tableta (USUARIO AUTENTICADO; cobertura de US-34).
+La Figura 93 corresponde al wireflow de Uso móvil en tableta (USUARIO AUTENTICADO; cobertura de US-34).
 
-<p><strong>Figura 82.</strong> <em>Wireflow Uso móvil en tableta</em></p>
+<p><strong>Figura 93.</strong> <em>Wireflow Uso móvil en tableta</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-16-uso-movil-tableta.png" alt="Wireflow Uso móvil en tableta" width="900"/></div>
 
 <p><strong><em>Nota.</em></strong> Página safeflow_wireflows de Figma. Flujo de Uso móvil en tableta para el actor USUARIO AUTENTICADO.</p>
 
-La Figura 83 corresponde al wireflow de Registrar despacho (OPERADOR; cobertura de US-61).
+La Figura 94 corresponde al wireflow de Registrar despacho (OPERADOR; cobertura de US-61).
 
-<p><strong>Figura 83.</strong> <em>Wireflow Registrar despacho</em></p>
+<p><strong>Figura 94.</strong> <em>Wireflow Registrar despacho</em></p>
 
 <div align="center"><img src="assets/chapter-03/wireflow-17-registrar-despacho.png" alt="Wireflow Registrar despacho" width="900"/></div>
 
@@ -3363,17 +3456,17 @@ Los mock-ups aplican el sistema visual de 3.1.1 a las 17 pantallas. A continuaci
 
 El visitante aún no tiene sesión y solo accede a dos pantallas, con la marca y la frase de apoyo como encabezado.
 
-La Figura 84 muestra la pantalla Iniciar sesión (US-31): correo y contraseña con texto de ayuda, el botón primario «Iniciar sesión», el secundario «Crear cuenta» y el tonal «Recuperar acceso». Sus estados cubren datos completos, credenciales incorrectas (error en el campo) y bloqueo temporal.
+La Figura 95 muestra la pantalla Iniciar sesión (US-31): correo y contraseña con texto de ayuda, el botón primario «Iniciar sesión», el secundario «Crear cuenta» y el tonal «Recuperar acceso». Sus estados cubren datos completos, credenciales incorrectas (error en el campo) y bloqueo temporal.
 
-<p><strong>Figura 84.</strong> <em>Mock-up Iniciar sesión</em></p>
+<p><strong>Figura 95.</strong> <em>Mock-up Iniciar sesión</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-iniciar-sesion.png" alt="Pantalla Iniciar sesión con logotipo SafeFlow, campos de correo y contraseña y botones Iniciar sesión, Crear cuenta y Recuperar acceso" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 01 VISITANTE en Figma.</p>
 
-La Figura 85 presenta Crear cuenta (US-30): correo, contraseña con la indicación de reglas de seguridad y casilla de aceptación de términos. Los estados incluyen correo ya existente y contraseña no admisible.
+La Figura 96 presenta Crear cuenta (US-30): correo, contraseña con la indicación de reglas de seguridad y casilla de aceptación de términos. Los estados incluyen correo ya existente y contraseña no admisible.
 
-<p><strong>Figura 85.</strong> <em>Mock-up Crear cuenta</em></p>
+<p><strong>Figura 96.</strong> <em>Mock-up Crear cuenta</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-crear-cuenta.png" alt="Pantalla Crear cuenta con campos de correo y contraseña, casilla de términos y botones Crear cuenta y Ya tengo cuenta" width="260"/></div>
 
@@ -3383,65 +3476,65 @@ La Figura 85 presenta Crear cuenta (US-30): correo, contraseña con la indicaci�
 
 El OPERADOR gestiona inventario y despachos con la barra inferior Inventario, Despachos y Cuenta.
 
-La Figura 86 muestra Inventario (US-10): título «Productos registrados», chips Todos, Normal y En riesgo, el botón «Registrar producto» y tarjetas con nombre, código, unidades, temperatura actual y rango del producto. El color del icono y de la etiqueta (verde, ámbar y rojo) acompaña al texto de estado. Tiene estados con datos completos, inventario vacío y consulta por estado.
+La Figura 97 muestra Inventario (US-10): título «Productos registrados», chips Todos, Normal y En riesgo, el botón «Registrar producto» y tarjetas con nombre, código, unidades, temperatura actual y rango del producto. El color del icono y de la etiqueta (verde, ámbar y rojo) acompaña al texto de estado. Tiene estados con datos completos, inventario vacío y consulta por estado.
 
-<p><strong>Figura 86.</strong> <em>Mock-up Inventario</em></p>
+<p><strong>Figura 97.</strong> <em>Mock-up Inventario</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-inventario.png" alt="Pantalla Inventario con filtros Todos, Normal y En riesgo y tarjetas de Vacuna A, Yogur natural e Insulina B con su temperatura" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 87 presenta Registrar producto (US-01), con nombre y rango de temperatura mínima y máxima, cada campo marcado como requerido. Sus estados incluyen datos incompletos y rango invertido.
+La Figura 98 presenta Registrar producto (US-01), con nombre y rango de temperatura mínima y máxima, cada campo marcado como requerido. Sus estados incluyen datos incompletos y rango invertido.
 
-<p><strong>Figura 87.</strong> <em>Mock-up Registrar producto</em></p>
+<p><strong>Figura 98.</strong> <em>Mock-up Registrar producto</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-registrar-producto.png" alt="Formulario Registrar producto con nombre y temperaturas mínima y máxima, botones Registrar producto y Cancelar" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 88 muestra Detalle de producto (US-03 y US-10): temperatura actual, sensor, disponibilidad y hora, un aviso «Lectura actualizada» que indica que no se requiere transcripción manual, accesos a «Registrar lote» y «Registrar ingreso» y la lista de lotes. Sus estados incluyen sensor desconectado, sin lotes y excursión térmica.
+La Figura 99 muestra Detalle de producto (US-03 y US-10): temperatura actual, sensor, disponibilidad y hora, un aviso «Lectura actualizada» que indica que no se requiere transcripción manual, accesos a «Registrar lote» y «Registrar ingreso» y la lista de lotes. Sus estados incluyen sensor desconectado, sin lotes y excursión térmica.
 
-<p><strong>Figura 88.</strong> <em>Mock-up Detalle de producto</em></p>
+<p><strong>Figura 99.</strong> <em>Mock-up Detalle de producto</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-detalle-producto.png" alt="Detalle de la Vacuna A con temperatura 5.1 grados, aviso de lectura actualizada, botones para registrar lote e ingreso y lote L-001" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 89 corresponde a Registrar lote (US-19): una tarjeta del producto asociado y el campo de identificación del lote. Sus estados incluyen identificación vacía y lote existente.
+La Figura 100 corresponde a Registrar lote (US-19): una tarjeta del producto asociado y el campo de identificación del lote. Sus estados incluyen identificación vacía y lote existente.
 
-<p><strong>Figura 89.</strong> <em>Mock-up Registrar lote</em></p>
+<p><strong>Figura 100.</strong> <em>Mock-up Registrar lote</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-registrar-lote.png" alt="Formulario Registrar lote con tarjeta de Vacuna A y campo Identificación del lote" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 90 muestra Registrar ingreso (US-02): el stock antes del ingreso («120 unidades») y el campo de cantidad. Sus estados incluyen cantidad no positiva y producto inexistente.
+La Figura 101 muestra Registrar ingreso (US-02): el stock antes del ingreso («120 unidades») y el campo de cantidad. Sus estados incluyen cantidad no positiva y producto inexistente.
 
-<p><strong>Figura 90.</strong> <em>Mock-up Registrar ingreso</em></p>
+<p><strong>Figura 101.</strong> <em>Mock-up Registrar ingreso</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-registrar-ingreso.png" alt="Formulario Registrar ingreso con stock actual de 120 unidades y campo de cantidad de unidades" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 91 presenta Despachos (US-25): chips Todos, En tránsito y Entregados, el botón «Registrar despacho» y tarjetas con producto, destino, temperatura, estado y sensor. Admite estados con datos completos, sin envíos y consulta por estado.
+La Figura 102 presenta Despachos (US-25): chips Todos, En tránsito y Entregados, el botón «Registrar despacho» y tarjetas con producto, destino, temperatura, estado y sensor. Admite estados con datos completos, sin envíos y consulta por estado.
 
-<p><strong>Figura 91.</strong> <em>Mock-up Despachos</em></p>
+<p><strong>Figura 102.</strong> <em>Mock-up Despachos</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-despachos.png" alt="Pantalla Despachos con filtros y tarjetas de los despachos D-001, D-002 y D-003" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 92 muestra Registrar despacho (US-61): selectores de producto y de sensor, campos de lote, cantidad y destino, y los botones de registro y cancelación. El despacho queda en preparación hasta validar su condición térmica. Sus estados incluyen datos incompletos, cantidad no válida y referencias inconsistentes.
+La Figura 103 muestra Registrar despacho (US-61): selectores de producto y de sensor, campos de lote, cantidad y destino, y los botones de registro y cancelación. El despacho queda en preparación hasta validar su condición térmica. Sus estados incluyen datos incompletos, cantidad no válida y referencias inconsistentes.
 
-<p><strong>Figura 92.</strong> <em>Mock-up Registrar despacho</em></p>
+<p><strong>Figura 103.</strong> <em>Mock-up Registrar despacho</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-registrar-despacho.png" alt="Formulario Registrar despacho con selección de producto, lote, cantidad, destino y selección de sensor" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 03 OPERADOR en Figma.</p>
 
-La Figura 93 presenta Validación del despacho (US-47): el producto, su rango, la última temperatura y un aviso verde «Condición térmica dentro del rango» con el botón «Continuar con el despacho». Los demás estados cubren riesgo con confirmación autorizada y bloqueo por falta de datos, y desde allí la entrega se confirma (US-24).
+La Figura 104 presenta Validación del despacho (US-47): el producto, su rango, la última temperatura y un aviso verde «Condición térmica dentro del rango» con el botón «Continuar con el despacho». Los demás estados cubren riesgo con confirmación autorizada y bloqueo por falta de datos, y desde allí la entrega se confirma (US-24).
 
-<p><strong>Figura 93.</strong> <em>Mock-up Validación del despacho</em></p>
+<p><strong>Figura 104.</strong> <em>Mock-up Validación del despacho</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-validacion-despacho.png" alt="Validación del despacho D-003 con temperatura 5.2 grados, aviso de condición térmica dentro del rango y botón Continuar con el despacho" width="260"/></div>
 
@@ -3451,25 +3544,25 @@ La Figura 93 presenta Validación del despacho (US-47): el producto, su rango, l
 
 El SUPERVISOR evalúa la situación operativa con la barra Resumen, Riesgos, Alertas y Cuenta.
 
-La Figura 94 muestra Resumen (US-13): un aviso crítico con la última anomalía y tarjetas de indicadores de productos, alertas activas y despachos. Tiene estados con datos, alcance por rol y ausencia de datos.
+La Figura 105 muestra Resumen (US-13): un aviso crítico con la última anomalía y tarjetas de indicadores de productos, alertas activas y despachos. Tiene estados con datos, alcance por rol y ausencia de datos.
 
-<p><strong>Figura 94.</strong> <em>Mock-up Resumen</em></p>
+<p><strong>Figura 105.</strong> <em>Mock-up Resumen</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-resumen.png" alt="Pantalla Resumen con aviso de anomalía térmica y tarjetas de productos registrados, alertas activas y despachos" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 04 SUPERVISOR en Figma.</p>
 
-La Figura 95 presenta Alertas (US-55 y US-05): chips Activas e Historial y tarjetas que distinguen la severidad (crítica y advertencia) e indican que se agrupan los avisos repetidos de una misma anomalía. Al abrir una alerta se llega al detalle de incidente, donde se registra la acción correctiva (US-06). Sus estados incluyen ausencia de alertas activas y alerta resuelta.
+La Figura 106 presenta Alertas (US-55 y US-05): chips Activas e Historial y tarjetas que distinguen la severidad (crítica y advertencia) e indican que se agrupan los avisos repetidos de una misma anomalía. Al abrir una alerta se llega al detalle de incidente, donde se registra la acción correctiva (US-06). Sus estados incluyen ausencia de alertas activas y alerta resuelta.
 
-<p><strong>Figura 95.</strong> <em>Mock-up Alertas</em></p>
+<p><strong>Figura 106.</strong> <em>Mock-up Alertas</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-alertas.png" alt="Pantalla Alertas con filtros Activas e Historial y las alertas A-001 crítica y A-002 de advertencia" width="260"/></div>
 
 <p><strong><em>Nota.</em></strong> Marco de celular de la sección 04 SUPERVISOR en Figma.</p>
 
-La Figura 96 muestra Historial térmico (US-17): el gráfico de evolución con la banda del rango del producto sombreada y la lista de lecturas en orden cronológico, con filtros Hoy y Periodo. Sus estados incluyen historial completo, ausencia de registros y consulta por periodo.
+La Figura 107 muestra Historial térmico (US-17): el gráfico de evolución con la banda del rango del producto sombreada y la lista de lecturas en orden cronológico, con filtros Hoy y Periodo. Sus estados incluyen historial completo, ausencia de registros y consulta por periodo.
 
-<p><strong>Figura 96.</strong> <em>Mock-up Historial térmico</em></p>
+<p><strong>Figura 107.</strong> <em>Mock-up Historial térmico</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-historial-termico.png" alt="Historial térmico de Insulina B con gráfico de evolución, banda del rango 2 a 8 grados y lecturas cronológicas" width="260"/></div>
 
@@ -3477,9 +3570,9 @@ La Figura 96 muestra Historial térmico (US-17): el gráfico de evolución con l
 
 ##### ADMIN
 
-La Figura 97 presenta Permisos por rol (US-18): un aviso que declara que la administración de permisos es exclusiva de ADMIN y no puede concederse a OPERADOR ni a SUPERVISOR, un selector de rol y casillas con las operaciones permitidas. Sus estados incluyen cambios guardados y rechazo de cambios no autorizados.
+La Figura 108 presenta Permisos por rol (US-18): un aviso que declara que la administración de permisos es exclusiva de ADMIN y no puede concederse a OPERADOR ni a SUPERVISOR, un selector de rol y casillas con las operaciones permitidas. Sus estados incluyen cambios guardados y rechazo de cambios no autorizados.
 
-<p><strong>Figura 97.</strong> <em>Mock-up Permisos por rol</em></p>
+<p><strong>Figura 108.</strong> <em>Mock-up Permisos por rol</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-permisos-por-rol.png" alt="Pantalla Permisos por rol con aviso de administración exclusiva de ADMIN y casillas de operaciones del rol OPERADOR" width="260"/></div>
 
@@ -3487,9 +3580,9 @@ La Figura 97 presenta Permisos por rol (US-18): un aviso que declara que la admi
 
 ##### Versión de tableta
 
-La Figura 98 muestra Inventario en tableta (US-34). La estructura es idéntica a la del celular; las tarjetas se distribuyen en dos columnas y la barra inferior se centra, para aprovechar el ancho sin cambiar el modelo mental del usuario. Las pantallas de tableta existen para los 17 destinos y sus estados.
+La Figura 109 muestra Inventario en tableta (US-34). La estructura es idéntica a la del celular; las tarjetas se distribuyen en dos columnas y la barra inferior se centra, para aprovechar el ancho sin cambiar el modelo mental del usuario. Las pantallas de tableta existen para los 17 destinos y sus estados.
 
-<p><strong>Figura 98.</strong> <em>Mock-up Inventario en tableta</em></p>
+<p><strong>Figura 109.</strong> <em>Mock-up Inventario en tableta</em></p>
 
 <div align="center"><img src="assets/chapter-03/mockup-inventario-tableta.png" alt="Pantalla Inventario en tableta con tarjetas de producto en dos columnas y barra inferior" width="480"/></div>
 
@@ -3501,33 +3594,33 @@ Como conjunto, los 15 mock-ups muestran que los tres roles comparten encabezado,
 
 Los flujos de usuario describen, para un objetivo concreto, la ruta esperada (happy path) y las rutas alternativas (unhappy paths) entre las pantallas diseñadas y los estados de sus marcos. Se presentan cuatro objetivos de usuario; los nodos de pantalla coinciden con los nombres de los mock-ups de 3.1.4.3.
 
-**Objetivo 1: Registrar producto y lote (OPERADOR).** El OPERADOR quiere dejar un producto con su rango de temperatura y un lote asociado para que pueda monitorearse. Parte de Inventario, abre el formulario, y el sistema valida que el nombre exista y que el rango sea coherente (mínima menor que máxima). Si falla, permanece en el formulario con el error; si tiene éxito, se emite Producto registrado y puede registrar el lote desde el detalle, donde una identificación vacía o repetida produce error. La Figura 99 lo resume.
+**Objetivo 1: Registrar producto y lote (OPERADOR).** El OPERADOR quiere dejar un producto con su rango de temperatura y un lote asociado para que pueda monitorearse. Parte de Inventario, abre el formulario, y el sistema valida que el nombre exista y que el rango sea coherente (mínima menor que máxima). Si falla, permanece en el formulario con el error; si tiene éxito, se emite Producto registrado y puede registrar el lote desde el detalle, donde una identificación vacía o repetida produce error. La Figura 110 lo resume.
 
-<p><strong>Figura 99.</strong> <em>User flow: Registrar producto y lote</em></p>
+<p><strong>Figura 110.</strong> <em>User flow: Registrar producto y lote</em></p>
 
 <div align="center"><img src="assets/diagrams/flujo-producto-lote.png" alt="User flow: Registrar producto y lote" width="533"/></div>
 
 <p><strong><em>Nota.</em></strong> Elaboración propia a partir de los mock-ups Registrar producto, Detalle de producto y Registrar lote.</p>
 
-**Objetivo 2: Registrar despacho, validar la condición térmica y confirmar la entrega (OPERADOR).** El OPERADOR quiere enviar una carga con la seguridad de que su temperatura es admisible. Registra el despacho (queda en preparación), solicita la validación y la aplicación evalúa las mediciones del sensor: si están dentro del rango, se puede continuar con el envío; si hay riesgo, solo un usuario autorizado puede confirmar la continuación; si no hay datos, el envío se bloquea. Luego del envío, el OPERADOR confirma la entrega. La Figura 100 muestra el recorrido.
+**Objetivo 2: Registrar despacho, validar la condición térmica y confirmar la entrega (OPERADOR).** El OPERADOR quiere enviar una carga con la seguridad de que su temperatura es admisible. Registra el despacho (queda en preparación), solicita la validación y la aplicación evalúa las mediciones del sensor: si están dentro del rango, se puede continuar con el envío; si hay riesgo, solo un usuario autorizado puede confirmar la continuación; si no hay datos, el envío se bloquea. Luego del envío, el OPERADOR confirma la entrega. La Figura 111 muestra el recorrido.
 
-<p><strong>Figura 100.</strong> <em>User flow: Registrar despacho y confirmar entrega</em></p>
+<p><strong>Figura 111.</strong> <em>User flow: Registrar despacho y confirmar entrega</em></p>
 
 <div align="center"><img src="assets/diagrams/flujo-despacho.png" alt="User flow: Registrar despacho y confirmar entrega" width="608"/></div>
 
 <p><strong><em>Nota.</em></strong> Elaboración propia. Los estados de condición térmica proceden de los marcos de Validación del despacho.</p>
 
-**Objetivo 3: Atender una alerta (SUPERVISOR).** El SUPERVISOR quiere resolver una incidencia térmica y dejar constancia. Recibe el aviso, abre Alertas, distingue la severidad y entra al detalle del incidente; allí registra la acción correctiva. Si no la completa, la alerta permanece activa; si la registra, queda resuelta y pasa al Historial. Si no hay alertas activas, se muestra un estado vacío. La Figura 101 describe el flujo.
+**Objetivo 3: Atender una alerta (SUPERVISOR).** El SUPERVISOR quiere resolver una incidencia térmica y dejar constancia. Recibe el aviso, abre Alertas, distingue la severidad y entra al detalle del incidente; allí registra la acción correctiva. Si no la completa, la alerta permanece activa; si la registra, queda resuelta y pasa al Historial. Si no hay alertas activas, se muestra un estado vacío. La Figura 112 describe el flujo.
 
-<p><strong>Figura 101.</strong> <em>User flow: Atender una alerta</em></p>
+<p><strong>Figura 112.</strong> <em>User flow: Atender una alerta</em></p>
 
 <div align="center"><img src="assets/diagrams/flujo-alerta.png" alt="User flow: Atender una alerta" width="544"/></div>
 
 <p><strong><em>Nota.</em></strong> Elaboración propia a partir de los mock-ups Alertas y Detalle de incidente.</p>
 
-**Objetivo 4: Iniciar sesión (VISITANTE).** El VISITANTE quiere acceder con su cuenta. Si las credenciales son correctas, pasa a USUARIO AUTENTICADO y entra al primer destino de su rol. Si fallan, se muestra el error; tras intentos fallidos repetidos, la cuenta queda bloqueada temporalmente. Más adelante, si la sesión se cierra o expira, vuelve a Iniciar sesión. La Figura 102 lo resume.
+**Objetivo 4: Iniciar sesión (VISITANTE).** El VISITANTE quiere acceder con su cuenta. Si las credenciales son correctas, pasa a USUARIO AUTENTICADO y entra al primer destino de su rol. Si fallan, se muestra el error; tras intentos fallidos repetidos, la cuenta queda bloqueada temporalmente. Más adelante, si la sesión se cierra o expira, vuelve a Iniciar sesión. La Figura 113 lo resume.
 
-<p><strong>Figura 102.</strong> <em>User flow: Iniciar sesión, bloqueo temporal y sesión expirada</em></p>
+<p><strong>Figura 113.</strong> <em>User flow: Iniciar sesión, bloqueo temporal y sesión expirada</em></p>
 
 <div align="center"><img src="assets/diagrams/flujo-sesion.png" alt="User flow: Iniciar sesión, bloqueo temporal y sesión expirada" width="602"/></div>
 
@@ -3587,9 +3680,9 @@ El código y la documentación se alojan en repositorios Git en GitHub, bajo la 
 
 > Pendiente: URL del repositorio de la aplicación Android, de la aplicación emuladora y del servicio compartido (organización GitHub del equipo).
 
-El equipo adopta GitFlow como estrategia de ramas. La Figura 103 resume el flujo: el trabajo diario nace en ramas `feature/*` desde `develop`; las ramas `release/*` estabilizan una entrega antes de integrarla en `main`; y las ramas `hotfix/*` corrigen defectos de producción directamente desde `main` y se reintegran a `develop`.
+El equipo adopta GitFlow como estrategia de ramas. La Figura 114 resume el flujo: el trabajo diario nace en ramas `feature/*` desde `develop`; las ramas `release/*` estabilizan una entrega antes de integrarla en `main`; y las ramas `hotfix/*` corrigen defectos de producción directamente desde `main` y se reintegran a `develop`.
 
-<p><strong>Figura 103.</strong> <em>Flujo de ramas GitFlow del proyecto</em></p>
+<p><strong>Figura 114.</strong> <em>Flujo de ramas GitFlow del proyecto</em></p>
 
 <div align="center"><img src="assets/diagrams/gitflow.png" alt="Flujo de ramas GitFlow del proyecto" width="900"/></div>
 
