@@ -3632,7 +3632,7 @@ Los cuatro flujos son consistentes con los wireflows de 3.1.4.2: cada nodo de pa
 
 El prototipo de Figma conecta los marcos de celular y tableta para simular la navegación real: la barra inferior cambia de destino según el rol, los chips filtran las listas, las tarjetas abren su detalle y los botones de registro llevan a sus formularios y de vuelta con su estado resultante. Las interacciones siguen las decisiones de arquitectura de información: navegación inferior por rol, navegación jerárquica con retorno y acceso a Cuenta desde el encabezado. El prototipo incluye los recorridos de los flujos de 3.1.4.4, entre ellos el despacho conectado hasta la entrega con sus errores de datos, cantidad y referencias, y se verificó que no existan enlaces rotos, taps sin destino ni escenarios inalcanzables desde sus puntos de partida. El prototipo está disponible en el archivo [SafeFlow](https://www.figma.com/design/ebf6YJVRmfKTHq2EDicpix/Safeflow).
 
-> Pendiente: video de demostración del prototipo navegable (enlace de Microsoft Stream) y captura del prototipo en ejecución.
+**Video de demostración:** [Ver video de prueba](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202123362_upc_edu_pe/IQBOGScGWfb5SLhtzpTS27uxAZd_MAZNwiqPsrOLz1ZA2YY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=scIjL5)
 
 <div style="page-break-after: always;"></div>
 
