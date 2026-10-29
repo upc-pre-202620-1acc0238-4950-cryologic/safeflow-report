@@ -4019,6 +4019,7 @@ En esta sección se presenta el proceso de diseño de la infraestructura, el apr
 Con el objetivo de contar con una infraestructura estable, segura y disponible para la ejecución de la plataforma, se implementaron dos servicios principales dentro del grupo de recursos `safeflow` en **Microsoft Azure**: un servidor administrado de **Azure Database for MySQL** y una **Web App** mediante **Azure App Services** para alojar la API desarrollada en .NET. Además, se integró el repositorio del proyecto con un proceso automatizado de **Integración y Despliegue Continuo (CI/CD)** para facilitar las actualizaciones de la aplicación.
 
 
+
 #### **1. Implementación de la Base de Datos en Azure**
 
 - Como primera etapa, se creó un servidor flexible de **Azure Database for MySQL**, seleccionando una configuración que permitiera optimizar la administración de costos, las tareas de mantenimiento y la disponibilidad del almacenamiento. Este procedimiento se muestra en el siguiente archivo.
