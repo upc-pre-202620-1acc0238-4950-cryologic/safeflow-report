@@ -1,0 +1,30 @@
+flowchart LR
+  subgraph PRES["Presentation"]
+    SCR["SummaryScreen"]
+    VM["SummaryViewModel"]
+  end
+  subgraph APP["Application"]
+    UC["GetOperationalSummary<br/>UseCase"]
+    UP["UpstreamChangeHandler"]
+  end
+  subgraph DOM["Domain"]
+    SUM["OperationalSummary"]
+    POL["IndicatorAccessPolicy"]
+    REPO_I["OperationalSummary<br/>Repository"]
+  end
+  subgraph INF["Infrastructure"]
+    REPO["OperationalSummary<br/>RepositoryImpl"]
+    MAP["SummaryMapper"]
+  end
+  API["Servicio compartido"]
+  DB[("Room local")]
+  SCR --> VM
+  VM --> UC
+  UP --> UC
+  UC --> SUM
+  UC --> POL
+  UC --> REPO_I
+  REPO -.->|implementa| REPO_I
+  REPO --> MAP
+  REPO --> API
+  REPO --> DB

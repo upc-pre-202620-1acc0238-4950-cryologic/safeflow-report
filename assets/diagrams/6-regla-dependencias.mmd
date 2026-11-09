@@ -1,0 +1,6 @@
+flowchart LR
+  P["Presentation<br/>Compose y ViewModel"] --> A["Application<br/>casos de uso"]
+  A --> D["Domain<br/>modelos y contratos"]
+  I["Infrastructure<br/>repositorios y adaptadores"] --> D
+  H["Hilt<br/>composición"] --> I
+  P --> U["core/ui<br/>sistema visual"]

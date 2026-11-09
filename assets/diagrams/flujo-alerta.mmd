@@ -1,0 +1,12 @@
+flowchart TD
+    A["Aviso de anomalía térmica"] --> B["Alertas"]
+    B --> C{Hay alertas activas?}
+    C -->|No| D["Estado vacío"]
+    C -->|Sí| E["Detalle de incidente"]
+    E --> F["Registrar acción correctiva"]
+    F --> G{Datos completos?}
+    G -->|No| H["Error en el formulario"]
+    H --> F
+    G -->|Sí| I["Alerta resuelta"]
+    I --> J["Historial de alertas"]
+    E -->|Cierra sin registrar| K["Alerta sigue activa"]

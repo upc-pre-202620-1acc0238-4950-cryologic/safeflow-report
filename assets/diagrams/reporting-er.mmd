@@ -1,0 +1,14 @@
+erDiagram
+  summary_snapshot_entity {
+    TEXT id PK
+    TEXT role_scope
+    INTEGER captured_at
+  }
+  indicator_snapshot_entity {
+    TEXT id PK
+    TEXT summary_id FK
+    TEXT group_code
+    TEXT indicator_code
+    REAL value
+  }
+  summary_snapshot_entity ||--o{ indicator_snapshot_entity : contains

@@ -1,0 +1,68 @@
+classDiagram
+  class Shipment {
+    -id ShipmentId
+    -product ProductRef
+    -batch BatchRef
+    -quantity Quantity
+    -destination Destination
+    -sensor SensorRef
+    -status ShipmentStatus
+    -thermalCheck ThermalCheck
+    -authorizedBy UserId
+    -startedAt Instant
+    -createdAt Instant
+    +applyThermalCheck(check ThermalCheck) ThermalConditionValidated
+    +authorize(userId UserId) ShipmentAuthorized
+    +start(at Instant) ShipmentStarted
+    +confirmDelivery(userId UserId, at Instant) DeliveryConfirmed
+  }
+  class Quantity {
+    <<value object>>
+    +units Int
+  }
+  class Destination {
+    <<value object>>
+    +name String
+  }
+  class ProductRef {
+    <<value object>>
+    +id String
+    +displayName String
+  }
+  class SensorRef {
+    <<value object>>
+    +id String
+  }
+  class ThermalCheck {
+    <<value object>>
+    +verdict ThermalVerdict
+    +checkedAt Instant
+    +readingCount Int
+  }
+  class DeliveryConfirmation {
+    <<value object>>
+    +confirmedBy UserId
+    +confirmedAt Instant
+  }
+  class ShipmentStatus {
+    <<enumeration>>
+    PREPARATION
+    VALIDATION
+    IN_TRANSIT
+    DELIVERED
+    BLOCKED
+  }
+  class ThermalVerdict {
+    <<enumeration>>
+    CAN_CONTINUE
+    REQUIRES_CONFIRMATION
+    BLOCKED_NO_DATA
+  }
+  Shipment "1" --> "1" Quantity : carries
+  Shipment "1" --> "1" Destination : is sent to
+  Shipment "1" --> "1" ProductRef : transports
+  Shipment "1" --> "1" SensorRef : is monitored by
+  Shipment "1" --> "1" ShipmentStatus : is in
+  Shipment "1" *-- "0..1" ThermalCheck : holds latest
+  Shipment "1" *-- "0..1" DeliveryConfirmation : is closed by
+  ThermalCheck "1" --> "1" ThermalVerdict : concludes

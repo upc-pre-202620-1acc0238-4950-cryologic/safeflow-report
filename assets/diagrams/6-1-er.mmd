@@ -1,0 +1,26 @@
+erDiagram
+  role {
+    TEXT code PK
+    TEXT name
+  }
+  role_permission {
+    TEXT role_code PK, FK
+    TEXT operation_code PK
+    INTEGER enabled
+    INTEGER updated_at
+  }
+  local_account {
+    TEXT account_id PK
+    TEXT email UK
+    TEXT display_name
+    TEXT role_code FK
+    TEXT status
+    INTEGER last_sign_in_at
+  }
+  lockout_state {
+    TEXT email PK
+    INTEGER failed_attempts
+    INTEGER locked_until
+  }
+  role ||--o{ role_permission : concede
+  role ||--o{ local_account : asigna

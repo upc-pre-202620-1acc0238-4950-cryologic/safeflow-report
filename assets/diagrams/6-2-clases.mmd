@@ -1,0 +1,82 @@
+classDiagram
+  class Product {
+    <<Aggregate Root>>
+    -ProductId id
+    -String name
+    -ThermalRange thermalRange
+    -ProductStatus status
+    +register(name: String, range: ThermalRange) Product
+    +updateStatus(status: ProductStatus)
+  }
+  class ProductId {
+    <<Value Object>>
+    -String value
+  }
+  class ThermalRange {
+    <<Value Object>>
+    -Double min
+    -Double max
+    +contains(value: Double) Boolean
+  }
+  class ProductStatus {
+    <<enumeration>>
+    NORMAL
+    ATTENTION
+    AT_RISK
+  }
+  class Batch {
+    <<Aggregate Root>>
+    -BatchCode code
+    -ProductId productId
+    -Instant registeredAt
+    +register(code: BatchCode, productId: ProductId) Batch
+  }
+  class BatchCode {
+    <<Value Object>>
+    -String value
+    +isValid() Boolean
+  }
+  class Stock {
+    <<Aggregate Root>>
+    -ProductId productId
+    -Quantity available
+    +registerEntry(quantity: Quantity, at: Instant) StockEntry
+  }
+  class StockEntry {
+    <<Entity>>
+    -String id
+    -Quantity quantity
+    -Instant registeredAt
+  }
+  class Quantity {
+    <<Value Object>>
+    -Int value
+    +isPositive() Boolean
+  }
+  class ProductRepository {
+    <<interface>>
+    +save(product: Product)
+    +findAll(status: ProductStatus) List~Product~
+  }
+  class BatchRepository {
+    <<interface>>
+    +save(batch: Batch)
+    +existsByCode(code: BatchCode) Boolean
+  }
+  class StockRepository {
+    <<interface>>
+    +save(stock: Stock)
+    +findByProduct(id: ProductId) Stock
+  }
+  Product "1" *-- "1" ProductId : se identifica por
+  Product "1" *-- "1" ThermalRange : conserva dentro de
+  Product "0..*" --> "1" ProductStatus : esta en
+  Batch "1" *-- "1" BatchCode : se identifica por
+  Batch "0..*" --> "1" ProductId : pertenece a
+  Stock "1" --> "1" ProductId : controla
+  Stock "1" *-- "0..*" StockEntry : registra
+  StockEntry "1" --> "1" Quantity : suma
+  Stock "1" --> "1" Quantity : disponible
+  ProductRepository ..> Product : persiste
+  BatchRepository ..> Batch : persiste
+  StockRepository ..> Stock : persiste

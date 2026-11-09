@@ -1,0 +1,88 @@
+classDiagram
+  class Account {
+    <<Aggregate Root>>
+    -AccountId id
+    -Email email
+    -String displayName
+    -Role role
+    -AccountStatus status
+    -Int failedAttempts
+    -Instant lockedUntil
+    +registerFailedAttempt(now: Instant, limit: Int)
+    +registerSuccessfulSignIn()
+    +isLocked(now: Instant) Boolean
+    +canSignIn(now: Instant) Boolean
+  }
+  class AccountId {
+    <<Value Object>>
+    -String value
+  }
+  class Email {
+    <<Value Object>>
+    -String value
+    +isValid() Boolean
+  }
+  class Role {
+    <<enumeration>>
+    ADMIN
+    OPERADOR
+    SUPERVISOR
+  }
+  class AccountStatus {
+    <<enumeration>>
+    PENDING_VERIFICATION
+    ACTIVE
+    LOCKED
+  }
+  class Session {
+    <<Aggregate Root>>
+    -String id
+    -AccountId accountId
+    -Role role
+    -Instant expiresAt
+    -Instant closedAt
+    +isActive(now: Instant) Boolean
+    +isExpired(now: Instant) Boolean
+    +close(now: Instant)
+  }
+  class RolePermissions {
+    <<Aggregate Root>>
+    -Role role
+    -Set~Operation~ allowed
+    +allows(operation: Operation) Boolean
+    +update(operations: Set~Operation~, actor: Role) RolePermissions
+  }
+  class Operation {
+    <<enumeration>>
+    REGISTER_PRODUCT
+    REGISTER_BATCH
+    REGISTER_STOCK_ENTRY
+    REGISTER_DISPATCH
+    VIEW_REPORTS
+  }
+  class AuthorizationService {
+    <<Domain Service>>
+    +isAllowed(session: Session, policy: RolePermissions, operation: Operation) Boolean
+  }
+  class AccountRepository {
+    <<interface>>
+    +findByEmail(email: Email) Account
+    +save(account: Account)
+  }
+  class SessionRepository {
+    <<interface>>
+    +current() Session
+    +save(session: Session)
+    +clear()
+  }
+  Account "1" *-- "1" AccountId : se identifica por
+  Account "1" *-- "1" Email : usa como credencial
+  Account "0..*" --> "1" Role : tiene
+  Account "1" --> "1" AccountStatus : esta en
+  Session "0..*" --> "1" AccountId : pertenece a
+  RolePermissions "1" --> "1" Role : regula
+  RolePermissions "1" o-- "0..*" Operation : autoriza
+  AuthorizationService ..> Session : evalua
+  AuthorizationService ..> RolePermissions : consulta
+  AccountRepository ..> Account : persiste
+  SessionRepository ..> Session : persiste

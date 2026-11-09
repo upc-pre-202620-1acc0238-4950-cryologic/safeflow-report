@@ -1,0 +1,22 @@
+erDiagram
+  alert_entity {
+    TEXT id PK
+    TEXT sensor_id
+    TEXT anomaly_type
+    TEXT severity
+    TEXT status
+    TEXT location
+    TEXT description
+    INTEGER occurrences
+    INTEGER first_detected_at
+    INTEGER last_detected_at
+    INTEGER resolved_at
+  }
+  corrective_action_entity {
+    TEXT id PK
+    TEXT alert_id FK
+    TEXT author_id
+    TEXT description
+    INTEGER recorded_at
+  }
+  alert_entity ||--o{ corrective_action_entity : has

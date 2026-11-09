@@ -1,0 +1,23 @@
+flowchart LR
+  IAM["IAM"]
+  Inv["Inventory"]
+  Mon["Environmental<br/>Monitoring"]
+  AlertsBC["Alerts"]
+  Log["Logistics"]
+  Rep["Reporting"]
+  Ext["Servicio compartido<br/>app emuladora"]
+
+  IAM -->|"U/D: OHS+PL / CF"| Inv
+  IAM -->|"U/D: OHS+PL / CF"| Mon
+  IAM -->|"U/D: OHS+PL / CF"| AlertsBC
+  IAM -->|"U/D: OHS+PL / CF"| Log
+  IAM -->|"U/D: OHS+PL / CF"| Rep
+  Inv -->|"U/D: C/S"| Mon
+  Inv -->|"U/D: C/S"| Log
+  Mon -->|"U/D: C/S"| AlertsBC
+  Mon -->|"U/D: C/S + ACL en Logistics"| Log
+  Inv -->|"U/D: CF"| Rep
+  Mon -->|"U/D: CF"| Rep
+  AlertsBC -->|"U/D: CF"| Rep
+  Log -->|"U/D: CF"| Rep
+  Ext -->|"ACL"| Mon

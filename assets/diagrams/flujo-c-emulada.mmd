@@ -1,0 +1,20 @@
+sequenceDiagram
+  autonumber
+  actor Op as Operador
+  participant Emu as App emuladora
+  participant Svc as Servicio compartido
+  box Environmental Monitoring
+    participant Acl as ACL
+    participant Mon as Monitoring
+  end
+  box Alerts
+    participant AlertsBC as Alerts
+  end
+  Op->>Emu: CMD Iniciar emisión
+  Emu->>Svc: CMD Publicar medición
+  Acl->>Svc: QRY Mediciones nuevas
+  Svc-->>Acl: RES Medición externa
+  Acl->>Mon: CMD Registrar lectura
+  Mon-->>Mon: EVT Lectura registrada o Lectura rechazada
+  Mon-->>AlertsBC: EVT Excursión térmica detectada
+  AlertsBC-->>AlertsBC: EVT Alerta generada

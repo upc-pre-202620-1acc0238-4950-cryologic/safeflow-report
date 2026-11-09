@@ -1,0 +1,27 @@
+flowchart LR
+  OPE["OPERADOR<br/>SUPERVISOR<br/>ADMIN"]
+  OPE2["OPERADOR"]
+
+  subgraph SAFE["SafeFlow"]
+    APP["SafeFlow Android App<br/>Kotlin, Jetpack Compose, MVVM"]
+    LOC[("Almacenamiento local<br/>Room y DataStore")]
+  end
+
+  subgraph EMUS["App Emuladora"]
+    EMU["Emulator Android App<br/>Genera mediciones y estados simulados"]
+  end
+
+  subgraph SHARED["Servicio compartido"]
+    API["Shared Service<br/>API REST sobre HTTPS"]
+    SDB[("Base de datos del servicio")]
+  end
+
+  NOT["Notificaciones<br/>Avisos móviles del SO"]
+
+  OPE -->|"Usa"| APP
+  OPE2 -->|"Usa"| EMU
+  APP -->|"Lee y escribe"| LOC
+  APP -->|"Consulta y sincroniza, HTTPS y JSON"| API
+  EMU -->|"Envía mediciones y estados, HTTPS y JSON"| API
+  API -->|"Lee y escribe"| SDB
+  APP -->|"Solicita aviso"| NOT

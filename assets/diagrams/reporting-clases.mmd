@@ -1,0 +1,60 @@
+classDiagram
+  class OperationalSummary {
+    -capturedAt Instant
+    -scope ReportingScope
+    -indicators List~Indicator~
+    +isEmpty() Boolean
+    +byGroup(group IndicatorGroup) List~Indicator~
+  }
+  class Indicator {
+    <<value object>>
+    +group IndicatorGroup
+    +code IndicatorCode
+    +value Double
+  }
+  class ReportingScope {
+    <<value object>>
+    +allowedGroups Set~IndicatorGroup~
+    +allows(group IndicatorGroup) Boolean
+  }
+  class IndicatorGroup {
+    <<enumeration>>
+    PRODUCTS
+    ALERTS
+    SHIPMENTS
+  }
+  class IndicatorAccessPolicy {
+    <<domain service>>
+    +restrict(summary OperationalSummary, scope ReportingScope) OperationalSummary
+  }
+  class OperationalSummaryFactory {
+    <<factory>>
+    +build(products Snapshot, alerts Snapshot, shipments Snapshot) OperationalSummary
+  }
+  class OperationalSummaryRepository {
+    <<interface>>
+    +observeSummary() Flow
+    +refresh()
+  }
+  class ProductSnapshotSource {
+    <<interface>>
+    +snapshot() Snapshot
+  }
+  class AlertSnapshotSource {
+    <<interface>>
+    +snapshot() Snapshot
+  }
+  class ShipmentSnapshotSource {
+    <<interface>>
+    +snapshot() Snapshot
+  }
+  OperationalSummary "1" *-- "0..*" Indicator : consolidates
+  OperationalSummary "1" --> "1" ReportingScope : limited by
+  Indicator "1" --> "1" IndicatorGroup : belongs to
+  ReportingScope "1" --> "1..*" IndicatorGroup : authorizes
+  IndicatorAccessPolicy ..> OperationalSummary : restricts
+  OperationalSummaryFactory ..> OperationalSummary : builds
+  OperationalSummaryFactory ..> ProductSnapshotSource : reads
+  OperationalSummaryFactory ..> AlertSnapshotSource : reads
+  OperationalSummaryFactory ..> ShipmentSnapshotSource : reads
+  OperationalSummaryRepository ..> OperationalSummary : provides

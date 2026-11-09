@@ -1,0 +1,22 @@
+flowchart LR
+  OPE["OPERADOR<br/>Persona"]
+  SUP["SUPERVISOR<br/>Persona"]
+  ADM["ADMIN<br/>Persona"]
+
+  subgraph SF["Alcance de la solución"]
+    SAFE["SafeFlow<br/>Sistema<br/>App Android de supervisión térmica"]
+    EMU["App Emuladora<br/>Sistema<br/>Emite mediciones simuladas"]
+  end
+
+  SRV["Servicio compartido<br/>Sistema<br/>Recibe y expone mediciones y estados"]
+  AVI["Avisos móviles del SO<br/>Sistema externo<br/>Entrega notificaciones"]
+
+  OPE -->|"Registra operación y consulta"| SAFE
+  SUP -->|"Supervisa y atiende alertas"| SAFE
+  ADM -->|"Administra usuarios y permisos"| SAFE
+  OPE -->|"Emite mediciones simuladas"| EMU
+  EMU -->|"Envía mediciones y estados, HTTPS"| SRV
+  SAFE -->|"Consulta y sincroniza, HTTPS"| SRV
+  SAFE -->|"Solicita aviso de alerta"| AVI
+  AVI -->|"Muestra aviso"| SUP
+  AVI -->|"Muestra aviso"| OPE

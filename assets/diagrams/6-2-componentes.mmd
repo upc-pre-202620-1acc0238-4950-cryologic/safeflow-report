@@ -1,0 +1,34 @@
+flowchart TB
+  subgraph PRES["Presentation"]
+    IS["InventoryScreen<br/>y ViewModel"]
+    RP["RegisterProduct<br/>RegisterBatch<br/>RegisterStockEntry"]
+  end
+  subgraph APP["Application"]
+    CMD["Register*UseCase"]
+    QRY["GetInventoryUseCase<br/>GetProductDetailUseCase"]
+    PUB["GetProductThermalRangeUseCase"]
+  end
+  subgraph DOM["Domain"]
+    AG["Product, Batch, Stock"]
+    FAC["Factories<br/>y BatchUniquenessChecker"]
+    REPO["Repositories<br/>interfaces"]
+  end
+  subgraph INF["Infrastructure"]
+    IMPL["Repository<br/>implementations"]
+    API["InventoryApiService"]
+    ROOM["Room<br/>InventoryDatabase"]
+  end
+  SRV[("Servicio compartido")]
+  MON["Monitoring<br/>consumidor"]
+  IS --> QRY
+  RP --> CMD
+  CMD --> FAC
+  CMD --> AG
+  CMD --> REPO
+  QRY --> REPO
+  PUB --> REPO
+  IMPL -.->|implementa| REPO
+  IMPL --> API
+  IMPL --> ROOM
+  API --> SRV
+  MON --> PUB

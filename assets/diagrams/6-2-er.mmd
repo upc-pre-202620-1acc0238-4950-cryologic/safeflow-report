@@ -1,0 +1,27 @@
+erDiagram
+  product {
+    TEXT id PK
+    TEXT name
+    REAL min_temperature
+    REAL max_temperature
+    TEXT status
+  }
+  batch {
+    TEXT code PK
+    TEXT product_id FK
+    INTEGER registered_at
+  }
+  stock {
+    TEXT product_id PK, FK
+    INTEGER available
+  }
+  stock_entry {
+    TEXT id PK
+    TEXT product_id FK
+    INTEGER quantity
+    INTEGER registered_at
+    INTEGER pending_sync
+  }
+  product ||--o{ batch : agrupa
+  product ||--|| stock : posee
+  product ||--o{ stock_entry : recibe

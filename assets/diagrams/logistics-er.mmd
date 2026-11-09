@@ -1,0 +1,26 @@
+erDiagram
+  shipment_entity {
+    TEXT id PK
+    TEXT product_id
+    TEXT product_name
+    TEXT batch_id
+    INTEGER quantity
+    TEXT destination
+    TEXT sensor_id
+    TEXT status
+    TEXT thermal_verdict
+    INTEGER thermal_checked_at
+    TEXT authorized_by
+    INTEGER started_at
+    TEXT delivered_by
+    INTEGER delivered_at
+    INTEGER created_at
+  }
+  shipment_reading_entity {
+    TEXT id PK
+    TEXT shipment_id FK
+    REAL value
+    TEXT status
+    INTEGER recorded_at
+  }
+  shipment_entity ||--o{ shipment_reading_entity : tracks
