@@ -1036,10 +1036,6 @@ El Sprint Backlog 2 descompone las once historias de usuario en 26 tareas técni
 
 <p><strong>Figura 115.</strong> <em>Tablero del Sprint Backlog 2</em></p>
 
-<div align="center"><img src="assets/chapter-04/sprint-2-board.png" alt="Tablero del Sprint Backlog 2" width="850"/></div>
-
-<p><strong><em>Nota.</em></strong> Captura del tablero de seguimiento del Sprint 2. URL pública del tablero: <em>[Pendiente: colocar enlace público de Trello / Jira / YouTrack]</em>.</p>
-
 La Tabla 102 detalla los Work-Items del Sprint 2 y su estado al cierre de la entrega AV2.
 
 <p><strong>Tabla 102.</strong> <em>Sprint Backlog 2: historias de usuario y tareas técnicas</em></p>
