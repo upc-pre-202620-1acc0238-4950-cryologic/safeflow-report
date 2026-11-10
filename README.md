@@ -230,143 +230,12 @@ La Figura 1 presenta las estadísticas de colaboración del repositorio del info
   - [2.5.2. Context Mapping](#252-context-mapping)
   - [2.5.3 Software Architecture](#253-software-architecture)
 - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-<<<<<<< HEAD
   - [2.6.1. Bounded Context: IAM](#261-bounded-context-iam)
   - [2.6.2. Bounded Context: Inventory](#262-bounded-context-inventory)
   - [2.6.3. Bounded Context: Environmental Monitoring](#263-bounded-context-environmental-monitoring)
   - [2.6.4 Alerts Bounded Context](#264-alerts-bounded-context)
   - [2.6.5 Logistics Bounded Context](#265-logistics-bounded-context)
   - [2.6.6 Reporting Bounded Context](#266-reporting-bounded-context)
-=======
-  - [2.6.1. Bounded Context: iam](#261-bounded-context-iam)
-    - [2.6.1.1. Domain Layer](#2611-domain-layer)
-    - [2.6.1.2. Interface Layer](#2612-interface-layer)
-    - [2.6.1.3. Application Layer](#2613-application-layer)
-    - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
-    - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
-      - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
-  
-  - [2.6.2. Bounded Context: alerts](#262-bounded-context-alerts)
-    - [2.6.2.1. Domain Layer](#2621-domain-layer)
-    - [2.6.2.2. Interface Layer](#2622-interface-layer)
-    - [2.6.2.3. Application Layer](#2623-application-layer)
-    - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
-    - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
-      - [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)
-
-  - [2.6.3. Bounded Context: analytics](#263-bounded-context-analytics)
-    - [2.6.3.1. Domain Layer](#2631-domain-layer)
-    - [2.6.3.2. Interface Layer](#2632-interface-layer)
-    - [2.6.3.3. Application Layer](#2633-application-layer)
-    - [2.6.3.4. Infrastructure Layer](#2634-infrastructure-layer)
-    - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
-      - [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)
-
-  - [2.6.4. Bounded Context: environmental-monitoring](#264-bounded-context-environmental-monitoring)
-    - [2.6.4.1. Domain Layer](#2641-domain-layer)
-    - [2.6.4.2. Interface Layer](#2642-interface-layer)
-    - [2.6.4.3. Application Layer](#2643-application-layer)
-    - [2.6.4.4. Infrastructure Layer](#2644-infrastructure-layer)
-    - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2645-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
-      - [2.6.4.6.2. Bounded Context Database Design Diagram](#26462-bounded-context-database-design-diagram)
-
-  - [2.6.5. Bounded Context: inventory](#265-bounded-context-inventory)
-    - [2.6.5.1. Domain Layer](#2651-domain-layer)
-    - [2.6.5.2. Interface Layer](#2652-interface-layer)
-    - [2.6.5.3. Application Layer](#2653-application-layer)
-    - [2.6.5.4. Infrastructure Layer](#2654-infrastructure-layer)
-    - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#2655-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
-      - [2.6.5.6.2. Bounded Context Database Design Diagram](#26562-bounded-context-database-design-diagram)
-  
-  - [2.6.6. Bounded Context: logistics](#266-bounded-context-logistics)
-    - [2.6.6.1. Domain Layer](#2661-domain-layer)
-    - [2.6.6.2. Interface Layer](#2662-interface-layer)
-    - [2.6.6.3. Application Layer](#2663-application-layer)
-    - [2.6.6.4. Infrastructure Layer](#2664-infrastructure-layer)
-    - [2.6.6.5. Bounded Context Software Architecture Component Level Diagrams](#2665-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.6.6. Bounded Context Software Architecture Code Level Diagrams](#2666-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26661-bounded-context-domain-layer-class-diagrams)
-      - [2.6.6.6.2. Bounded Context Database Design Diagram](#26662-bounded-context-database-design-diagram)
-  - [2.6.7. Bounded Context: reporting](#267-bounded-context-reporting)
-    - [2.6.7.1. Domain Layer](#2671-domain-layer)
-    - [2.6.7.2. Interface Layer](#2672-interface-layer)
-    - [2.6.7.3. Application Layer](#2673-application-layer)
-    - [2.6.7.4. Infrastructure Layer](#2674-infrastructure-layer)
-    - [2.6.7.5. Bounded Context Software Architecture Component Level Diagrams](#2675-bounded-context-software-architecture-component-level-diagrams)
-    - [2.6.7.6. Bounded Context Software Architecture Code Level Diagrams](#2676-bounded-context-software-architecture-code-level-diagrams)
-      - [2.6.7.6.1. Bounded Context Domain Layer Class Diagrams](#26761-bounded-context-domain-layer-class-diagrams)
-      - [2.6.7.6.2. Bounded Context Database Design Diagram](#26762-bounded-context-database-design-diagram)
-
-
-
- 
-Capítulo III: Solution UI/UX Design 
-3.1. Product design 
-3.1.1. Style Guidelines 
-3.1.1.1. General Style Guidelines 
-3.1.2. Information Architecture 
-3.1.2.1. Organization Systems 
-3.1.2.2. Labelling Systems 
-3.1.2.3. SEO Tags and Meta Tags 
-3.1.2.4. Searching Systems 
-3.1.2.5. Navigation Systems 
-3.1.3. Landing Page UI Design 
-3.1.3.1. Landing Page Wireframe 
-3.1.3.2. Landing Page Mock-up 
-3.1.4. Mobile Applications UX/UI Design 
-3.1.4.1. Mobile Applications Wireframes
-3.1.4.2. Mobile Applications Wireflow Diagrams 
-3.1.4.3. Mobile Applications Mock-ups 
-3.1.4.4. Mobile Applications User Flow Diagrams 
-3.1.4.5. Mobile Applications Prototyping 
-
-Capítulo IV: Product Implementation & Validation 
-4. Product Implementation & Validation 
-4.1. Software Configuration Management 
-4.1.1. Software Development Environment Configuration 
-4.1.2. Source Code Management 
-4.1.3. Source Code Style Guide & Conventions 
-4.1.4. Software Deployment Configuration 
-4.2. Landing Page & Mobile Application Implementation 
-4.2.1. Sprint n 
-4.2.1.1. Sprint Planning n 
-4.2.1.2. Aspect Leaders and Collaborators 
-4.2.1.3. Sprint Backlog n 
-4.2.1.4. Development Evidence for Sprint Review
-4.2.1.5. Testing Suite Evidence for Sprint Review 
-4.2.1.6. Execution Evidence for Sprint Review 
-4.2.1.7. Services Documentation Evidence for Sprint Review 
-4.2.1.8. Software Deployment Evidence for Sprint Review
-4.2.1.9. Team Collaboration Insights during Sprint
-4.3. Validation Interviews 
-4.3.1. Diseño de Entrevistas 
-4.3.2. Registro de Entrevistas 
-4.3.3. Evaluaciones según heurísticas
-
-Conclusiones 
-Conclusiones y recomendaciones. 
-Video App Validation 
-Video About the product 
-Video About the team 
-Glosario 
-Bibliografía 
-Anexos
- -->
-
-
-
-
->>>>>>> feature/chapter-04
 [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
 
 - [3.1. Product design](#31-product-design)
@@ -384,6 +253,7 @@ Anexos
   - [4.1.5. Consideraciones éticas, i18n y accesibilidad](#415-consideraciones-éticas-i18n-y-accesibilidad)
 - [4.2. Landing Page, Services & Applications Implementation](#42-landing-page-services--applications-implementation)
   - [4.2.1. Sprint 1](#421-sprint-1)
+  - [4.2.2. Sprint 2](#422-sprint-2)
 - [4.3. Validation Interviews](#43-validation-interviews)
   - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
   - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -2513,7 +2383,6 @@ Los eventos del contexto se resumen en la Tabla 64. Alerts emite cuatro eventos 
 
 En una aplicación Android la capa de interfaz es la capa Presentation: pantallas Compose, ViewModels y estado observable con `StateFlow`, que la interfaz recoge con `collectAsStateWithLifecycle()`. Los ViewModels solo invocan casos de uso; no conocen Retrofit, Room ni repositorios concretos. La Tabla 65 lista los componentes.
 
-<<<<<<< HEAD
 <p><strong>Tabla 65.</strong> <em>Componentes de presentación de Alerts</em></p>
 
 | Componente | Tipo | Responsabilidad | Historia |
@@ -3768,8 +3637,6 @@ El prototipo de Figma conecta los marcos de celular y tableta para simular la na
 
 <div style="page-break-after: always;"></div>
 
-=======
->>>>>>> feature/chapter-04
 # Capítulo IV: Product Implementation & Validation
 
 Este capítulo documenta cómo el equipo implementa, comprueba, despliega y valida SafeFlow, la aplicación móvil Android que supervisa la cadena de frío de productos farmacéuticos y alimenticios. Reúne las decisiones de gestión de la configuración del software, la planificación y ejecución del Sprint 1 (entrega del Trabajo Parcial TB1) y el diseño de las validaciones con usuarios de los segmentos objetivo. La solución se compone de la aplicación Android principal, una aplicación emuladora que alimenta el servicio compartido y ese servicio remoto; este informe se centra en la aplicación principal, cuya base técnica ya existe, y deja señalado de forma explícita lo que aún no cuenta con evidencia.
@@ -4066,8 +3933,6 @@ Esta sección presenta las analíticas de colaboración del repositorio (commits
 
 <div style="page-break-after: always;"></div>
 
-<<<<<<< HEAD
-=======
 ### 4.2.2. Sprint 2
 
 El Sprint 2 concentra el núcleo operativo (*core business*) de SafeFlow en la aplicación móvil principal y el despliegue al 100 % del servicio compartido en Microsoft Azure. En esta iteración se implementan los Bounded Contexts **Environmental Monitoring**, **Alerts** y **Logistics**: consulta de temperatura y disponibilidad del sensor, detección de desviaciones y productos en riesgo, historial térmico, recepción de alertas priorizadas por severidad, resolución mediante acciones correctivas, y registro, validación térmica previa y monitoreo de despachos en tránsito.
@@ -4171,7 +4036,8 @@ La Tabla 102 detalla los Work-Items del Sprint 2 y su estado al cierre de la ent
 
 <p><strong><em>Nota.</em></strong> Elaboración propia.</p>
 
->>>>>>> feature/chapter-04
+<div style="page-break-after: always;"></div>
+
 ## 4.3. Validation Interviews
 
 Las entrevistas de validación comprueban con usuarios reales de los segmentos objetivo (empresas del sector farmacéutico y operadores logísticos) que la aplicación resuelve sus tareas con claridad. En esta etapa el equipo definió el diseño de las entrevistas y la plantilla de evaluación; las sesiones se realizarán cuando existan flujos funcionales instalables.
@@ -4338,7 +4204,6 @@ Con el objetivo de contar con una infraestructura estable, segura y disponible p
 <img src="assets/chapter-05/datos_reales.jpeg" alt="datos reales" width="900"/>
 </div>
 
-<<<<<<< HEAD
 # Conclusiones y recomendaciones
 
 Esta conclusión es parcial y corresponde a la entrega TB1: contrasta lo logrado hasta ahora con el problema y las hipótesis del Capítulo I, señala los límites del avance y propone los siguientes pasos. Las hipótesis de prevención, trazabilidad, eficiencia e integridad aún no pueden confirmarse ni refutarse, porque dependen de monitoreo, alertas y despachos funcionando y de validaciones con usuarios.
@@ -4514,6 +4379,3 @@ Este anexo contiene el formato para describir cada problema detectado en la eval
 | Evidencia | Pendiente: captura de pantalla o minuto del video |
 
 <p><strong><em>Nota.</em></strong> Estructura del formato de evaluación de User Experience según heurísticas del curso; se completa tras las sesiones de validación.</p>
-=======
-
->>>>>>> feature/chapter-04
