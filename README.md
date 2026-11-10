@@ -966,6 +966,109 @@ Esta sección presenta las analíticas de colaboración del repositorio (commits
 
 El Sprint 2 concentra el núcleo operativo (*core business*) de SafeFlow en la aplicación móvil principal y el despliegue al 100 % del servicio compartido en Microsoft Azure. En esta iteración se implementan los Bounded Contexts **Environmental Monitoring**, **Alerts** y **Logistics**: consulta de temperatura y disponibilidad del sensor, detección de desviaciones y productos en riesgo, historial térmico, recepción de alertas priorizadas por severidad, resolución mediante acciones correctivas, y registro, validación térmica previa y monitoreo de despachos en tránsito.
 
+#### 4.2.2.1. Sprint Planning 2
+
+El Sprint Planning 2 establece el compromiso del equipo, tomando como base la retroalimentación de la entrega TB1 y el despliegue completo del backend en la nube. La Tabla 99 resume los acuerdos de la sesión.
+
+<p><strong>Tabla 99.</strong> <em>Resumen del Sprint Planning 2</em></p>
+
+| Campo | Valor |
+|:---|:---|
+| Sprint # | Sprint 2 |
+| Date | 2026-10-12 |
+| Time | 08:00 PM |
+| Location | Reunión virtual síncrona vía Microsoft Teams |
+| Prepared By | Acosta Elera, Abraam Bernabe |
+| Attendees | Acosta Elera, Abraam Bernabe / Bustinza Muñoz, Sebastian Alonso / Mio Mejia, Andy Alejandro / Morales Yapuchura, Jefferson Bayron |
+| Sprint 1 Review Summary | Se entregó el diseño UI/UX completo en Figma, la arquitectura táctica por capas de los seis Bounded Contexts y el incremento inicial con IAM e Inventory (21 Story Points). Se identificó la necesidad de publicar al 100 % la API RESTful en la nube con su documentación OpenAPI y conectar los flujos core de monitoreo, alertas y despachos para la entrega AV2. |
+| Sprint 1 Retrospective Summary | **Aciertos:** El uso de componentes reutilizables en `core/ui` aceleró la construcción de formularios en Compose. **Oportunidades de mejora:**Dado que el proyecto cuenta con solo 3 Sprints, el equipo acordó adelantar al Sprint 2 el registro y la validación térmica de despachos (US-61, US-47) y la priorización de alertas (US-55) para evitar sobrecargar el Sprint 3. |
+| Sprint 2 Goal | Ver el Sprint Goal detallado inmediatamente debajo de esta tabla. |
+| Sprint 2 Velocity | 38 Story Points |
+| Sum of Story Points | 38 Story Points |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. La velocidad pasa de 21 SP en el Sprint 1 a 38 SP en el Sprint 2 debido a que la arquitectura base y el sistema de diseño ya se encuentran construidos.</p>
+
+El Sprint Goal del Sprint 2 sigue la plantilla de Scrum.org y cumple los criterios SMART:
+
+- **Our focus is on** implementar el monitoreo térmico de productos y despachos, la priorización y resolución de alertas mediante acciones correctivas, y el registro de despachos con validación térmica previa al envío, respaldados por el servicio compartido desplegado al 100 % en Microsoft Azure.
+- **We believe it delivers** a los supervisores farmacéuticos y operadores logísticos un control preventivo real sobre la cadena de frío que impide despachar carga en condiciones riesgosas y garantiza la trazabilidad de cada incidencia térmica.
+- **This will be confirmed when** las once historias del Sprint 2 cumplan sus criterios de aceptación consumiendo los endpoints en producción (`safeflow-api`), un OPERADOR pueda registrar un despacho y validar su condición térmica antes del envío, y un SUPERVISOR pueda filtrar alertas por severidad y resolverlas con una acción correctiva verificada con `assembleDebug`, `testDebugUnitTest` y `lintDebug`.
+
+La Tabla 100 presenta las once User Stories seleccionadas para el Sprint 2.
+
+<p><strong>Tabla 100.</strong> <em>Historias de usuario del Sprint 2</em></p>
+
+| Id | Título | Bounded Context | Story Points |
+|:---|:---|:---|:---:|
+| US-03 | Consultar temperatura y estado del sensor | Environmental Monitoring | 5 |
+| US-04 | Consultar desviaciones térmicas y riesgo | Environmental Monitoring | 5 |
+| US-17 | Consultar historial de temperatura | Environmental Monitoring | 3 |
+| US-20 | Consultar productos en riesgo | Environmental Monitoring | 2 |
+| US-05 | Recibir avisos de anomalías | Alerts | 3 |
+| US-06 | Resolver alertas con acción correctiva | Alerts | 3 |
+| US-55 | Consultar alertas por severidad | Alerts | 2 |
+| US-61 | Registrar despacho | Logistics | 5 |
+| US-47 | Validar condiciones previas al envío | Logistics | 3 |
+| US-07 | Monitorear temperatura del transporte | Logistics | 5 |
+| US-25 | Consultar estado de despachos | Logistics | 2 |
+| **Total** | | | **38** |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir del Product Backlog.</p>
+
+#### 4.2.2.2. Aspect Leaders and Collaborators
+
+Para cubrir los tres Bounded Contexts centrales del Sprint 2 y el despliegue al 100 % del backend, la matriz Leadership-and-Collaboration Matrix (LACX) distribuye el liderazgo técnico entre los cuatro integrantes como muestra la Tabla 101.
+
+<p><strong>Tabla 101.</strong> <em>Leadership-and-Collaboration Matrix del Sprint 2</em></p>
+
+| Team Member (Last Name, First Name) | GitHub Username | Environmental Monitoring BC | Alerts & Logistics BC | Backend REST & Azure Deployment | Mobile UI (Compose) | Testing & Documentation |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|
+| Acosta Elera, Abraam Bernabe | AbraamBernabe | L | L | C | C | C |
+| Bustinza Muñoz, Sebastian Alonso | sebastianbustinza809 | C | C | C | L | C |
+| Mio Mejia, Andy Alejandro | AndyMio17 | C | C | L | C | C |
+| Morales Yapuchura, Jefferson Bayron | Fenfito | C | C | C | C | L |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. L indica líder del aspecto y C colaborador.</p>
+
+#### 4.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 descompone las once historias de usuario en 26 tareas técnicas verificables. La Figura 115 muestra el tablero de trabajo del equipo durante el Sprint 2.
+
+<p><strong>Figura 115.</strong> <em>Tablero del Sprint Backlog 2</em></p>
+
+<div align="center"><img src="assets/chapter-04/sprint-2-board.png" alt="Tablero del Sprint Backlog 2" width="850"/></div>
+
+<p><strong><em>Nota.</em></strong> Captura del tablero de seguimiento del Sprint 2. URL pública del tablero: <em>[Pendiente: colocar enlace público de Trello / Jira / YouTrack]</em>.</p>
+
+La Tabla 102 detalla los Work-Items del Sprint 2 y su estado al cierre de la entrega AV2.
+
+<p><strong>Tabla 102.</strong> <em>Sprint Backlog 2: historias de usuario y tareas técnicas</em></p>
+
+| Sprint # | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|:---:|:---|:---|:---|:---|:---|:---:|:---|:---:|
+| Sprint 2 | US-03 | Consultar temperatura y estado del sensor | T-201 | Modelar lecturas y disponibilidad del sensor | Definir las entidades de lectura térmica, sensor y estados de conexión en la capa de dominio de monitoreo | 3 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-03 | Consultar temperatura y estado del sensor | T-202 | Integrar servicio y persistencia de lecturas | Implementar el consumo del servicio remoto, el traductor de mediciones y el almacenamiento local de lecturas | 5 | Mio Mejia, Andy | Done |
+| Sprint 2 | US-03 | Consultar temperatura y estado del sensor | T-203 | Construir vista de temperatura actual | Desarrollar la interfaz móvil y la lógica de estado para mostrar la última temperatura y la disponibilidad del sensor en el detalle del producto | 4 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-04 | Consultar desviaciones térmicas y riesgo | T-204 | Implementar reglas de evaluación térmica | Definir la lógica de dominio para clasificar lecturas en estado normal, advertencia o excursión según el rango del producto | 4 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-04 | Consultar desviaciones térmicas y riesgo | T-205 | Persistencia y vista de desviaciones térmicas | Implementar el almacenamiento de anomalías detectadas y la pantalla de consulta con indicadores visuales de severidad | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-20 | Consultar productos en riesgo | T-206 | Consulta y pantalla de productos en riesgo | Implementar la lógica de negocio para filtrar productos con anomalías activas y construir su vista para el rol supervisor | 4 | Morales Yapuchura, Jefferson | Done |
+| Sprint 2 | US-17 | Consultar historial de temperatura | T-207 | Filtrado de lecturas históricas por periodo | Implementar la consulta de lecturas por rango de fechas en la base de datos local y en el cliente del servicio remoto | 4 | Mio Mejia, Andy | Done |
+| Sprint 2 | US-17 | Consultar historial de temperatura | T-208 | Gráfico de evolución y vista de historial | Construir el componente visual del gráfico térmico y la pantalla de historial con filtros por día y por periodo | 6 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-05 | Recibir avisos de anomalías | T-209 | Modelar alertas y política de agrupación | Definir el modelo de dominio de alertas y la regla de negocio que agrupa incidencias repetidas de una misma anomalía | 4 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-05 | Recibir avisos de anomalías | T-210 | Generación de alertas y notificaciones móviles | Implementar la creación automática de alertas ante anomalías y el adaptador de notificaciones del sistema operativo | 5 | Mio Mejia, Andy | Done |
+| Sprint 2 | US-55 | Consultar alertas por severidad | T-211 | Listado de alertas priorizadas por severidad | Desarrollar la consulta ordenada por nivel de criticidad y la pantalla de alertas con filtros para activas e historial | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-06 | Resolver alertas con acción correctiva | T-212 | Lógica y persistencia de acciones correctivas | Implementar el registro de acciones correctivas con validación de autor y fecha para cambiar el estado de la alerta a resuelta | 4 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-06 | Resolver alertas con acción correctiva | T-213 | Pantalla de detalle de incidente y resolución | Construir la vista de detalle de la alerta y el formulario para registrar la acción correctiva aplicada | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-61 | Registrar despacho | T-214 | Modelar despacho y reglas de validación de carga | Definir el agregado de despacho y las validaciones de stock disponible, cantidad positiva y vinculación entre lote, producto y sensor | 5 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-61 | Registrar despacho | T-215 | Repositorio y formulario de registro de despacho | Implementar la persistencia de despachos en estado de preparación y la pantalla con el formulario de registro | 6 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-47 | Validar condiciones previas al envío | T-216 | Reglas de comprobación térmica previa al envío | Implementar la política que autoriza el envío en rango, solicita confirmación ante riesgo o bloquea el despacho por falta de datos | 5 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-47 | Validar condiciones previas al envío | T-217 | Pantalla de validación térmica del despacho | Construir la interfaz de comprobación previa al envío mostrando el veredicto térmico y las acciones de autorización o bloqueo | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-25 | Consultar estado de despachos | T-218 | Consulta y pantalla de seguimiento de despachos | Implementar la consulta de envíos y la vista de listado con filtros por estado en preparación, en tránsito y entregados | 4 | Morales Yapuchura, Jefferson | Done |
+| Sprint 2 | US-07 | Monitorear temperatura del transporte | T-219 | Adaptador y vista de lecturas del transporte | Implementar la obtención de mediciones asociadas al sensor del despacho y la vista cronológica de evolución térmica en ruta | 5 | Mio Mejia, Andy | Done |
+| Sprint 2 | Transversal | Despliegue en la nube y suite de pruebas | T-220 | Despliegue del servicio web y pruebas del Sprint | Aprovisionar el servidor de base de datos y la API en la nube, publicar la documentación de servicios y ejecutar pruebas automatizadas | 6 | Mio Mejia, Andy / Morales Yapuchura, Jefferson | Done |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia.</p>
+
 ## 4.3. Validation Interviews
 
 Las entrevistas de validación comprueban con usuarios reales de los segmentos objetivo (empresas del sector farmacéutico y operadores logísticos) que la aplicación resuelve sus tareas con claridad. En esta etapa el equipo definió el diseño de las entrevistas y la plantilla de evaluación; las sesiones se realizarán cuando existan flujos funcionales instalables.
