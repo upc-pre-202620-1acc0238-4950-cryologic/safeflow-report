@@ -962,6 +962,10 @@ Esta sección presenta las analíticas de colaboración del repositorio (commits
 
 <div style="page-break-after: always;"></div>
 
+### 4.2.2. Sprint 2
+
+El Sprint 2 concentra el núcleo operativo (*core business*) de SafeFlow en la aplicación móvil principal y el despliegue al 100 % del servicio compartido en Microsoft Azure. En esta iteración se implementan los Bounded Contexts **Environmental Monitoring**, **Alerts** y **Logistics**: consulta de temperatura y disponibilidad del sensor, detección de desviaciones y productos en riesgo, historial térmico, recepción de alertas priorizadas por severidad, resolución mediante acciones correctivas, y registro, validación térmica previa y monitoreo de despachos en tránsito.
+
 ## 4.3. Validation Interviews
 
 Las entrevistas de validación comprueban con usuarios reales de los segmentos objetivo (empresas del sector farmacéutico y operadores logísticos) que la aplicación resuelve sus tareas con claridad. En esta etapa el equipo definió el diseño de las entrevistas y la plantilla de evaluación; las sesiones se realizarán cuando existan flujos funcionales instalables.
