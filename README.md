@@ -230,12 +230,143 @@ La Figura 1 presenta las estadísticas de colaboración del repositorio del info
   - [2.5.2. Context Mapping](#252-context-mapping)
   - [2.5.3 Software Architecture](#253-software-architecture)
 - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+<<<<<<< HEAD
   - [2.6.1. Bounded Context: IAM](#261-bounded-context-iam)
   - [2.6.2. Bounded Context: Inventory](#262-bounded-context-inventory)
   - [2.6.3. Bounded Context: Environmental Monitoring](#263-bounded-context-environmental-monitoring)
   - [2.6.4 Alerts Bounded Context](#264-alerts-bounded-context)
   - [2.6.5 Logistics Bounded Context](#265-logistics-bounded-context)
   - [2.6.6 Reporting Bounded Context](#266-reporting-bounded-context)
+=======
+  - [2.6.1. Bounded Context: iam](#261-bounded-context-iam)
+    - [2.6.1.1. Domain Layer](#2611-domain-layer)
+    - [2.6.1.2. Interface Layer](#2612-interface-layer)
+    - [2.6.1.3. Application Layer](#2613-application-layer)
+    - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
+    - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+      - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
+  
+  - [2.6.2. Bounded Context: alerts](#262-bounded-context-alerts)
+    - [2.6.2.1. Domain Layer](#2621-domain-layer)
+    - [2.6.2.2. Interface Layer](#2622-interface-layer)
+    - [2.6.2.3. Application Layer](#2623-application-layer)
+    - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
+    - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
+      - [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)
+
+  - [2.6.3. Bounded Context: analytics](#263-bounded-context-analytics)
+    - [2.6.3.1. Domain Layer](#2631-domain-layer)
+    - [2.6.3.2. Interface Layer](#2632-interface-layer)
+    - [2.6.3.3. Application Layer](#2633-application-layer)
+    - [2.6.3.4. Infrastructure Layer](#2634-infrastructure-layer)
+    - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
+      - [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)
+
+  - [2.6.4. Bounded Context: environmental-monitoring](#264-bounded-context-environmental-monitoring)
+    - [2.6.4.1. Domain Layer](#2641-domain-layer)
+    - [2.6.4.2. Interface Layer](#2642-interface-layer)
+    - [2.6.4.3. Application Layer](#2643-application-layer)
+    - [2.6.4.4. Infrastructure Layer](#2644-infrastructure-layer)
+    - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2645-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
+      - [2.6.4.6.2. Bounded Context Database Design Diagram](#26462-bounded-context-database-design-diagram)
+
+  - [2.6.5. Bounded Context: inventory](#265-bounded-context-inventory)
+    - [2.6.5.1. Domain Layer](#2651-domain-layer)
+    - [2.6.5.2. Interface Layer](#2652-interface-layer)
+    - [2.6.5.3. Application Layer](#2653-application-layer)
+    - [2.6.5.4. Infrastructure Layer](#2654-infrastructure-layer)
+    - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#2655-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
+      - [2.6.5.6.2. Bounded Context Database Design Diagram](#26562-bounded-context-database-design-diagram)
+  
+  - [2.6.6. Bounded Context: logistics](#266-bounded-context-logistics)
+    - [2.6.6.1. Domain Layer](#2661-domain-layer)
+    - [2.6.6.2. Interface Layer](#2662-interface-layer)
+    - [2.6.6.3. Application Layer](#2663-application-layer)
+    - [2.6.6.4. Infrastructure Layer](#2664-infrastructure-layer)
+    - [2.6.6.5. Bounded Context Software Architecture Component Level Diagrams](#2665-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.6.6. Bounded Context Software Architecture Code Level Diagrams](#2666-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.6.6.1. Bounded Context Domain Layer Class Diagrams](#26661-bounded-context-domain-layer-class-diagrams)
+      - [2.6.6.6.2. Bounded Context Database Design Diagram](#26662-bounded-context-database-design-diagram)
+  - [2.6.7. Bounded Context: reporting](#267-bounded-context-reporting)
+    - [2.6.7.1. Domain Layer](#2671-domain-layer)
+    - [2.6.7.2. Interface Layer](#2672-interface-layer)
+    - [2.6.7.3. Application Layer](#2673-application-layer)
+    - [2.6.7.4. Infrastructure Layer](#2674-infrastructure-layer)
+    - [2.6.7.5. Bounded Context Software Architecture Component Level Diagrams](#2675-bounded-context-software-architecture-component-level-diagrams)
+    - [2.6.7.6. Bounded Context Software Architecture Code Level Diagrams](#2676-bounded-context-software-architecture-code-level-diagrams)
+      - [2.6.7.6.1. Bounded Context Domain Layer Class Diagrams](#26761-bounded-context-domain-layer-class-diagrams)
+      - [2.6.7.6.2. Bounded Context Database Design Diagram](#26762-bounded-context-database-design-diagram)
+
+
+
+ 
+Capítulo III: Solution UI/UX Design 
+3.1. Product design 
+3.1.1. Style Guidelines 
+3.1.1.1. General Style Guidelines 
+3.1.2. Information Architecture 
+3.1.2.1. Organization Systems 
+3.1.2.2. Labelling Systems 
+3.1.2.3. SEO Tags and Meta Tags 
+3.1.2.4. Searching Systems 
+3.1.2.5. Navigation Systems 
+3.1.3. Landing Page UI Design 
+3.1.3.1. Landing Page Wireframe 
+3.1.3.2. Landing Page Mock-up 
+3.1.4. Mobile Applications UX/UI Design 
+3.1.4.1. Mobile Applications Wireframes
+3.1.4.2. Mobile Applications Wireflow Diagrams 
+3.1.4.3. Mobile Applications Mock-ups 
+3.1.4.4. Mobile Applications User Flow Diagrams 
+3.1.4.5. Mobile Applications Prototyping 
+
+Capítulo IV: Product Implementation & Validation 
+4. Product Implementation & Validation 
+4.1. Software Configuration Management 
+4.1.1. Software Development Environment Configuration 
+4.1.2. Source Code Management 
+4.1.3. Source Code Style Guide & Conventions 
+4.1.4. Software Deployment Configuration 
+4.2. Landing Page & Mobile Application Implementation 
+4.2.1. Sprint n 
+4.2.1.1. Sprint Planning n 
+4.2.1.2. Aspect Leaders and Collaborators 
+4.2.1.3. Sprint Backlog n 
+4.2.1.4. Development Evidence for Sprint Review
+4.2.1.5. Testing Suite Evidence for Sprint Review 
+4.2.1.6. Execution Evidence for Sprint Review 
+4.2.1.7. Services Documentation Evidence for Sprint Review 
+4.2.1.8. Software Deployment Evidence for Sprint Review
+4.2.1.9. Team Collaboration Insights during Sprint
+4.3. Validation Interviews 
+4.3.1. Diseño de Entrevistas 
+4.3.2. Registro de Entrevistas 
+4.3.3. Evaluaciones según heurísticas
+
+Conclusiones 
+Conclusiones y recomendaciones. 
+Video App Validation 
+Video About the product 
+Video About the team 
+Glosario 
+Bibliografía 
+Anexos
+ -->
+
+
+
+
+>>>>>>> feature/chapter-04
 [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
 
 - [3.1. Product design](#31-product-design)
@@ -2382,6 +2513,7 @@ Los eventos del contexto se resumen en la Tabla 64. Alerts emite cuatro eventos 
 
 En una aplicación Android la capa de interfaz es la capa Presentation: pantallas Compose, ViewModels y estado observable con `StateFlow`, que la interfaz recoge con `collectAsStateWithLifecycle()`. Los ViewModels solo invocan casos de uso; no conocen Retrofit, Room ni repositorios concretos. La Tabla 65 lista los componentes.
 
+<<<<<<< HEAD
 <p><strong>Tabla 65.</strong> <em>Componentes de presentación de Alerts</em></p>
 
 | Componente | Tipo | Responsabilidad | Historia |
@@ -3636,6 +3768,8 @@ El prototipo de Figma conecta los marcos de celular y tableta para simular la na
 
 <div style="page-break-after: always;"></div>
 
+=======
+>>>>>>> feature/chapter-04
 # Capítulo IV: Product Implementation & Validation
 
 Este capítulo documenta cómo el equipo implementa, comprueba, despliega y valida SafeFlow, la aplicación móvil Android que supervisa la cadena de frío de productos farmacéuticos y alimenticios. Reúne las decisiones de gestión de la configuración del software, la planificación y ejecución del Sprint 1 (entrega del Trabajo Parcial TB1) y el diseño de las validaciones con usuarios de los segmentos objetivo. La solución se compone de la aplicación Android principal, una aplicación emuladora que alimenta el servicio compartido y ese servicio remoto; este informe se centra en la aplicación principal, cuya base técnica ya existe, y deja señalado de forma explícita lo que aún no cuenta con evidencia.
@@ -3932,6 +4066,112 @@ Esta sección presenta las analíticas de colaboración del repositorio (commits
 
 <div style="page-break-after: always;"></div>
 
+<<<<<<< HEAD
+=======
+### 4.2.2. Sprint 2
+
+El Sprint 2 concentra el núcleo operativo (*core business*) de SafeFlow en la aplicación móvil principal y el despliegue al 100 % del servicio compartido en Microsoft Azure. En esta iteración se implementan los Bounded Contexts **Environmental Monitoring**, **Alerts** y **Logistics**: consulta de temperatura y disponibilidad del sensor, detección de desviaciones y productos en riesgo, historial térmico, recepción de alertas priorizadas por severidad, resolución mediante acciones correctivas, y registro, validación térmica previa y monitoreo de despachos en tránsito.
+
+#### 4.2.2.1. Sprint Planning 2
+
+El Sprint Planning 2 establece el compromiso del equipo, tomando como base la retroalimentación de la entrega TB1 y el despliegue completo del backend en la nube. La Tabla 99 resume los acuerdos de la sesión.
+
+<p><strong>Tabla 99.</strong> <em>Resumen del Sprint Planning 2</em></p>
+
+| Campo | Valor |
+|:---|:---|
+| Sprint # | Sprint 2 |
+| Date | 2026-10-12 |
+| Time | 08:00 PM |
+| Location | Reunión virtual síncrona vía Microsoft Teams |
+| Prepared By | Acosta Elera, Abraam Bernabe |
+| Attendees | Acosta Elera, Abraam Bernabe / Bustinza Muñoz, Sebastian Alonso / Mio Mejia, Andy Alejandro / Morales Yapuchura, Jefferson Bayron |
+| Sprint 1 Review Summary | Se entregó el diseño UI/UX completo en Figma, la arquitectura táctica por capas de los seis Bounded Contexts y el incremento inicial con IAM e Inventory (21 Story Points). Se identificó la necesidad de publicar al 100 % la API RESTful en la nube con su documentación OpenAPI y conectar los flujos core de monitoreo, alertas y despachos para la entrega AV2. |
+| Sprint 1 Retrospective Summary | **Aciertos:** El uso de componentes reutilizables en `core/ui` aceleró la construcción de formularios en Compose. **Oportunidades de mejora:**Dado que el proyecto cuenta con solo 3 Sprints, el equipo acordó adelantar al Sprint 2 el registro y la validación térmica de despachos (US-61, US-47) y la priorización de alertas (US-55) para evitar sobrecargar el Sprint 3. |
+| Sprint 2 Goal | Ver el Sprint Goal detallado inmediatamente debajo de esta tabla. |
+| Sprint 2 Velocity | 38 Story Points |
+| Sum of Story Points | 38 Story Points |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. La velocidad pasa de 21 SP en el Sprint 1 a 38 SP en el Sprint 2 debido a que la arquitectura base y el sistema de diseño ya se encuentran construidos.</p>
+
+El Sprint Goal del Sprint 2 sigue la plantilla de Scrum.org y cumple los criterios SMART:
+
+- **Our focus is on** implementar el monitoreo térmico de productos y despachos, la priorización y resolución de alertas mediante acciones correctivas, y el registro de despachos con validación térmica previa al envío, respaldados por el servicio compartido desplegado al 100 % en Microsoft Azure.
+- **We believe it delivers** a los supervisores farmacéuticos y operadores logísticos un control preventivo real sobre la cadena de frío que impide despachar carga en condiciones riesgosas y garantiza la trazabilidad de cada incidencia térmica.
+- **This will be confirmed when** las once historias del Sprint 2 cumplan sus criterios de aceptación consumiendo los endpoints en producción (`safeflow-api`), un OPERADOR pueda registrar un despacho y validar su condición térmica antes del envío, y un SUPERVISOR pueda filtrar alertas por severidad y resolverlas con una acción correctiva verificada con `assembleDebug`, `testDebugUnitTest` y `lintDebug`.
+
+La Tabla 100 presenta las once User Stories seleccionadas para el Sprint 2.
+
+<p><strong>Tabla 100.</strong> <em>Historias de usuario del Sprint 2</em></p>
+
+| Id | Título | Bounded Context | Story Points |
+|:---|:---|:---|:---:|
+| US-03 | Consultar temperatura y estado del sensor | Environmental Monitoring | 5 |
+| US-04 | Consultar desviaciones térmicas y riesgo | Environmental Monitoring | 5 |
+| US-17 | Consultar historial de temperatura | Environmental Monitoring | 3 |
+| US-20 | Consultar productos en riesgo | Environmental Monitoring | 2 |
+| US-05 | Recibir avisos de anomalías | Alerts | 3 |
+| US-06 | Resolver alertas con acción correctiva | Alerts | 3 |
+| US-55 | Consultar alertas por severidad | Alerts | 2 |
+| US-61 | Registrar despacho | Logistics | 5 |
+| US-47 | Validar condiciones previas al envío | Logistics | 3 |
+| US-07 | Monitorear temperatura del transporte | Logistics | 5 |
+| US-25 | Consultar estado de despachos | Logistics | 2 |
+| **Total** | | | **38** |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia a partir del Product Backlog.</p>
+
+#### 4.2.2.2. Aspect Leaders and Collaborators
+
+Para cubrir los tres Bounded Contexts centrales del Sprint 2 y el despliegue al 100 % del backend, la matriz Leadership-and-Collaboration Matrix (LACX) distribuye el liderazgo técnico entre los cuatro integrantes como muestra la Tabla 101.
+
+<p><strong>Tabla 101.</strong> <em>Leadership-and-Collaboration Matrix del Sprint 2</em></p>
+
+| Team Member (Last Name, First Name) | GitHub Username | Environmental Monitoring BC | Alerts & Logistics BC | Backend REST & Azure Deployment | Mobile UI (Compose) | Testing & Documentation |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|
+| Acosta Elera, Abraam Bernabe | AbraamBernabe | L | L | C | C | C |
+| Bustinza Muñoz, Sebastian Alonso | sebastianbustinza809 | C | C | C | L | C |
+| Mio Mejia, Andy Alejandro | AndyMio17 | C | C | L | C | C |
+| Morales Yapuchura, Jefferson Bayron | Fenfito | C | C | C | C | L |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia. L indica líder del aspecto y C colaborador.</p>
+
+#### 4.2.2.3. Sprint Backlog 2
+
+El Sprint Backlog 2 descompone las once historias de usuario en 26 tareas técnicas verificables. La Figura 115 muestra el tablero de trabajo del equipo durante el Sprint 2.
+
+<p><strong>Figura 115.</strong> <em>Tablero del Sprint Backlog 2</em></p>
+
+La Tabla 102 detalla los Work-Items del Sprint 2 y su estado al cierre de la entrega AV2.
+
+<p><strong>Tabla 102.</strong> <em>Sprint Backlog 2: historias de usuario y tareas técnicas</em></p>
+
+| Sprint # | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|:---:|:---|:---|:---|:---|:---|:---:|:---|:---:|
+| Sprint 2 | US-03 | Consultar temperatura y estado del sensor | T-201 | Modelar lecturas y disponibilidad del sensor | Definir las entidades de lectura térmica, sensor y estados de conexión en la capa de dominio de monitoreo | 3 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-03 | Consultar temperatura y estado del sensor | T-202 | Integrar servicio y persistencia de lecturas | Implementar el consumo del servicio remoto, el traductor de mediciones y el almacenamiento local de lecturas | 5 | Mio Mejia, Andy | Done |
+| Sprint 2 | US-03 | Consultar temperatura y estado del sensor | T-203 | Construir vista de temperatura actual | Desarrollar la interfaz móvil y la lógica de estado para mostrar la última temperatura y la disponibilidad del sensor en el detalle del producto | 4 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-04 | Consultar desviaciones térmicas y riesgo | T-204 | Implementar reglas de evaluación térmica | Definir la lógica de dominio para clasificar lecturas en estado normal, advertencia o excursión según el rango del producto | 4 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-04 | Consultar desviaciones térmicas y riesgo | T-205 | Persistencia y vista de desviaciones térmicas | Implementar el almacenamiento de anomalías detectadas y la pantalla de consulta con indicadores visuales de severidad | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-20 | Consultar productos en riesgo | T-206 | Consulta y pantalla de productos en riesgo | Implementar la lógica de negocio para filtrar productos con anomalías activas y construir su vista para el rol supervisor | 4 | Morales Yapuchura, Jefferson | Done |
+| Sprint 2 | US-17 | Consultar historial de temperatura | T-207 | Filtrado de lecturas históricas por periodo | Implementar la consulta de lecturas por rango de fechas en la base de datos local y en el cliente del servicio remoto | 4 | Mio Mejia, Andy | Done |
+| Sprint 2 | US-17 | Consultar historial de temperatura | T-208 | Gráfico de evolución y vista de historial | Construir el componente visual del gráfico térmico y la pantalla de historial con filtros por día y por periodo | 6 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-05 | Recibir avisos de anomalías | T-209 | Modelar alertas y política de agrupación | Definir el modelo de dominio de alertas y la regla de negocio que agrupa incidencias repetidas de una misma anomalía | 4 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-05 | Recibir avisos de anomalías | T-210 | Generación de alertas y notificaciones móviles | Implementar la creación automática de alertas ante anomalías y el adaptador de notificaciones del sistema operativo | 5 | Mio Mejia, Andy | Done |
+| Sprint 2 | US-55 | Consultar alertas por severidad | T-211 | Listado de alertas priorizadas por severidad | Desarrollar la consulta ordenada por nivel de criticidad y la pantalla de alertas con filtros para activas e historial | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-06 | Resolver alertas con acción correctiva | T-212 | Lógica y persistencia de acciones correctivas | Implementar el registro de acciones correctivas con validación de autor y fecha para cambiar el estado de la alerta a resuelta | 4 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-06 | Resolver alertas con acción correctiva | T-213 | Pantalla de detalle de incidente y resolución | Construir la vista de detalle de la alerta y el formulario para registrar la acción correctiva aplicada | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-61 | Registrar despacho | T-214 | Modelar despacho y reglas de validación de carga | Definir el agregado de despacho y las validaciones de stock disponible, cantidad positiva y vinculación entre lote, producto y sensor | 5 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-61 | Registrar despacho | T-215 | Repositorio y formulario de registro de despacho | Implementar la persistencia de despachos en estado de preparación y la pantalla con el formulario de registro | 6 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-47 | Validar condiciones previas al envío | T-216 | Reglas de comprobación térmica previa al envío | Implementar la política que autoriza el envío en rango, solicita confirmación ante riesgo o bloquea el despacho por falta de datos | 5 | Acosta Elera, Abraam | Done |
+| Sprint 2 | US-47 | Validar condiciones previas al envío | T-217 | Pantalla de validación térmica del despacho | Construir la interfaz de comprobación previa al envío mostrando el veredicto térmico y las acciones de autorización o bloqueo | 5 | Bustinza Muñoz, Sebastian | Done |
+| Sprint 2 | US-25 | Consultar estado de despachos | T-218 | Consulta y pantalla de seguimiento de despachos | Implementar la consulta de envíos y la vista de listado con filtros por estado en preparación, en tránsito y entregados | 4 | Morales Yapuchura, Jefferson | Done |
+| Sprint 2 | US-07 | Monitorear temperatura del transporte | T-219 | Adaptador y vista de lecturas del transporte | Implementar la obtención de mediciones asociadas al sensor del despacho y la vista cronológica de evolución térmica en ruta | 5 | Mio Mejia, Andy | Done |
+| Sprint 2 | Transversal | Despliegue en la nube y suite de pruebas | T-220 | Despliegue del servicio web y pruebas del Sprint | Aprovisionar el servidor de base de datos y la API en la nube, publicar la documentación de servicios y ejecutar pruebas automatizadas | 6 | Mio Mejia, Andy / Morales Yapuchura, Jefferson | Done |
+
+<p><strong><em>Nota.</em></strong> Elaboración propia.</p>
+
+>>>>>>> feature/chapter-04
 ## 4.3. Validation Interviews
 
 Las entrevistas de validación comprueban con usuarios reales de los segmentos objetivo (empresas del sector farmacéutico y operadores logísticos) que la aplicación resuelve sus tareas con claridad. En esta etapa el equipo definió el diseño de las entrevistas y la plantilla de evaluación; las sesiones se realizarán cuando existan flujos funcionales instalables.
@@ -4098,6 +4338,7 @@ Con el objetivo de contar con una infraestructura estable, segura y disponible p
 <img src="assets/chapter-05/datos_reales.jpeg" alt="datos reales" width="900"/>
 </div>
 
+<<<<<<< HEAD
 # Conclusiones y recomendaciones
 
 Esta conclusión es parcial y corresponde a la entrega TB1: contrasta lo logrado hasta ahora con el problema y las hipótesis del Capítulo I, señala los límites del avance y propone los siguientes pasos. Las hipótesis de prevención, trazabilidad, eficiencia e integridad aún no pueden confirmarse ni refutarse, porque dependen de monitoreo, alertas y despachos funcionando y de validaciones con usuarios.
@@ -4273,3 +4514,6 @@ Este anexo contiene el formato para describir cada problema detectado en la eval
 | Evidencia | Pendiente: captura de pantalla o minuto del video |
 
 <p><strong><em>Nota.</em></strong> Estructura del formato de evaluación de User Experience según heurísticas del curso; se completa tras las sesiones de validación.</p>
+=======
+
+>>>>>>> feature/chapter-04
