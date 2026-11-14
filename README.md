@@ -4384,7 +4384,9 @@ El video documenta la prueba de la aplicación con usuarios, instalada a través
 
 El video resume el proceso de trabajo del equipo, con escenas de sesiones reales de trabajo y los testimonios de los integrantes, y se acompañará de la pauta de secuencias con el tiempo de inicio de cada sección.
 
-> Pendiente: captura representativa, URLs de Microsoft Stream y de YouTube, pauta de secuencias (hh:mm:ss) y duración del video.
+<img src="assets/chapter-05/aboutTeam.jpg" alt="About Team" width="600">
+
+[Video About The team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202123362_upc_edu_pe/IQDsui-fWUJ8SKLWiz04_PqnAYLL-4l6q8ecHERxBFVhjgM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4ksgOc)
 
 <div style="page-break-after: always;"></div>
 
