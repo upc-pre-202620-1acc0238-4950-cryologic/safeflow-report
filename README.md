@@ -3899,10 +3899,10 @@ El Sprint Planning 1 fija el objetivo del Sprint, las historias comprometidas y 
 | Campo | Valor |
 |:---|:---|
 | Sprint | Sprint 1 |
-| Date | 2026-09-21 (reconstrucción referencial) |
-| Time | 08:00 PM (reconstrucción referencial) |
-| Location | Reunión virtual síncrona vía Microsoft Teams (reconstrucción referencial) |
-| Prepared By | Acosta Elera, Abraam Bernabe (reconstrucción referencial) |
+| Date | 2026-09-21 |
+| Time | 08:00 PM |
+| Location | Reunión virtual síncrona vía Microsoft Teams  |
+| Prepared By | Acosta Elera, Abraam Bernabe  |
 | Attendees | Acosta Elera, Abraam Bernabe / Bustinza Muñoz, Sebastian Alonso / Mio Mejia, Andy Alejandro / Morales Yapuchura, Jefferson Bayron (reconstrucción referencial) |
 | Sprint 0 Review Summary | No aplica: es el primer Sprint del proyecto. La base técnica Android (estructura por Bounded Context, sistema visual y verificación de compilación) se preparó antes del Sprint. |
 | Sprint 0 Retrospective Summary | No aplica: no existe Sprint anterior. |
@@ -3912,7 +3912,6 @@ El Sprint Planning 1 fija el objetivo del Sprint, las historias comprometidas y 
 
 <p><strong><em>Nota.</em></strong> Elaboración propia. Los datos administrativos se presentan como reconstrucción referencial y no sustituyen el acta de la reunión; la velocidad comprometida coincide con la suma de la Tabla 93.</p>
 
-> Validar con el equipo los datos de esta reconstrucción y reemplazarlos si se recupera el acta del Sprint Planning 1.
 
 El Sprint Goal se redactó con la plantilla de Scrum.org y con criterios SMART:
 
