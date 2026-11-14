@@ -4171,7 +4171,13 @@ La Tabla 102 detalla los Work-Items del Sprint 2 y su estado al cierre de la ent
 
 <p><strong><em>Nota.</em></strong> Elaboración propia.</p>
 
-Vamos a usar Gherkin como forma de expresar cada uno de los casos y cómo respondería el backend.
+
+## Evidencias de los casos de prueba
+
+Vamos a usar Gherkin como forma de expresar cada uno de los casos y cómo respondería el backend. 
+A continuación le prestaremos solo unos casos. Para visualizar todos los casos utilizaremos este recurso, debido a la cantidad de casos de prueba documentados, se comparte el siguiente enlace para consultar el detalle completo de los escenarios y sus evidencias:
+
+[Ver todos los casos de prueba - Capítulo 4](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202123362_upc_edu_pe/IgA7ouyl6nlcTaOlkG8nCDLuAU5a-rvJNZysVQZAvVyePJM?e=JI0i53)
 
 #### Consultar Resumen Operativo - Ok - Indicadores autorizados coinciden con el backend
 ![Consultar Resumen Operativo](./assets/chapter-04/ConsultarResumenOperativo.png)
@@ -4183,8 +4189,26 @@ Vamos a usar Gherkin como forma de expresar cada uno de los casos y cómo respon
 ![Consultar Productos En Riesgo - Resultado 2](./assets/chapter-04/riesgo2.png)
 ![Consultar Productos En Riesgo - Resultado 2](./assets/chapter-04/riesgo3.png)
 
+### Consultar Historial Térmico - Ok - Periodo seleccionado sin lecturas registradas
 
+![Consultar Historial Termico](./assets/chapter-04/historialT1.png)
+![Consultar Historial Termico](./assets/chapter-04/historialT2.png)
 
+![Consultar Historial Termico](./assets/chapter-04/historialT3.png)
+
+![Consultar Historial Termico](./assets/chapter-04/historialT4.png)
+
+### Consultar Historial Térmico - Ok - Consulta del día sin lecturas disponibles
+
+![Consultar Historial Termico](./assets/chapter-04/historialT11.png)
+
+![Consultar Historial Termico](./assets/chapter-04/historialT22.png)
+
+![Consultar Historial Termico](./assets/chapter-04/historialT33.png)
+
+Se comparte el siguiente enlace para consultar el detalle completo de los escenarios y sus evidencias:
+
+[Ver todos los casos de prueba - Capítulo 4](https://upcedupe-my.sharepoint.com/:f:/g/personal/u202123362_upc_edu_pe/IgA7ouyl6nlcTaOlkG8nCDLuAU5a-rvJNZysVQZAvVyePJM?e=JI0i53)
 
 <div style="page-break-after: always;"></div>
 
