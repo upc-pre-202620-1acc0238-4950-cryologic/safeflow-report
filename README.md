@@ -4171,6 +4171,21 @@ La Tabla 102 detalla los Work-Items del Sprint 2 y su estado al cierre de la ent
 
 <p><strong><em>Nota.</em></strong> Elaboración propia.</p>
 
+Vamos a usar Gherkin como forma de expresar cada uno de los casos y cómo respondería el backend.
+
+#### Consultar Resumen Operativo - Ok - Indicadores autorizados coinciden con el backend
+![Consultar Resumen Operativo](./assets/chapter-04/ConsultarResumenOperativo.png)
+
+### Consultar Productos En Riesgo - Ok - Consulta sin productos en condición de riesgo
+
+![Consultar Productos En Riesgo - Resultado 1](./assets/chapter-04/riesgo1.png)
+
+![Consultar Productos En Riesgo - Resultado 2](./assets/chapter-04/riesgo2.png)
+![Consultar Productos En Riesgo - Resultado 2](./assets/chapter-04/riesgo3.png)
+
+
+
+
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Validation Interviews
