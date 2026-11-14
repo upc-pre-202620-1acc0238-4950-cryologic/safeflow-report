@@ -4374,8 +4374,10 @@ Con el objetivo de contar con una infraestructura estable, segura y disponible p
 
 - Como etapa final del ciclo de despliegue, se validó la comunicación síncrona entre el frontend móvil y el backend alojado en Azure App Services. La interfaz de usuario procesa y visualiza de manera correcta los registros e información real almacenada en la base de datos, demostrando la operatividad completa, la consistencia de los datos y el correcto funcionamiento integrado de la aplicación. Esta evidencia se presenta a continuación.
 
+
+
 <div align="center">
-<img src="assets/chapter-05/datos_reales.jpeg" alt="datos reales" width="900"/>
+<img src="assets/chapter-05/BackEvidence.png" alt="datos reales" width="900"/>
 </div>
 
 # Conclusiones y recomendaciones
