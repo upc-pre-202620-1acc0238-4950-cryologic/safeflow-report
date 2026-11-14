@@ -137,16 +137,16 @@ El informe se mantiene en el repositorio de la organización del equipo, donde c
 - Repositorio del informe: [safeflow-report](https://github.com/upc-pre-202620-1acc0238-4950-cryologic/safeflow-report.git)
 - Repositorio de la aplicación <https://github.com/https://github.com/upc-pre-202620-1acc0238-4950-cryologic/safeflow-android-app>
 
-La tabla siguiente detalla las tareas asignadas a cada integrante en las entregas AV1 y TB1 y su relación con las secciones del informe.
+La tabla siguiente detalla las tareas asignadas a cada integrante en las entregas AV1, TB1 y TB2 y su relación con las secciones del informe.
 
 <p><em>Tareas asignadas por integrante en las entregas AV1 y TB1</em></p>
 
-| Integrante | AV1 | TB1 |
-|------------|-----|-----|
-| Acosta Elera, Abraam Bernabe | Requisitos mediante User Stories, Impact Mapping y Product Backlog; diseño estratégico y arquitectura de software con Domain-Driven Design. | Actualización de epics y User Stories; Domain Message Flow Modeling, Bounded Context Canvases, Context Mapping, C4 y diseño táctico por Bounded Context. |
-| Bustinza Muñoz, Sebastian Alonso | Needfinding: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y EventStorming. | Desarrollo de la aplicación móvil Android (base técnica y sistema visual) y apoyo en la documentación: Capítulo III (UI/UX) y Capítulo IV (Sprint 1). |
-| Mio Mejia, Andy Alejandro | Capítulo de presentación: Startup Profile, Solution Profile, proceso Lean UX y segmentos objetivo; ramas y gestión del código fuente. | Revisión del Capítulo I (5W y 2H, supuestos e hipótesis de Lean UX), Student Outcome, Objetivos SMART y Source Code Management. |
-| Morales Yapuchura, Jefferson Bayron | Análisis competitivo; diseño, registro y análisis de entrevistas con usuarios clave. | Trazabilidad del análisis de entrevistas, numeración y citación de figuras y tablas, diseño de las entrevistas de validación, glosario y bibliografía. |
+| Integrante | AV1 | TB1 | AV2 |
+|------------|-----|-----|-----|
+| Acosta Elera, Abraam Bernabe | Requisitos mediante User Stories, Impact Mapping y Product Backlog; diseño estratégico y arquitectura de software con Domain-Driven Design. | Actualización de epics y User Stories; Domain Message Flow Modeling, Bounded Context Canvases, Context Mapping, C4 y diseño táctico por Bounded Context. | Por completar. |
+| Bustinza Muñoz, Sebastian Alonso | Needfinding: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y EventStorming. | Desarrollo de la aplicación móvil Android (base técnica y sistema visual) y apoyo en la documentación: Capítulo III (UI/UX) y Capítulo IV (Sprint 1). | Por completar. |
+| Mio Mejia, Andy Alejandro | Capítulo de presentación: Startup Profile, Solution Profile, proceso Lean UX y segmentos objetivo; ramas y gestión del código fuente. | Revisión del Capítulo I (5W y 2H, supuestos e hipótesis de Lean UX), Student Outcome, Objetivos SMART y Source Code Management. | Actualizar Casos de Prueba, Videos |
+| Morales Yapuchura, Jefferson Bayron | Análisis competitivo; diseño, registro y análisis de entrevistas con usuarios clave. | Trazabilidad del análisis de entrevistas, numeración y citación de figuras y tablas, diseño de las entrevistas de validación, glosario y bibliografía. | Por completar. |
 
 <p><strong><em>Nota.</em></strong> Elaboración propia a partir del reparto de responsabilidades del equipo en cada entrega.</p>
 
