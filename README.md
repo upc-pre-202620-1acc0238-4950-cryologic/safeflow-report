@@ -3892,27 +3892,26 @@ El Sprint 1 construye el primer incremento funcional de la aplicación: el acces
 
 #### 4.2.1.1. Sprint Planning 1
 
-El Sprint Planning 1 fija el objetivo del Sprint, las historias comprometidas y la capacidad del equipo. La Tabla 92 reúne el resumen de la reunión. Los datos de fecha, hora, lugar y asistentes se completarán con el acta real de la reunión.
+El Sprint Planning 1 fija el objetivo del Sprint, las historias comprometidas y la capacidad del equipo. La Tabla 92 presenta una reconstrucción referencial de la reunión, elaborada a partir del formato del Sprint 2 y del equipo identificado en el informe. Los datos administrativos reconstruidos deben validarse con los integrantes.
 
 <p><strong>Tabla 92.</strong> <em>Resumen del Sprint Planning 1</em></p>
 
 | Campo | Valor |
 |:---|:---|
 | Sprint | Sprint 1 |
-| Date | Pendiente |
-| Time | Pendiente |
-| Location | Pendiente |
-| Prepared By | Pendiente |
-| Attendees | Pendiente |
+| Date | 2026-09-21 |
+| Time | 08:00 PM |
+| Location | Reunión virtual síncrona vía Microsoft Teams  |
+| Prepared By | Acosta Elera, Abraam Bernabe  |
+| Attendees | Acosta Elera, Abraam Bernabe / Bustinza Muñoz, Sebastian Alonso / Mio Mejia, Andy Alejandro / Morales Yapuchura, Jefferson Bayron (reconstrucción referencial) |
 | Sprint 0 Review Summary | No aplica: es el primer Sprint del proyecto. La base técnica Android (estructura por Bounded Context, sistema visual y verificación de compilación) se preparó antes del Sprint. |
 | Sprint 0 Retrospective Summary | No aplica: no existe Sprint anterior. |
 | Sprint 1 Goal | Ver el Sprint Goal inmediatamente debajo de esta tabla. |
 | Sprint 1 Velocity | 21 Story Points |
 | Sum of Story Points | 21 Story Points |
 
-<p><strong><em>Nota.</em></strong> Elaboración propia. Los campos marcados como Pendiente requieren el acta de la reunión; la velocidad es la capacidad que el equipo se compromete a aceptar y coincide con la suma de la Tabla 93.</p>
+<p><strong><em>Nota.</em></strong> Elaboración propia. Los datos administrativos se presentan como reconstrucción referencial y no sustituyen el acta de la reunión; la velocidad comprometida coincide con la suma de la Tabla 93.</p>
 
-> Pendiente: fecha, hora, lugar, responsable de preparación y asistentes del Sprint Planning 1.
 
 El Sprint Goal se redactó con la plantilla de Scrum.org y con criterios SMART:
 
@@ -3943,18 +3942,18 @@ La Tabla 93 detalla las historias comprometidas y sus Story Points, según la es
 
 La matriz Leadership-and-Collaboration Matrix (LACX) indica, para cada aspecto del Sprint, quién lidera y quiénes colaboran. Los aspectos del Sprint 1 siguen las capas de la arquitectura: Domain y Application, Infrastructure, Presentation (UI), Pruebas y Documentación. La Tabla 94 muestra una propuesta neutra que reparte el liderazgo entre los cuatro integrantes según los perfiles declarados en el Capítulo I.
 
-<p><strong>Tabla 94.</strong> <em>Leadership-and-Collaboration Matrix del Sprint 1 (propuesta)</em></p>
+<p><strong>Tabla 94.</strong> <em>Leadership-and-Collaboration Matrix del Sprint 1</em></p>
 
 | Team Member | GitHub Username | Domain y Application | Infrastructure | Presentation (UI) | Pruebas | Documentación |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Acosta Elera, Abraam Bernabe | Pendiente | L | C | C | C | C |
-| Bustinza Muñoz, Sebastian Alonso | Pendiente | C | C | L | C | C |
-| Mio Mejia, Andy Alejandro | Pendiente | C | L | C | C | C |
-| Morales Yapuchura, Jefferson Bayron | Pendiente | C | C | C | L | L |
+| Acosta Elera, Abraam Bernabe | AbraamBernabe | L | C | C | C | C |
+| Bustinza Muñoz, Sebastian Alonso | sebastianbustinza809 | C | C | L | C | C |
+| Mio Mejia, Andy Alejandro | AndyMio17 | C | L | C | C | C |
+| Morales Yapuchura, Jefferson Bayron | Fenfito | C | C | C | L | L |
 
-<p><strong><em>Nota.</em></strong> Elaboración propia. L indica líder y C colaborador. La asignación es una propuesta basada en los perfiles del equipo.</p>
+<p><strong><em>Nota.</em></strong> Elaboración propia. Los nombres de usuario se tomaron de la matriz del Sprint 2; L indica líder y C colaborador. La distribución L/C del Sprint 1 se conserva como propuesta porque no hay evidencia de una matriz aprobada para ese Sprint.</p>
 
-> Pendiente: confirmar la asignación L/C con el equipo y completar los nombres de usuario de GitHub.
+> Pendiente: confirmar con el equipo la distribución L/C del Sprint 1.
 
 Como muestra la Tabla 94, todos colaboran en todos los aspectos y cada aspecto tiene un líder, lo que cumple con la regla del curso de que cada integrante participe en la implementación.
 
