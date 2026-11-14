@@ -4001,31 +4001,32 @@ La Tabla 95 contiene 27 tareas que cubren las cuatro capas en cada historia, de 
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
-Esta sección debe evidenciar, por repositorio, los commits relacionados con la implementación del Sprint 1. Estado actual: el proyecto Android contiene la base técnica sobre la que se implementarán las historias, es decir, la estructura de los seis Bounded Contexts por capas, el sistema visual compartido en `core/ui` y una compilación verificada con `assembleDebug`. Todavía no hay funcionalidades de negocio implementadas y el proyecto aún no está inicializado como repositorio Git, por lo que no existen commits que registrar. La Tabla 96 queda lista para completarse.
+Esta sección evidencia los commits relacionados con la implementación del Sprint 1. La evidencia compartida registra cinco commits de funcionalidades en la rama `main`, asociados con identidad y acceso, inventario, monitoreo, logística y reportes.
 
 <p><strong>Tabla 96.</strong> <em>Commits de implementación del Sprint 1</em></p>
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |:---|:---|:---|:---|:---|:---|
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
+| Aplicación Android (URL no visible) | main | `0aa5948` | feat(iam): configurar base compartida, autenticacion y permisos por rol | No visible en la captura | 9 de octubre (año no visible) |
+| Aplicación Android (URL no visible) | main | `615d488` | feat(inventory): gestionar productos, lotes, ingresos y stock local | No visible en la captura | 9 de octubre (año no visible) |
+| Aplicación Android (URL no visible) | main | `a8c1ea8` | feat(monitoring): consultar temperaturas y gestionar alertas e incidencias | No visible en la captura | 9 de octubre (año no visible) |
+| Aplicación Android (URL no visible) | main | `455e300` | feat(logistics): gestionar despachos, reservas y confirmacion de entrega | No visible en la captura | 9 de octubre (año no visible) |
+| Aplicación Android (URL no visible) | main | `4305e91` | feat(reporting): integrar resumen, navegacion y pruebas de reglas y flujos | No visible en la captura | 9 de octubre (año no visible) |
 
-<p><strong><em>Nota.</em></strong> Se completará con los commits reales una vez inicializados los repositorios.</p>
-
-> Pendiente: inicializar el repositorio Git de la aplicación Android y registrar los commits del Sprint 1.
+<p><strong><em>Nota.</em></strong> Commits transcritos de la captura compartida; los identificadores son abreviados. El nombre o URL exactos del repositorio, el cuerpo de los mensajes y el año de la fecha no aparecen en la evidencia.</p>
 
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
-Esta sección presenta las pruebas automatizadas asociadas a las historias del Sprint: pruebas unitarias de los casos de uso y del dominio, y escenarios de aceptación en Gherkin derivados de los criterios de aceptación de cada historia. Estado actual: la tarea `testDebugUnitTest` se ejecuta correctamente sobre la base del proyecto, pero aún no existen pruebas de las historias porque no hay funcionalidades implementadas. La Tabla 97 registrará los commits de pruebas.
+Esta sección presenta las pruebas automatizadas asociadas a las historias del Sprint: pruebas unitarias de los casos de uso y del dominio, y escenarios de aceptación en Gherkin derivados de los criterios de aceptación de cada historia. El estado registrado indica que `testDebugUnitTest` se ejecuta correctamente. Además, el commit `4305e91` menciona pruebas de reglas y flujos dentro de la funcionalidad de reportes. La captura no muestra los archivos de prueba, los casos cubiertos ni el resultado de ejecución, por lo que esa evidencia aún debe documentarse.
 
 <p><strong>Tabla 97.</strong> <em>Commits de pruebas del Sprint 1</em></p>
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |:---|:---|:---|:---|:---|:---|
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
+| Aplicación Android (URL no visible) | main | `4305e91` | feat(reporting): integrar resumen, navegacion y pruebas de reglas y flujos | No visible en la captura | 9 de octubre (año no visible) |
 
-<p><strong><em>Nota.</em></strong> Se completará con los commits de tipo `test` y la relación entre pruebas y historias.</p>
+<p><strong><em>Nota.</em></strong> Commit transcrito de la captura compartida; el identificador es abreviado. El nombre o URL exactos del repositorio, el cuerpo del mensaje y el año de la fecha no aparecen en la evidencia. La captura tampoco permite confirmar si existen commits independientes de tipo `test`.</p>
 
-> Pendiente: relación de pruebas unitarias, archivos `.feature` en Gherkin con sus Steps y commits de pruebas.
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
 
