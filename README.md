@@ -143,7 +143,7 @@ La tabla siguiente detalla las tareas asignadas a cada integrante en las entrega
 
 | Integrante | AV1 | TB1 | AV2 |
 |------------|-----|-----|-----|
-| Acosta Elera, Abraam Bernabe | Requisitos mediante User Stories, Impact Mapping y Product Backlog; diseño estratégico y arquitectura de software con Domain-Driven Design. | Actualización de epics y User Stories; Domain Message Flow Modeling, Bounded Context Canvases, Context Mapping, C4 y diseño táctico por Bounded Context. | Por completar. |
+| Acosta Elera, Abraam Bernabe | Requisitos mediante User Stories, Impact Mapping y Product Backlog; diseño estratégico y arquitectura de software con Domain-Driven Design. | Actualización de epics y User Stories; Domain Message Flow Modeling, Bounded Context Canvases, Context Mapping, C4 y diseño táctico por Bounded Context. | Modelado de dominio y reglas de negocio para monitoreo térmico, alertas, acciones correctivas y validación de despachos (Sprint 2). |
 | Bustinza Muñoz, Sebastian Alonso | Needfinding: User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping y EventStorming. | Desarrollo de la aplicación móvil Android (base técnica y sistema visual) y apoyo en la documentación: Capítulo III (UI/UX) y Capítulo IV (Sprint 1). | Por completar. |
 | Mio Mejia, Andy Alejandro | Capítulo de presentación: Startup Profile, Solution Profile, proceso Lean UX y segmentos objetivo; ramas y gestión del código fuente. | Revisión del Capítulo I (5W y 2H, supuestos e hipótesis de Lean UX), Student Outcome, Objetivos SMART y Source Code Management. | Actualizar Casos de Prueba, Videos |
 | Morales Yapuchura, Jefferson Bayron | Análisis competitivo; diseño, registro y análisis de entrevistas con usuarios clave. | Trazabilidad del análisis de entrevistas, numeración y citación de figuras y tablas, diseño de las entrevistas de validación, glosario y bibliografía. | Por completar. |
@@ -363,6 +363,11 @@ La Figura 1 presenta las estadísticas de colaboración del repositorio del info
       - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
       - [4.2.2.2. Aspect Leaders and Collaborators](#4222-aspect-leaders-and-collaborators)
       - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
+  - [Evidencias de los casos de prueba](#evidencias-de-los-casos-de-prueba)
+      - [Consultar Resumen Operativo - Ok - Indicadores autorizados coinciden con el backend](#consultar-resumen-operativo---ok---indicadores-autorizados-coinciden-con-el-backend)
+    - [Consultar Productos En Riesgo - Ok - Consulta sin productos en condición de riesgo](#consultar-productos-en-riesgo---ok---consulta-sin-productos-en-condición-de-riesgo)
+    - [Consultar Historial Térmico - Ok - Periodo seleccionado sin lecturas registradas](#consultar-historial-térmico---ok---periodo-seleccionado-sin-lecturas-registradas)
+    - [Consultar Historial Térmico - Ok - Consulta del día sin lecturas disponibles](#consultar-historial-térmico---ok---consulta-del-día-sin-lecturas-disponibles)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -420,8 +425,8 @@ Cada integrante detalla a continuación la relación entre el outcome, sus dimen
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Acosta Elera, Abraam Bernabe**<br>**AV1:** Aplicó EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping para modelar el dominio de la cadena de frío; redactó las User Stories, el Impact Mapping y el Product Backlog.<br>**TB1:** Actualizó el catálogo de epics y User Stories (EP-01 a EP-07, 28 historias) y rehízo el Domain Message Flow Modeling, los seis Bounded Context Canvases, el Context Mapping y los diagramas C4 con las guías de la comunidad DDD (ddd-crew). | **AV1:** El equipo incorporó técnicas de Domain-Driven Design que no formaban parte de su práctica previa y las aplicó a un dominio real.<br>**TB1:** Justificar cada patrón de relación entre contextos obligó a contrastar alternativas y documentar por qué se descartó cada una. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **AV1:** Estudió el modelado estratégico de DDD para dividir el sistema en seis Bounded Contexts.<br>**TB1:** Estudió el modelado táctico por capas y las guías Domain Message Flow Modelling, Bounded Context Canvas y Context Mapping, y las aplicó a la documentación de cada contexto. | **AV1:** La complejidad del dominio mostró que el modelado requiere iteración y revisión constantes.<br>**TB1:** Las observaciones del docente se convirtieron en ciclos de corrección registrados en el control de versiones del informe. |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Acosta Elera, Abraam Bernabe**<br>**AV1:** Aplicó EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping para modelar el dominio de la cadena de frío; redactó las User Stories, el Impact Mapping y el Product Backlog.<br>**TB1:** Actualizó el catálogo de epics y User Stories (EP-01 a EP-07, 28 historias) y rehízo el Domain Message Flow Modeling, los seis Bounded Context Canvases, el Context Mapping y los diagramas C4 con las guías de la comunidad DDD (ddd-crew).<br>**AV2:** Diseñó los modelos de dominio y las reglas de negocio del Sprint 2 para lecturas y disponibilidad de sensores, evaluación de desviaciones térmicas, alertas, acciones correctivas, despachos y validación térmica previa al envío. | **AV1:** El equipo incorporó técnicas de Domain-Driven Design que no formaban parte de su práctica previa y las aplicó a un dominio real.<br>**TB1:** Justificar cada patrón de relación entre contextos obligó a contrastar alternativas y documentar por qué se descartó cada una.<br>**AV2:** Aplicar reglas de dominio a los flujos de monitoreo, alertas y logística ayudó a mantener coherencia entre las condiciones térmicas y las decisiones operativas del sistema. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **AV1:** Estudió el modelado estratégico de DDD para dividir el sistema en seis Bounded Contexts.<br>**TB1:** Estudió el modelado táctico por capas y las guías Domain Message Flow Modelling, Bounded Context Canvas y Context Mapping, y las aplicó a la documentación de cada contexto.<br>**AV2:** Profundizó en el modelado de dominio y el diseño de políticas térmicas y de despacho, analizando cómo representar estados, validaciones y acciones correctivas en los distintos contextos. | **AV1:** La complejidad del dominio mostró que el modelado requiere iteración y revisión constantes.<br>**TB1:** Las observaciones del docente se convirtieron en ciclos de corrección registrados en el control de versiones del informe.<br>**AV2:** El trabajo en distintos contextos confirmó la necesidad de seguir aprendiendo para integrar reglas y conservar la consistencia entre los procesos operativos. |
 
 <p><strong><em>Nota.</em></strong> Elaboración propia. Formato del Anexo A del enunciado del trabajo final.</p>
 
@@ -3813,9 +3818,9 @@ Como muestra la Tabla 89, las herramientas de desarrollo se concentran en el eco
 
 ### 4.1.2. Source Code Management
 
-El código y la documentación se alojan en repositorios Git en GitHub, bajo la organización del equipo. Se gestiona un repositorio por producto digital: la aplicación Android principal, la aplicación emuladora y, cuando exista, el servicio compartido. El repositorio de la aplicación Android aún no está inicializado como repositorio Git, por lo que la adopción de las prácticas descritas aquí es el primer paso del Sprint 1.
+El código y la documentación se alojan en repositorios Git en GitHub, bajo la organización del equipo. Se gestiona un repositorio por producto digital: la aplicación Android principal, la aplicación emuladora y, cuando exista, el servicio compartido. El repositorio de la aplicación Android está disponible en GitHub; la adopción de las prácticas descritas aquí es el primer paso del Sprint 1.
 
-> Pendiente: URL del repositorio de la aplicación Android, de la aplicación emuladora y del servicio compartido (organización GitHub del equipo).
+> Repositorio de la aplicación Android: [safeflow-android-app-v2](https://github.com/upc-pre-202620-1acc0238-4950-cryologic/safeflow-android-app-v2).
 
 El equipo adopta GitFlow como estrategia de ramas. La Figura 114 resume el flujo: el trabajo diario nace en ramas `feature/*` desde `develop`; las ramas `release/*` estabilizan una entrega antes de integrarla en `main`; y las ramas `hotfix/*` corrigen defectos de producción directamente desde `main` y se reintegran a `develop`.
 
@@ -3869,15 +3874,19 @@ Según la Tabla 91, la regla de mayor impacto es el aislamiento entre contextos,
 
 La aplicación Android se construye con Gradle y, durante el desarrollo, se genera como APK de depuración en `app/build/outputs/apk/debug/app-debug.apk` mediante la tarea `assembleDebug`. Para las sesiones de validación con usuarios, el equipo distribuirá las compilaciones a los dispositivos de prueba a través de Firebase App Distribution, de modo que cada participante instale la versión vigente sin necesidad de publicar la aplicación en una tienda. Antes de cada distribución se ejecutan `testDebugUnitTest` y `lintDebug`, y solo una compilación que pasa ambas tareas se publica a los evaluadores.
 
-El servicio compartido, que recibe las mediciones simuladas de la aplicación emuladora y las sirve a la aplicación principal, se desplegará como servicio remoto accesible por HTTPS.
+El servicio compartido (backend), que recibe las mediciones simuladas de la aplicación emuladora y las sirve a la aplicación principal, está desplegado en Azure App Service y es accesible por HTTPS. La URL base de la API es `https://safeflow-api-chbaa6fxbbdja6b2.southeastasia-01.azurewebsites.net`; la documentación Swagger está disponible en [Swagger UI](https://safeflow-api-chbaa6fxbbdja6b2.southeastasia-01.azurewebsites.net/swagger/index.html).
 
-> Pendiente: plataforma, URL base y procedimiento de despliegue del servicio compartido.
 
 ### 4.1.5. Consideraciones éticas, i18n y accesibilidad
 
 SafeFlow gestiona información operativa de empresas y datos de cuentas de usuario, por lo que el equipo adopta los principios del código de ética de ingeniería de software de ACM/IEEE y del Colegio de Ingenieros del Perú: veracidad en lo que se afirma del producto, respeto a la privacidad de los usuarios y responsabilidad por la calidad de lo entregado. Los términos y condiciones de servicio se muestran durante el registro de la cuenta, tal como lo contempla la historia US-30.
 
-> Pendiente: texto de los términos y condiciones de servicio.
+**Términos y condiciones de uso de SafeFlow (borrador).** Al crear una cuenta, la persona usuaria acepta utilizar SafeFlow únicamente para fines autorizados por su organización y de acuerdo con el rol asignado. Se compromete a proporcionar información veraz, mantener protegidas sus credenciales y comunicar cualquier uso no autorizado. La organización es responsable de autorizar las cuentas, asignar los permisos adecuados y verificar la información operativa que registra.
+
+SafeFlow sirve de apoyo para registrar y consultar información de inventario, lotes, mediciones térmicas, incidencias y despachos; no sustituye los procedimientos de seguridad de la organización, la supervisión profesional ni los controles físicos, y no garantiza por sí solo la calidad o el cumplimiento normativo de los productos. El uso del servicio requiere conectividad y puede verse interrumpido por mantenimiento o fallos técnicos, por lo que la organización debe mantener los controles y registros necesarios para sus operaciones críticas.
+
+La información ingresada se procesa para proporcionar las funciones del servicio y se muestra a las personas usuarias autorizadas. Los detalles sobre los datos recopilados, su conservación, eliminación y los derechos de sus titulares deberán especificarse en el aviso de privacidad aplicable antes de publicar el servicio. El incumplimiento de estas condiciones o un riesgo para la seguridad podrá dar lugar a la suspensión del acceso, informando a la organización cuando sea posible.
+
 
 En internacionalización, la aplicación define como idiomas base el español latinoamericano (es_419) y el inglés (en_US), con los textos de interfaz en recursos de cadenas y no incrustados en el código. En accesibilidad, los componentes de `core/ui` exigen descripción de contenido (`contentDescription`) en íconos y botones de ícono, contraste suficiente en la paleta de colores semánticos y un objetivo táctil mínimo de 48 dp en los controles interactivos. Estas decisiones ya forman parte del sistema visual compartido, por lo que cada pantalla las hereda sin trabajo adicional.
 
@@ -3954,15 +3963,12 @@ La matriz Leadership-and-Collaboration Matrix (LACX) indica, para cada aspecto d
 
 <p><strong><em>Nota.</em></strong> Elaboración propia. Los nombres de usuario se tomaron de la matriz del Sprint 2; L indica líder y C colaborador. La distribución L/C del Sprint 1 se conserva como propuesta porque no hay evidencia de una matriz aprobada para ese Sprint.</p>
 
-> Pendiente: confirmar con el equipo la distribución L/C del Sprint 1.
 
 Como muestra la Tabla 94, todos colaboran en todos los aspectos y cada aspecto tiene un líder, lo que cumple con la regla del curso de que cada integrante participe en la implementación.
 
 #### 4.2.1.3. Sprint Backlog 1
 
 El Sprint Backlog 1 descompone cada historia del Sprint en tareas técnicas alineadas con las capas de la arquitectura. La Tabla 95 presenta las tareas con su estimación en horas, que es una propuesta inicial sujeta a ajuste en el Sprint Planning. La asignación y el estado se actualizarán a medida que avance el trabajo.
-
-> Pendiente: captura del tablero del Sprint 1 y URL público del tablero.
 
 <p><strong>Tabla 95.</strong> <em>Sprint Backlog 1: historias y tareas</em></p>
 
